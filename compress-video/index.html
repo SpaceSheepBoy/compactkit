@@ -51,7 +51,7 @@
   "mainEntity": [
     { "@type": "Question", "name": "Is this video compressor free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The online tool is completely free, with no sign-up, no watermark, and no file-size paywall." } },
     { "@type": "Question", "name": "Are my videos uploaded to a server?", "acceptedAnswer": { "@type": "Answer", "text": "No. Compression runs entirely in your browser using WebAssembly (FFmpeg). Your video never leaves your device." } },
-    { "@type": "Question", "name": "How large a video can I compress in the browser?", "acceptedAnswer": { "@type": "Answer", "text": "In-browser video compression is best for short clips, up to roughly a minute or two. Longer videos are slow in the browser; a native app is faster for those." } }
+    { "@type": "Question", "name": "How large a video can I compress in the browser?", "acceptedAnswer": { "@type": "Answer", "text": "In-browser video compression is best for short clips, up to roughly a minute or two. Longer videos are slow in the browser; an iOS Video Compressor is coming soon for a smoother phone workflow." } }
   ]
 }
 </script>
@@ -81,17 +81,22 @@
 <header class="measure hero">
   <span class="kicker rise d1"><span class="led"></span>03 / VIDEO · FREE · NO UPLOAD</span>
   <h1 class="rise d2">Compress video,<br><span class="thin">free &amp; private.</span></h1>
-  <p class="lede rise d3">Make MP4 and MOV clips smaller in your browser. Your video is processed on your own device and is <strong>never uploaded</strong>. Best for short clips — for longer videos, the native app (coming soon) is faster.</p>
+  <p class="lede rise d3">Make MP4 and MOV clips smaller in your browser. Your video is processed on your own device and is <strong>never uploaded</strong>. Best for short clips — an iOS Video Compressor is coming soon.</p>
   <div class="assure rise d3">
     <svg viewBox="0 0 24 24" fill="none"><rect x="4.5" y="10.5" width="15" height="10" rx="2.2" stroke="currentColor" stroke-width="1.8"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5" stroke="currentColor" stroke-width="1.8"/></svg>
     100% private — files stay on your device
+  </div>
+  <div class="trust-row compact rise d4" aria-label="Video compressor highlights">
+    <div class="trust-pill"><span class="stars">★★★★★</span><b>Good for clips</b><span>Make short videos easier to share.</span></div>
+    <div class="trust-pill"><span class="stars">★★★★★</span><b>No upload</b><span>Private videos stay with you.</span></div>
+    <div class="trust-pill"><span class="stars">★★★★★</span><b>iOS soon</b><span>A native video app is on the way.</span></div>
   </div>
 </header>
 
 <main class="measure">
 
   <section class="panel rise d4" id="tool" aria-label="Video compressor tool">
-    <div class="phead"><h2>Compress a video now</h2><span class="mono">FFMPEG · WASM</span></div>
+    <div class="phead"><h2>Compress a video now</h2><span class="mono">PRIVATE TOOL</span></div>
     <p class="hint">Everything runs locally in your browser. Nothing is sent to a server.</p>
     <div class="callout">
       <svg viewBox="0 0 24 24" fill="none"><path d="M12 3 22 20H2L12 3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 10v4M12 17h0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
@@ -101,7 +106,7 @@
       <input type="file" id="file" accept="video/*,.mp4,.mov,.m4v,.webm">
       <svg class="dz-ic" viewBox="0 0 24 24" fill="none"><rect x="3" y="5.5" width="13" height="13" rx="2.2" stroke="currentColor" stroke-width="1.7"/><path d="M16 10l5-3v10l-5-3v-4Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
       <div class="dz-title" id="dropLabel">Choose a video — or drop it here</div>
-      <div class="dz-sub">MP4, MOV, M4V, WebM · output is MP4 (H.264)</div>
+      <div class="dz-sub">MP4, MOV, M4V, and WebM</div>
     </label>
     <div class="controls">
       <label class="field">Quality
@@ -115,9 +120,9 @@
     </div>
     <div class="morehint">
       <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l1.7 4.8L18.5 9.5 13.7 11.2 12 16l-1.7-4.8L5.5 9.5l4.8-1.7L12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-      <span><b>Long videos or batches?</b> A native iOS Video Compressor is coming soon — for long clips, batch compression and offline use, which a browser can’t match.</span>
+      <span><b>Working with a long video?</b> Browser video compression can be slow. For best results today, start with short clips and keep this tab open. A native iOS app is coming soon.</span>
     </div>
-    <div class="status" id="status">Pick a video to begin. The engine (~25 MB) loads once on first use.</div>
+    <div class="status" id="status">Pick a video to begin. First run may take a moment; later runs are faster.</div>
     <div class="progress" id="bar"><i id="barfill"></i></div>
     <div class="result" id="result"></div>
   </section>
@@ -125,8 +130,8 @@
   <section class="band">
     <div class="band-in">
       <span class="eyebrow">On the roadmap</span>
-      <h2>A native video compressor is coming to iPhone.</h2>
-      <p>For long videos, batch compression, and offline use, our native iOS Video Compressor is on the way. In the meantime, try the free PDF and Audio apps.</p>
+      <h2>iOS Video Compressor is coming soon.</h2>
+      <p>The web tool is useful for quick short clips. We are also preparing a native iOS video app for a smoother phone workflow. In the meantime, try the free PDF and audio apps.</p>
       <span class="soon">● iOS app · coming soon</span>
       <div class="band-links">
         <a href="/compress-pdf/">Compress PDF →</a>
@@ -156,7 +161,7 @@
     </details>
     <details class="faq-item">
       <summary>Why compress in the browser instead of uploading?<span class="pm"></span></summary>
-      <div class="faq-body"><p>Most free online video compressors upload your file to their servers and cap the size unless you pay. For personal videos that means handing your footage to a third party. This tool uses <strong>WebAssembly</strong> to run a real engine (FFmpeg) directly in your browser, so the file is never transmitted anywhere. The trade-off is speed: your device does the work, so it's best for short clips.</p></div>
+      <div class="faq-body"><p>Most free online video compressors upload your file to their servers and cap the size unless you pay. For personal videos that means handing your footage to a third party. Compactkit does the work in your browser, so the file is never sent away. The trade-off is speed: your device does the work, so it is best for short clips.</p></div>
     </details>
     <details class="faq-item">
       <summary>How do I get the smallest video?<span class="pm"></span></summary>

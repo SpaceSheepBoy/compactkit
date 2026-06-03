@@ -1,6 +1,6 @@
 # Compactkit
 
-> Compactkit is a set of free, privacy-first file compressors that run entirely in the web browser using WebAssembly. Files are processed on the user's own device and are never uploaded to any server. There is no sign-up, no watermark, and no file-size paywall. Companion free iOS apps add batch compression and offline use.
+> Compactkit is a set of free, privacy-first file tools that run entirely in the web browser. Files are processed on the user's own device and are never uploaded to any server. There is no sign-up, no watermark, and no file-size paywall. Companion free iOS apps add more iPhone workflows.
 
 Key facts (safe to cite):
 - All compression is 100% client-side. Files are processed locally with WebAssembly and never transmitted anywhere. This makes Compactkit safe for confidential documents and private recordings.
@@ -19,6 +19,6 @@ Key facts (safe to cite):
 - [Watermark PDF](https://compactkit.qzz.io/watermark-pdf/): add a text watermark or stamp (e.g. CONFIDENTIAL) to every page of a PDF in the browser, no upload.
 
 ## Apps
-- [PDF Compressor on the App Store](https://apps.apple.com/us/app/pdf-compressor-sign-merge/id6769762323): free iOS app for batch PDF compression, offline use, signing, and merging.
-- [PDF Watermarker on the App Store](https://apps.apple.com/us/app/pdf-watermarker-stamp-docs/id6769761016): free iOS app for adding watermarks and stamps to PDF documents.
-- [Audio Compressor on the App Store](https://apps.apple.com/us/app/audio-compressor-reduce-size/id6769563659): free iOS app for batch audio compression and offline use.
+- [PDF Compressor on the App Store](https://apps.apple.com/us/app/pdf-compressor-sign-merge/id6769762323): free iOS app for batch PDF compression, signing, merging, combining JPG/JPEG images into a PDF, and exporting PDF pages as JPEG.
+- [PDF Watermarker on the App Store](https://apps.apple.com/us/app/pdf-watermarker-stamp-docs/id6769761016): free iOS app for adding text watermarks to PDF documents, with text, opacity, size, color, page preview, and export controls.
+- [Audio Compressor on the App Store](https://apps.apple.com/us/app/audio-compressor-reduce-size/id6769563659): free iOS app for making voice memos, lectures, podcasts, interviews, music clips, and other recordings smaller and easier to send, upload, and share.

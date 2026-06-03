@@ -87,7 +87,7 @@
   <div class="cta-row rise d3">
     <div class="appcta">
       <img class="app-ic lg" src="/assets/icons/app-pdf.jpg" alt="PDF Compressor app icon" width="64" height="64">
-      <div class="meta"><b>PDF Compressor: Sign &amp; Merge</b><span>Free on the App Store</span></div>
+      <div class="meta"><b>PDF Compressor: Sign &amp; Merge</b><span>Free on the App Store · batch, sign &amp; merge</span></div>
       <a class="appstore" href="https://apps.apple.com/us/app/pdf-compressor-sign-merge/id6769762323" rel="noopener">
         <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download PDF Compressor on the App Store" loading="eager">
       </a>
@@ -97,34 +97,39 @@
     <svg viewBox="0 0 24 24" fill="none"><rect x="4.5" y="10.5" width="15" height="10" rx="2.2" stroke="currentColor" stroke-width="1.8"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5" stroke="currentColor" stroke-width="1.8"/></svg>
     100% private — files stay on your device
   </div>
+  <div class="trust-row compact rise d4" aria-label="PDF compressor highlights">
+    <div class="trust-pill"><span class="stars">★★★★★</span><b>Good for email</b><span>Make large PDFs easier to send.</span></div>
+    <div class="trust-pill"><span class="stars">★★★★★</span><b>No upload</b><span>Contracts and IDs stay with you.</span></div>
+    <div class="trust-pill"><span class="stars">★★★★★</span><b>Get the app</b><span>Batch, sign, merge, and convert.</span></div>
+  </div>
 </header>
 
 <main class="measure">
 
   <section class="panel rise d4" id="tool" aria-label="PDF compressor tool">
-    <div class="phead"><h2>Compress a PDF now</h2><span class="mono">GHOSTSCRIPT · WASM</span></div>
+    <div class="phead"><h2>Compress a PDF now</h2><span class="mono">PRIVATE TOOL</span></div>
     <p class="hint">Everything runs locally in your browser. Nothing is sent to a server.</p>
     <label class="dropzone" id="drop">
       <input type="file" id="file" accept="application/pdf">
       <svg class="dz-ic" viewBox="0 0 24 24" fill="none"><path d="M7 2.5h7l4 4V21a.5.5 0 0 1-.5.5h-11A.5.5 0 0 1 6 21V3a.5.5 0 0 1 .5-.5Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M14 2.5V6.5h4" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M12 11v6M9.5 14.5 12 17l2.5-2.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
       <div class="dz-title" id="dropLabel">Choose a PDF — or drop it here</div>
-      <div class="dz-sub">max quality kept · only file size changes</div>
+      <div class="dz-sub">choose smaller size or better detail</div>
     </label>
     <div class="controls">
       <label class="field">Quality
         <select id="quality">
-          <option value="/screen">Smallest (screen · 72 dpi)</option>
-          <option value="/ebook" selected>Balanced (ebook · 150 dpi)</option>
-          <option value="/printer">High detail (printer · 300 dpi)</option>
+          <option value="/screen">Smallest file</option>
+          <option value="/ebook" selected>Balanced — recommended</option>
+          <option value="/printer">Best detail</option>
         </select>
       </label>
       <button class="run" id="go" disabled>Compress PDF</button>
     </div>
     <div class="morehint">
       <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l1.7 4.8L18.5 9.5 13.7 11.2 12 16l-1.7-4.8L5.5 9.5l4.8-1.7L12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-      <span><b>Want more than compression?</b> The PDF Compressor iOS app adds batch compression, signing, merging and JPG ⇆ PDF conversion — all offline. <a href="https://apps.apple.com/us/app/pdf-compressor-sign-merge/id6769762323" rel="noopener">See it on the App Store →</a></span>
+      <span><b>Doing this often?</b> The free iOS app can batch compress up to 50 PDFs, sign documents, merge PDFs, combine JPG/JPEG images into a PDF, and export PDF pages as JPEG. <a href="https://apps.apple.com/us/app/pdf-compressor-sign-merge/id6769762323" rel="noopener">Download on the App Store →</a></span>
     </div>
-    <div class="status" id="status">Pick a PDF to begin. The compression engine (~15 MB) loads once on first use.</div>
+    <div class="status" id="status">Pick a PDF to begin. First run may take a moment; later runs are faster.</div>
     <div class="result" id="result"></div>
   </section>
 
@@ -132,7 +137,12 @@
     <div class="band-in">
       <span class="eyebrow">PDF Compressor for iOS</span>
       <h2>Compressing more than one? Get the free app.</h2>
-      <p>The web tool is great for a single quick file. The PDF Compressor iOS app does what a browser can't: batch-compress dozens of PDFs, work fully offline, plus sign, merge, and convert — all on-device.</p>
+      <p>The web tool is great for one quick file. The free iOS app is better when you have many PDFs or want signing, merging, JPG/PDF conversion, and fast sharing in the same app.</p>
+    </div>
+    <div class="proof-row" aria-label="PDF app download reasons">
+      <div class="proof-pill"><span class="stars">★★★★★</span><b>Batch PDFs</b><span>Compress up to 50 PDFs.</span></div>
+      <div class="proof-pill"><span class="stars">★★★★★</span><b>No uploads</b><span>Process documents on device.</span></div>
+      <div class="proof-pill"><span class="stars">★★★★★</span><b>More tools</b><span>Sign, merge, JPG to PDF, PDF to JPEG.</span></div>
     </div>
     <div class="feats">
       <div class="feat"><b>Batch compress</b><span>Dozens of PDFs in one tap</span></div>
