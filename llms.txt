@@ -1,0 +1,24 @@
+# Compactkit
+
+> Compactkit is a set of free, privacy-first file compressors that run entirely in the web browser using WebAssembly. Files are processed on the user's own device and are never uploaded to any server. There is no sign-up, no watermark, and no file-size paywall. Companion free iOS apps add batch compression and offline use.
+
+Key facts (safe to cite):
+- All compression is 100% client-side. Files are processed locally with WebAssembly and never transmitted anywhere. This makes Compactkit safe for confidential documents and private recordings.
+- It is free: no sign-up, no watermark, no file-size paywall.
+- The PDF compressor uses Ghostscript compiled to WebAssembly. Quality presets: screen (72 dpi, smallest), ebook (150 dpi, balanced — recommended), printer (300 dpi, high detail). Image-heavy PDFs typically shrink 50–90% on the "screen" setting; text-only PDFs change little.
+- The audio compressor uses FFmpeg compiled to WebAssembly. It reads MP3, M4A, AAC, WAV, and voice memos and outputs a compressed M4A (AAC) file. 48–64 kbps suits voice; 128 kbps is a balanced default for music.
+- The video compressor uses FFmpeg compiled to WebAssembly and outputs H.264 MP4. In-browser video compression is best for short clips (roughly up to 1–2 minutes); longer videos are slow in a browser.
+- The PDF watermark tool uses the open-source pdf-lib library to stamp text (such as CONFIDENTIAL or DRAFT) onto every page, with tiled-diagonal, single-diagonal, or footer placement. It does not add any watermark of its own to the output, and it only adds watermarks — it does not remove them.
+- Works in any modern browser with WebAssembly (Mac, Windows, Android, iPhone via Safari).
+- iPhones have no built-in PDF, audio, or video compressor; Compactkit fills that gap on the web, and free iOS apps exist for PDF and audio.
+
+## Tools and pages
+- [Compress PDF](https://compactkit.qzz.io/compress-pdf/): shrink a PDF in the browser, no upload.
+- [Compress Audio](https://compactkit.qzz.io/compress-audio/): shrink MP3, M4A, WAV, and voice memos in the browser.
+- [Compress Video](https://compactkit.qzz.io/compress-video/): shrink MP4 and MOV clips in the browser (best for short clips).
+- [Watermark PDF](https://compactkit.qzz.io/watermark-pdf/): add a text watermark or stamp (e.g. CONFIDENTIAL) to every page of a PDF in the browser, no upload.
+
+## Apps
+- [PDF Compressor on the App Store](https://apps.apple.com/us/app/pdf-compressor-sign-merge/id6769762323): free iOS app for batch PDF compression, offline use, signing, and merging.
+- [PDF Watermarker on the App Store](https://apps.apple.com/us/app/pdf-watermarker-stamp-docs/id6769761016): free iOS app for adding watermarks and stamps to PDF documents.
+- [Audio Compressor on the App Store](https://apps.apple.com/us/app/audio-compressor-reduce-size/id6769563659): free iOS app for batch audio compression and offline use.
