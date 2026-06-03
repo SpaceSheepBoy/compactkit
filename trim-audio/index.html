@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trim Audio Online Free — Cut MP3, M4A &amp; WAV in Your Browser (No Upload)</title>
+<meta name="description" content="Trim audio in your browser. Cut MP3, M4A, WAV, AAC, and voice memos by start and end time. No upload, no sign-up. Free iOS app for more audio tools.">
+<link rel="canonical" href="https://compactkit.qzz.io/trim-audio/">
+<meta property="og:title" content="Trim Audio Online Free — No Upload">
+<meta property="og:description" content="Cut audio by start and end time in your browser. Files stay on your device.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://compactkit.qzz.io/trim-audio/">
+<meta name="theme-color" content="#FBFAF6">
+<link rel="stylesheet" href="/assets/app.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Compactkit Trim Audio",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web browser",
+  "browserRequirements": "Requires JavaScript and WebAssembly. Runs fully client-side.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "featureList": [
+    "Trim MP3, M4A, WAV, AAC, and voice memos by start and end time",
+    "Files are processed locally and never uploaded",
+    "No sign-up"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to trim audio without uploading it",
+  "tool": [{ "@type": "HowToTool", "name": "A web browser" }],
+  "step": [
+    { "@type": "HowToStep", "position": 1, "name": "Choose an audio file", "text": "Pick an MP3, M4A, WAV, AAC, or voice memo. It stays on your device." },
+    { "@type": "HowToStep", "position": 2, "name": "Enter start and end time", "text": "Type the start and end times in seconds." },
+    { "@type": "HowToStep", "position": 3, "name": "Download trimmed audio", "text": "Click Trim audio. The trimmed M4A file is created in your browser and downloads automatically." }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Can I trim audio without uploading?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The browser tool trims audio locally using WebAssembly and does not upload the file." } },
+    { "@type": "Question", "name": "What audio formats can I trim?", "acceptedAnswer": { "@type": "Answer", "text": "The tool supports MP3, M4A, WAV, AAC, and voice memos, and outputs an M4A file." } }
+  ]
+}
+</script>
+</head>
+<body class="t-audio">
+<div class="topline"></div>
+<div class="shell"><nav class="nav"><a class="brand" href="/"><svg class="mark" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="1" y="1" width="26" height="26" rx="8" stroke="currentColor" stroke-width="1.6"/><path d="M8 9.5 11.5 14 8 18.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 9.5 16.5 14 20 18.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Compactkit</a><div class="nav-links"><a href="/compress-pdf/">Compress PDF</a><a class="active" href="/compress-audio/">Compress Audio</a><a href="/compress-video/">Compress Video</a><a href="/watermark-pdf/">Watermark PDF</a><a href="/tutorials/">Help</a></div></nav></div>
+
+<header class="measure hero">
+  <span class="kicker rise d1"><span class="led"></span>AUDIO · TRIM · NO UPLOAD</span>
+  <h1 class="rise d2">Trim audio,<br><span class="thin">keep the useful part.</span></h1>
+  <p class="lede rise d3">Cut a voice memo, lecture, interview, podcast, or music clip by start and end time. Everything runs in your browser.</p>
+  <div class="cta-row rise d3"><div class="appcta"><img class="app-ic lg" src="/assets/icons/app-audio.jpg" alt="Audio Compressor app icon" width="64" height="64"><div class="meta"><b>Audio Compressor: Reduce Size</b><span>Trim · split · compress · batch · merge</span></div><a class="appstore" href="https://apps.apple.com/us/app/audio-compressor-reduce-size/id6769563659" rel="noopener"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download Audio Compressor on the App Store" loading="eager"></a></div></div>
+  <div class="assure rise d3">100% private — audio stays on your device</div>
+</header>
+
+<main class="measure">
+  <section class="panel task-panel rise d4" id="tool" aria-label="Trim audio tool">
+    <div>
+      <div class="phead"><h2>Trim audio now</h2><span class="mono">PRIVATE TOOL</span></div>
+      <p class="hint">Drag the timeline handles, preview the selected section, then trim. The trimmed M4A is created locally in your browser.</p>
+      <label class="dropzone" id="drop">
+        <input type="file" id="file" accept="audio/*,.m4a,.mp3,.wav,.aac,.caf,.aiff">
+        <svg class="dz-ic" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 17h16M8 4v6M16 14v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M8 10l8 4M16 10l-8 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        <div class="dz-title" id="dropLabel">Choose audio — or drop it here</div>
+        <div class="dz-sub">MP3, M4A, WAV, AAC, and voice memos</div>
+      </label>
+      <div class="trim-editor" id="trimEditor" hidden>
+        <audio id="preview" controls preload="metadata"></audio>
+        <div class="timeline-head"><span id="fileMeta">Selected audio</span><b id="rangeLabel">0:00 - 0:00</b></div>
+        <div class="range-wrap" id="rangeWrap">
+          <div class="range-track"><i id="rangeFill"></i></div>
+          <input class="range range-start" type="range" id="startRange" min="0" max="1" step="0.1" value="0" aria-label="Trim start time">
+          <input class="range range-end" type="range" id="endRange" min="0" max="1" step="0.1" value="1" aria-label="Trim end time">
+        </div>
+        <div class="preview-actions">
+          <button class="soft-btn" type="button" id="playSelection">Play selection</button>
+          <button class="soft-btn" type="button" id="resetTrim">Reset</button>
+        </div>
+      </div>
+      <div class="controls">
+        <label class="field">Start seconds
+          <input type="number" id="start" min="0" step="0.1" value="0">
+        </label>
+        <label class="field">End seconds
+          <input type="number" id="end" min="0.1" step="0.1" placeholder="Auto">
+        </label>
+        <button class="run" id="go" disabled>Trim audio</button>
+      </div>
+      <div class="morehint"><span><b>Need more control?</b> The iOS app also supports compression, target size, splitting, batch files, merging, and conversion. <a href="https://apps.apple.com/us/app/audio-compressor-reduce-size/id6769563659" rel="noopener">Download on the App Store →</a></span></div>
+      <div class="status" id="status">Pick an audio file to begin.</div>
+      <div class="progress" id="bar"><i id="barfill"></i></div>
+      <div class="result" id="result"></div>
+    </div>
+    <aside class="download-box">
+      <div class="appcta"><img class="app-ic md" src="/assets/icons/app-audio.jpg" alt="" width="56" height="56"><div class="meta"><b>Audio Compressor</b><span>Full audio workflow for iPhone</span></div><a class="appstore" href="https://apps.apple.com/us/app/audio-compressor-reduce-size/id6769563659" rel="noopener"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us?size=250x83" alt="Download on the App Store"></a></div>
+      <p>Also supports choosing format and size, compressing many files at once, splitting, converting, and merging audio.</p>
+      <div class="proof-pill"><span class="stars">★★★★★</span><b>Trim audio</b><span>Cut away the parts you do not need.</span></div>
+    </aside>
+  </section>
+
+  <section class="band">
+    <div class="band-in"><span class="eyebrow">Audio workflow</span><h2>Trim first, compress after.</h2><p>Cut silence, mistakes, or extra sections from a recording, then compress it so it is easier to send, upload, or store.</p></div>
+    <div class="proof-row"><div class="proof-pill"><span class="stars">★★★★★</span><b>Voice memos</b><span>Keep the important part.</span></div><div class="proof-pill"><span class="stars">★★★★★</span><b>Interviews</b><span>Cut setup and dead air.</span></div><div class="proof-pill"><span class="stars">★★★★★</span><b>Lectures</b><span>Save useful sections.</span></div></div>
+  </section>
+
+  <div class="sec-head"><span class="eyebrow">Related tools</span><h2>More audio pages</h2></div>
+  <div class="mini-tools"><a class="mini-tool" href="/compress-audio/"><b>Compress Audio</b><span>Shrink audio in the browser.</span></a><a class="mini-tool" href="/split-audio/"><b>Split Audio</b><span>Break audio into parts.</span></a><a class="mini-tool" href="/compress-video/"><b>Compress Video</b><span>Make short clips smaller.</span></a><a class="mini-tool" href="/compress-pdf/"><b>Compress PDF</b><span>Reduce PDF size.</span></a></div>
+  <div class="faq"><details class="faq-item" open><summary>Can I trim audio without uploading?<span class="pm"></span></summary><div class="faq-body"><p>Yes. The audio is processed in your browser and is not sent to a server.</p></div></details><details class="faq-item"><summary>What do start and end seconds mean?<span class="pm"></span></summary><div class="faq-body"><p>Start is where the kept section begins. End is where it stops. For example, start 10 and end 45 keeps the section from 10 seconds to 45 seconds.</p></div></details></div>
+</main>
+
+<footer class="site-foot"><div class="shell"><div class="foot-grid"><div class="foot-brand"><a class="brand" href="/"><svg class="mark" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="1" y="1" width="26" height="26" rx="8" stroke="currentColor" stroke-width="1.6"/><path d="M8 9.5 11.5 14 8 18.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 9.5 16.5 14 20 18.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Compactkit</a><p>Free, private file compression. Nothing is ever uploaded — every file is processed on your own device.</p></div><div class="foot-col"><h4>Tools</h4><a href="/compress-pdf/">Compress PDF</a><a href="/compress-audio/">Compress Audio</a><a href="/compress-video/">Compress Video</a><a href="/watermark-pdf/">Watermark PDF</a><a href="/sign-pdf/">Sign PDF</a><a href="/merge-pdf/">Merge PDF</a><a href="/jpg-to-pdf/">JPG to PDF</a><a href="/pdf-to-jpg/">PDF to JPG</a><a href="/split-audio/">Split Audio</a><a href="/trim-audio/">Trim Audio</a></div><div class="foot-col"><h4>iOS apps</h4><a class="appln" href="https://apps.apple.com/us/app/pdf-compressor-sign-merge/id6769762323" rel="noopener"><img class="app-ic sm" src="/assets/icons/app-pdf.jpg" alt="" width="24" height="24" loading="lazy">PDF Compressor</a><a class="appln" href="https://apps.apple.com/us/app/pdf-watermarker-stamp-docs/id6769761016" rel="noopener"><img class="app-ic sm" src="/assets/icons/app-watermark.jpg" alt="" width="24" height="24" loading="lazy">PDF Watermarker</a><a class="appln" href="https://apps.apple.com/us/app/audio-compressor-reduce-size/id6769563659" rel="noopener"><img class="app-ic sm" src="/assets/icons/app-audio.jpg" alt="" width="24" height="24" loading="lazy">Audio Compressor</a></div><div class="foot-col"><h4>Tutorials</h4><a href="/iphone-video-tutorials/">Video tutorials</a></div></div><div class="foot-bottom"><span>© Compactkit</span><span>Files never leave your device. <a href="https://www.youtube.com/@iphonetooltips" rel="noopener">YouTube @iphonetooltips</a></span></div></div></footer>
+<script type="module">
+import { FFmpeg } from '/vendor/ffmpeg/index.js';
+import { fetchFile, toBlobURL } from '/vendor/util/index.js';
+const CORE = 'https://cdn.jsdelivr.net/npm/@ffmpeg/core@0.12.6/dist/esm';
+const $ = id => document.getElementById(id);
+const appCta = `<div class="result-cta"><img class="app-ic sm" src="/assets/icons/app-audio.jpg" alt="" width="24" height="24"><div class="meta"><b>Need the full audio workflow?</b><span>Get the free app for trim, split, batch compress, merge, convert, and size control.</span></div><a class="appstore" href="https://apps.apple.com/us/app/audio-compressor-reduce-size/id6769563659" rel="noopener"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download Audio Compressor on the App Store"></a></div>`;
+let picked = null, ffmpeg = null, loaded = false, duration = null, previewUrl = null, stopTimer = null;
+const drop = $('drop'), input = $('file');
+function fmtTime(seconds){
+  if(!Number.isFinite(seconds)) return '0:00';
+  const total = Math.max(0, Math.round(seconds));
+  const h = Math.floor(total / 3600);
+  const m = Math.floor((total % 3600) / 60);
+  const s = total % 60;
+  return h ? `${h}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}` : `${m}:${String(s).padStart(2,'0')}`;
+}
+function clampTrim(start, end){
+  const max = Number.isFinite(duration) && duration > 0 ? duration : Math.max(end, 1);
+  let s = Math.max(0, Math.min(start, max));
+  let e = Math.max(0.1, Math.min(end, max));
+  if(e <= s) e = Math.min(max, s + 0.1);
+  if(s >= e) s = Math.max(0, e - 0.1);
+  return [s, e];
+}
+function syncTrim(source){
+  if(!Number.isFinite(duration) || duration <= 0) return;
+  let start = source === 'number' ? parseFloat($('start').value || '0') : parseFloat($('startRange').value || '0');
+  let end = source === 'number' ? parseFloat($('end').value || String(duration)) : parseFloat($('endRange').value || String(duration));
+  [start, end] = clampTrim(start, end);
+  $('start').value = start.toFixed(1).replace(/\.0$/,'');
+  $('end').value = end.toFixed(1).replace(/\.0$/,'');
+  $('startRange').value = String(start);
+  $('endRange').value = String(end);
+  $('rangeFill').style.left = (start / duration * 100) + '%';
+  $('rangeFill').style.right = (100 - end / duration * 100) + '%';
+  $('rangeLabel').textContent = `${fmtTime(start)} - ${fmtTime(end)}`;
+}
+function readDuration(file){
+  return new Promise((resolve, reject) => {
+    const audio = document.createElement('audio');
+    audio.preload = 'metadata';
+    audio.onloadedmetadata = () => { URL.revokeObjectURL(audio.src); resolve(audio.duration); };
+    audio.onerror = () => reject(new Error('Could not read the audio length.'));
+    audio.src = URL.createObjectURL(file);
+  });
+}
+async function setFile(f){
+  if(!f){ return; }
+  picked = f;
+  if(previewUrl) URL.revokeObjectURL(previewUrl);
+  previewUrl = URL.createObjectURL(f);
+  $('preview').src = previewUrl;
+  $('dropLabel').textContent = f.name + '  ·  ' + (f.size/1e6).toFixed(2) + ' MB';
+  $('go').disabled = false;
+  $('status').textContent = 'Reading audio length...';
+  $('result').classList.remove('show');
+  try{
+    duration = await readDuration(f);
+    $('trimEditor').hidden = false;
+    $('fileMeta').textContent = `${f.name} · ${fmtTime(duration)}`;
+    $('startRange').max = String(duration);
+    $('endRange').max = String(duration);
+    $('endRange').value = String(duration);
+    $('end').placeholder = Math.floor(duration).toString();
+    $('end').value = (Math.round(duration * 10) / 10).toString();
+    syncTrim('number');
+    $('status').textContent = 'Ready. Drag the handles or type exact seconds, then preview or trim.';
+  }catch(e){
+    duration = null;
+    $('trimEditor').hidden = true;
+    $('status').textContent = 'Ready. Enter the start and end seconds, then click “Trim audio”.';
+  }
+}
+input.addEventListener('change', e => setFile(e.target.files[0]));
+['dragover','dragenter'].forEach(ev => drop.addEventListener(ev, e => { e.preventDefault(); drop.classList.add('drag'); }));
+['dragleave','drop'].forEach(ev => drop.addEventListener(ev, e => { e.preventDefault(); drop.classList.remove('drag'); }));
+drop.addEventListener('drop', e => setFile(e.dataTransfer.files[0]));
+['input','change'].forEach(ev => {
+  $('startRange').addEventListener(ev, () => syncTrim('range'));
+  $('endRange').addEventListener(ev, () => syncTrim('range'));
+  $('start').addEventListener(ev, () => syncTrim('number'));
+  $('end').addEventListener(ev, () => syncTrim('number'));
+});
+$('resetTrim').addEventListener('click', () => {
+  if(!Number.isFinite(duration)) return;
+  $('start').value = '0';
+  $('end').value = (Math.round(duration * 10) / 10).toString();
+  syncTrim('number');
+  $('preview').currentTime = 0;
+});
+$('playSelection').addEventListener('click', async () => {
+  if(!picked || !Number.isFinite(duration)) return;
+  const [start, end] = clampTrim(parseFloat($('start').value || '0'), parseFloat($('end').value || String(duration)));
+  clearInterval(stopTimer);
+  const audio = $('preview');
+  audio.currentTime = start;
+  await audio.play();
+  stopTimer = setInterval(() => {
+    if(audio.currentTime >= end || audio.ended){
+      audio.pause();
+      clearInterval(stopTimer);
+    }
+  }, 80);
+});
+async function ensureLoaded(){
+  if(loaded) return;
+  ffmpeg = new FFmpeg();
+  ffmpeg.on('progress', ({ progress }) => {
+    const p = Math.max(0, Math.min(100, Math.round(progress * 100)));
+    $('bar').classList.add('show'); $('barfill').style.width = p + '%';
+  });
+  await ffmpeg.load({
+    coreURL: await toBlobURL(`${CORE}/ffmpeg-core.js`, 'text/javascript'),
+    wasmURL: await toBlobURL(`${CORE}/ffmpeg-core.wasm`, 'application/wasm'),
+  });
+  loaded = true;
+}
+$('go').addEventListener('click', async () => {
+  if(!picked) return;
+  const start = Math.max(0, parseFloat($('start').value || '0'));
+  const endRaw = parseFloat($('end').value || '');
+  const end = Number.isFinite(endRaw) ? endRaw : duration;
+  if(!Number.isFinite(end) || end <= start){ $('status').textContent = 'Enter an end time that is after the start time.'; return; }
+  $('go').disabled = true;
+  $('status').textContent = 'Loading engine and trimming... (first run downloads ~25 MB, then it is cached)';
+  try{
+    await ensureLoaded();
+    const ext = (picked.name.match(/\.([a-z0-9]+)$/i)?.[1] || 'audio').toLowerCase();
+    const inName = 'input.' + ext, outName = 'trimmed.m4a';
+    await ffmpeg.writeFile(inName, await fetchFile(picked));
+    await ffmpeg.exec(['-ss', String(start), '-to', String(end), '-i', inName, '-vn', '-c:a', 'aac', '-b:a', '128k', '-movflags', '+faststart', outName]);
+    const data = await ffmpeg.readFile(outName);
+    const url = URL.createObjectURL(new Blob([data.buffer || data], { type: 'audio/mp4' }));
+    const a = document.createElement('a');
+    a.href = url; a.download = picked.name.replace(/\.[^.]+$/,'') + '-trimmed.m4a'; a.click();
+    URL.revokeObjectURL(url);
+    try{ await ffmpeg.deleteFile(inName); await ffmpeg.deleteFile(outName); }catch(e){}
+    $('result').className = 'result show';
+    $('result').innerHTML = `Done — kept <b>${start}</b>s to <b>${end}</b>s and downloaded the trimmed audio.${appCta}`;
+    $('status').textContent = 'Trim another file any time — nothing was uploaded.';
+  }catch(err){
+    $('status').textContent = 'Something went wrong: ' + (err && err.message || err);
+  }finally{
+    $('bar').classList.remove('show'); $('barfill').style.width = '0';
+    $('go').disabled = false;
+  }
+});
+</script>
+</body>
+</html>

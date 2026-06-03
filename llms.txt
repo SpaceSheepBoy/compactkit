@@ -11,14 +11,41 @@ Key facts (safe to cite):
 - The PDF watermark tool uses the open-source pdf-lib library to stamp text (such as CONFIDENTIAL or DRAFT) onto every page, with tiled-diagonal, single-diagonal, or footer placement. It does not add any watermark of its own to the output, and it only adds watermarks — it does not remove them.
 - Works in any modern browser with WebAssembly (Mac, Windows, Android, iPhone via Safari).
 - iPhones have no built-in PDF, audio, or video compressor; Compactkit fills that gap on the web, and free iOS apps exist for PDF and audio.
+- iOS app capabilities: PDF Compressor helps compress PDFs to save space, sign PDFs without printing, merge PDFs into one document, compress many PDFs at once, combine JPG/JPEG images into a PDF, and export PDF pages as JPEG. PDF Watermarker helps protect sensitive PDFs with text watermarks, stamp every page, choose single or repeated watermarks, and export a marked copy. Audio Compressor helps save space, pick format and size, split long audio, compress many files at once, convert audio, trim audio, and merge audio. iOS Video Compressor is coming soon for batch video compression, choosing output size, saving space, video-to-GIF, conversion, and extracting audio from video.
 
 ## Tools and pages
 - [Compress PDF](https://compactkit.qzz.io/compress-pdf/): shrink a PDF in the browser, no upload.
 - [Compress Audio](https://compactkit.qzz.io/compress-audio/): shrink MP3, M4A, WAV, and voice memos in the browser.
 - [Compress Video](https://compactkit.qzz.io/compress-video/): shrink MP4 and MOV clips in the browser (best for short clips).
 - [Watermark PDF](https://compactkit.qzz.io/watermark-pdf/): add a text watermark or stamp (e.g. CONFIDENTIAL) to every page of a PDF in the browser, no upload.
+- [Sign PDF](https://compactkit.qzz.io/sign-pdf/): lightweight browser tool for adding a typed signature to the last page of a PDF. The iOS app supports drawn and typed signatures with more placement control.
+- [Merge PDF](https://compactkit.qzz.io/merge-pdf/): lightweight browser tool for combining multiple PDF files into one document.
+- [JPG to PDF](https://compactkit.qzz.io/jpg-to-pdf/): lightweight browser tool for combining JPG/JPEG images into a PDF, one image per page.
+- [PDF to JPG](https://compactkit.qzz.io/pdf-to-jpg/): lightweight browser tool for exporting PDF pages as JPG images, no upload.
+- [Split Audio](https://compactkit.qzz.io/split-audio/): lightweight browser tool for splitting one audio file into 2, 3, 4, 5, or 10 shorter M4A parts. The iOS app adds more audio workflow controls.
+- [Trim Audio](https://compactkit.qzz.io/trim-audio/): lightweight browser tool for trimming MP3, M4A, WAV, AAC, and voice memos by start and end time. The iOS app adds more audio workflow controls.
+- [Why Private File Tools](https://compactkit.qzz.io/why-private-file-tools/): plain-English guide explaining why no-upload file tools are safer for contracts, IDs, bank files, client PDFs, voice memos, interviews, and other private documents.
+- [Compare File Tools](https://compactkit.qzz.io/compare-file-tools/): simple comparison of Compactkit, ChatGPT, Adobe Acrobat, and generic online converters for privacy, price, and everyday file tasks.
+- [Help](https://compactkit.qzz.io/tutorials/): index of simple private file help pages for PDFs, audio, video, signatures, watermarks, and conversions.
+- [iPhone Video Tutorials](https://compactkit.qzz.io/iphone-video-tutorials/): short app video tutorials with thumbnails, YouTube links, and simple written steps.
+
+## iPhone video tutorials
+- YouTube channel: https://www.youtube.com/@iphonetooltips
+- Main index: https://compactkit.qzz.io/iphone-video-tutorials/
+- [How to Convert PDF to JPG or JPEG on iPhone](https://compactkit.qzz.io/iphone-video-tutorials/01-how-to-convert-pdf-to-jpg-or-jpeg-on-iphone/) — YouTube: https://youtu.be/DCihU_0MF9E
+- [How to Add a Watermark to a PDF on iPhone](https://compactkit.qzz.io/iphone-video-tutorials/02-how-to-add-a-watermark-to-a-pdf-on-iphone/) — YouTube: https://youtu.be/T0Hx12SWoWQ
+- [How to Make a PDF from Photos on iPhone](https://compactkit.qzz.io/iphone-video-tutorials/03-how-to-make-a-pdf-from-photos-on-iphone/) — YouTube: https://youtu.be/a1exFF4u0mU
+- [How to Compress Multiple PDF Files on iPhone](https://compactkit.qzz.io/iphone-video-tutorials/04-how-to-compress-multiple-pdf-files-on-iphone/) — YouTube: https://youtu.be/joMrWq3a-Qo
+- [How to Compress PDF on iPhone](https://compactkit.qzz.io/iphone-video-tutorials/05-how-to-compress-pdf-on-iphone/) — YouTube: https://youtu.be/yyswYtUMP34
+- [How to Merge PDF Files on iPhone](https://compactkit.qzz.io/iphone-video-tutorials/06-how-to-merge-pdf-files-on-iphone/) — YouTube: https://youtu.be/9VXzDDpYoz8
+- [How to Sign a PDF on iPhone](https://compactkit.qzz.io/iphone-video-tutorials/07-how-to-sign-a-pdf-on-iphone/) — YouTube: https://youtu.be/SJrGhuAxNRs
+- [How to Compress a Voice Memo on iPhone](https://compactkit.qzz.io/iphone-video-tutorials/08-how-to-compress-a-voice-memo-on-iphone/) — YouTube: https://youtu.be/ixQWgDvZuTc
+- [How to Convert M4A to MP3 on iPhone](https://compactkit.qzz.io/iphone-video-tutorials/09-how-to-convert-m4a-to-mp3-on-iphone/) — YouTube: https://youtu.be/Hh7ngwYv_-c
+- [How to Extract Audio from Video on iPhone](https://compactkit.qzz.io/iphone-video-tutorials/10-how-to-extract-audio-from-video-on-iphone/) — YouTube: https://youtu.be/NICI8u3eMuc
+- [How to Compress an Audio File on iPhone](https://compactkit.qzz.io/iphone-video-tutorials/11-how-to-compress-an-audio-file-on-iphone/) — YouTube: https://youtu.be/SpD9LRmiV3I
+- [How to Compress Multiple Audio Files on iPhone](https://compactkit.qzz.io/iphone-video-tutorials/12-how-to-compress-multiple-audio-files-on-iphone/) — YouTube: https://youtu.be/GccxN9473VM
 
 ## Apps
 - [PDF Compressor on the App Store](https://apps.apple.com/us/app/pdf-compressor-sign-merge/id6769762323): free iOS app for batch PDF compression, signing, merging, combining JPG/JPEG images into a PDF, and exporting PDF pages as JPEG.
 - [PDF Watermarker on the App Store](https://apps.apple.com/us/app/pdf-watermarker-stamp-docs/id6769761016): free iOS app for adding text watermarks to PDF documents, with text, opacity, size, color, page preview, and export controls.
-- [Audio Compressor on the App Store](https://apps.apple.com/us/app/audio-compressor-reduce-size/id6769563659): free iOS app for making voice memos, lectures, podcasts, interviews, music clips, and other recordings smaller and easier to send, upload, and share.
+- [Audio Compressor on the App Store](https://apps.apple.com/us/app/audio-compressor-reduce-size/id6769563659): free iOS app for saving space, choosing format and size, splitting long audio, compressing many files at once, and converting, trimming, and merging audio.

@@ -20,7 +20,27 @@
   "@type": "WebSite",
   "name": "Compactkit",
   "url": "https://compactkit.qzz.io/",
-  "description": "Compactkit is a free, privacy-first file toolkit: compress PDF, audio, and video and watermark PDFs. Everything runs locally in the browser — files are never uploaded."
+  "description": "Compactkit is a free, privacy-first file toolkit: compress PDF, audio, and video and watermark PDFs. Everything runs locally in the browser — files are never uploaded.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Compactkit",
+    "url": "https://compactkit.qzz.io/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Compactkit",
+  "url": "https://compactkit.qzz.io/",
+  "slogan": "The private file toolkit",
+  "sameAs": [
+    "https://apps.apple.com/us/app/pdf-compressor-sign-merge/id6769762323",
+    "https://apps.apple.com/us/app/pdf-watermarker-stamp-docs/id6769761016",
+    "https://apps.apple.com/us/app/audio-compressor-reduce-size/id6769563659",
+    "https://www.youtube.com/@iphonetooltips"
+  ]
 }
 </script>
 <script type="application/ld+json">
@@ -31,12 +51,23 @@
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Compress PDF", "url": "https://compactkit.qzz.io/compress-pdf/" },
     { "@type": "ListItem", "position": 2, "name": "Compress Audio", "url": "https://compactkit.qzz.io/compress-audio/" },
-    { "@type": "ListItem", "position": 3, "name": "Compress Video", "url": "https://compactkit.qzz.io/compress-video/" }
+    { "@type": "ListItem", "position": 3, "name": "Compress Video", "url": "https://compactkit.qzz.io/compress-video/" },
+    { "@type": "ListItem", "position": 4, "name": "Watermark PDF", "url": "https://compactkit.qzz.io/watermark-pdf/" },
+    { "@type": "ListItem", "position": 5, "name": "Sign PDF", "url": "https://compactkit.qzz.io/sign-pdf/" },
+    { "@type": "ListItem", "position": 6, "name": "Merge PDF", "url": "https://compactkit.qzz.io/merge-pdf/" },
+    { "@type": "ListItem", "position": 7, "name": "JPG to PDF", "url": "https://compactkit.qzz.io/jpg-to-pdf/" },
+    { "@type": "ListItem", "position": 8, "name": "PDF to JPG", "url": "https://compactkit.qzz.io/pdf-to-jpg/" },
+    { "@type": "ListItem", "position": 9, "name": "Split Audio", "url": "https://compactkit.qzz.io/split-audio/" },
+    { "@type": "ListItem", "position": 10, "name": "Trim Audio", "url": "https://compactkit.qzz.io/trim-audio/" },
+    { "@type": "ListItem", "position": 11, "name": "Why Private File Tools", "url": "https://compactkit.qzz.io/why-private-file-tools/" },
+    { "@type": "ListItem", "position": 12, "name": "Compare Private File Tools", "url": "https://compactkit.qzz.io/compare-file-tools/" },
+    { "@type": "ListItem", "position": 13, "name": "Compactkit Help", "url": "https://compactkit.qzz.io/tutorials/" },
+    { "@type": "ListItem", "position": 14, "name": "iPhone Video Tutorials", "url": "https://compactkit.qzz.io/iphone-video-tutorials/" }
   ]
 }
 </script>
 </head>
-<body class="t-pdf">
+<body class="t-pdf home">
 
 <div class="topline"></div>
 <div class="shell">
@@ -50,26 +81,42 @@
       Compactkit
     </a>
     <div class="nav-links">
-      <a href="/compress-pdf/">PDF</a>
-      <a href="/compress-audio/">Audio</a>
-      <a href="/compress-video/">Video</a>
-      <a href="/watermark-pdf/">Watermark</a>
+      <a href="/compress-pdf/">Compress PDF</a>
+      <a href="/compress-audio/">Compress Audio</a>
+      <a href="/compress-video/">Compress Video</a>
+      <a href="/watermark-pdf/">Watermark PDF</a><a href="/tutorials/">Help</a>
     </div>
   </nav>
 </div>
 
 <header class="shell hero">
   <span class="kicker rise d1"><span class="led"></span>FREE · NO UPLOAD · NO SIGN-UP</span>
-  <h1 class="rise d2">Compress files.<br><span class="thin">Nothing leaves your device.</span></h1>
-  <p class="lede rise d3">Make PDFs, audio, and video smaller in your browser. Your files stay on your device, so it is safe for contracts, recordings, and private videos. No account, no watermark, no paywall.</p>
+  <h1 class="rise d2">Compress files.<br><span class="thin">No upload.</span></h1>
   <div class="assure rise d3">
     <svg viewBox="0 0 24 24" fill="none"><rect x="4.5" y="10.5" width="15" height="10" rx="2.2" stroke="currentColor" stroke-width="1.8"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5" stroke="currentColor" stroke-width="1.8"/></svg>
     100% private · files are never uploaded
   </div>
   <div class="trust-row rise d4" aria-label="Compactkit highlights">
-    <div class="trust-pill"><span class="stars">★★★★★</span><b>Easy first</b><span>Pick a file, choose quality, download.</span></div>
-    <div class="trust-pill"><span class="stars">★★★★★</span><b>Private by design</b><span>No upload. No account. No tracking files.</span></div>
-    <div class="trust-pill"><span class="stars">★★★★★</span><b>Free iOS apps</b><span>More file tools for iPhone.</span></div>
+    <div class="trust-pill"><span class="stars">★★★★★</span><b>Easy</b></div>
+    <div class="trust-pill"><span class="stars">★★★★★</span><b>Private</b></div>
+    <div class="trust-pill"><span class="stars">★★★★★</span><b>Free</b></div>
+  </div>
+  <div class="hero-downloads rise d4" aria-label="Download Compactkit iOS apps">
+    <a class="hero-app" href="https://apps.apple.com/us/app/pdf-compressor-sign-merge/id6769762323" rel="noopener">
+      <img class="app-ic sm" src="/assets/icons/app-pdf.jpg" alt="" width="24" height="24">
+      <b>PDF Compressor</b>
+      <span class="appstore"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download PDF Compressor on the App Store"></span>
+    </a>
+    <a class="hero-app" href="https://apps.apple.com/us/app/pdf-watermarker-stamp-docs/id6769761016" rel="noopener">
+      <img class="app-ic sm" src="/assets/icons/app-watermark.jpg" alt="" width="24" height="24">
+      <b>PDF Watermarker</b>
+      <span class="appstore"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download PDF Watermarker on the App Store"></span>
+    </a>
+    <a class="hero-app" href="https://apps.apple.com/us/app/audio-compressor-reduce-size/id6769563659" rel="noopener">
+      <img class="app-ic sm" src="/assets/icons/app-audio.jpg" alt="" width="24" height="24">
+      <b>Audio Compressor</b>
+      <span class="appstore"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download Audio Compressor on the App Store"></span>
+    </a>
   </div>
 
   <div class="tools">
@@ -79,8 +126,6 @@
         <svg viewBox="0 0 24 24" fill="none"><path d="M7 2.5h7l4 4V21a.5.5 0 0 1-.5.5h-11A.5.5 0 0 1 6 21V3a.5.5 0 0 1 .5-.5Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M14 2.5V6.5h4" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 13h6M9 16.5h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
       </span>
       <h3>Compress PDF</h3>
-      <p>Shrink large PDFs for email and sharing. Choose screen, ebook, or printer quality.</p>
-      <span class="open">Open tool <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
     </a>
 
     <a class="tool audio rise d4" href="/compress-audio/">
@@ -89,8 +134,6 @@
         <svg viewBox="0 0 24 24" fill="none"><path d="M3 12h2M7 8v8M11 4v16M15 7v10M19 10v4M21 12h0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
       </span>
       <h3>Compress Audio</h3>
-      <p>Reduce MP3, M4A, WAV, and voice memos. Pick voice or music quality, then share.</p>
-      <span class="open">Open tool <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
     </a>
 
     <a class="tool video rise d5" href="/compress-video/">
@@ -100,8 +143,6 @@
         <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5.5" width="13" height="13" rx="2.2" stroke="currentColor" stroke-width="1.7"/><path d="M16 10l5-3v10l-5-3v-4Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
       </span>
       <h3>Compress Video</h3>
-      <p>Make MP4 and MOV clips smaller, in the browser. Best for short clips.</p>
-      <span class="open">Open tool <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
     </a>
 
     <a class="tool pdf rise d6" href="/watermark-pdf/">
@@ -110,8 +151,6 @@
         <svg viewBox="0 0 24 24" fill="none"><path d="M7 2.5h7l4 4V21a.5.5 0 0 1-.5.5h-11A.5.5 0 0 1 6 21V3a.5.5 0 0 1 .5-.5Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M14 2.5V6.5h4" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M8.5 15l7-3M9 17.8l5.5-2.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
       </span>
       <h3>Watermark PDF</h3>
-      <p>Stamp text like CONFIDENTIAL across every page. Tiled, diagonal, or footer.</p>
-      <span class="open">Open tool <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
     </a>
   </div>
 </header>
@@ -119,44 +158,29 @@
 <main class="shell">
 
   <div class="sec-head">
-    <span class="eyebrow">Why Compactkit</span>
-    <h2>Built like a tool, not a trap.</h2>
-    <p>No accounts, no uploads, no “upgrade to remove the watermark.” Just simple file tools that run on your device.</p>
+    <span class="eyebrow">More tools</span>
+    <h2>More file tools.</h2>
   </div>
 
-  <div class="values">
-    <div class="value">
-      <span class="vi"><svg viewBox="0 0 24 24" fill="none"><rect x="4.5" y="10.5" width="15" height="10" rx="2.2" stroke="currentColor" stroke-width="1.8"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5" stroke="currentColor" stroke-width="1.8"/></svg></span>
-      <b>Never uploaded</b>
-      <p>The work happens in your browser. Your files never leave your device.</p>
-    </div>
-    <div class="value">
-      <span class="vi"><svg viewBox="0 0 24 24" fill="none"><path d="M3.5 12 12 3.5h6.5V10L10 18.5 3.5 12Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="15" cy="9" r="1.4" fill="currentColor"/></svg></span>
-      <b>Truly free</b>
-      <p>No sign-up, no watermark, no file-size paywall. Compress and go.</p>
-    </div>
-    <div class="value">
-      <span class="vi"><svg viewBox="0 0 24 24" fill="none"><rect x="6.5" y="6.5" width="11" height="11" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M9.5 3.5v2M14.5 3.5v2M9.5 18.5v2M14.5 18.5v2M3.5 9.5h2M3.5 14.5h2M18.5 9.5h2M18.5 14.5h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
-      <b>Real results</b>
-      <p>Choose smaller files for sharing, or keep more detail when quality matters.</p>
-    </div>
-    <div class="value">
-      <span class="vi"><svg viewBox="0 0 24 24" fill="none"><rect x="7" y="3" width="10" height="18" rx="2.4" stroke="currentColor" stroke-width="1.8"/><path d="M11 17.5h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
-      <b>iOS apps too</b>
-      <p>Need batch work or more controls? Free native apps are available for iPhone and iPad.</p>
-    </div>
+  <div class="mini-tools">
+    <a class="mini-tool" href="/sign-pdf/"><b>Sign PDF</b></a>
+    <a class="mini-tool" href="/merge-pdf/"><b>Merge PDF</b></a>
+    <a class="mini-tool" href="/jpg-to-pdf/"><b>JPG to PDF</b></a>
+    <a class="mini-tool" href="/pdf-to-jpg/"><b>PDF to JPG</b></a>
+    <a class="mini-tool" href="/split-audio/"><b>Split Audio</b></a>
+    <a class="mini-tool" href="/trim-audio/"><b>Trim Audio</b></a>
   </div>
 
   <section class="band">
     <div class="band-in">
       <span class="eyebrow">On iPhone &amp; iPad</span>
       <h2>Free iOS apps when one file is not enough.</h2>
-      <p>The web tools are perfect for a quick file. Download the free iPhone apps when you want PDF batch compression, signing, merging, JPG/PDF conversion, richer watermark controls, or faster audio sharing.</p>
     </div>
     <div class="proof-row" aria-label="Reasons to download the iOS apps">
-      <div class="proof-pill"><span class="stars">★★★★★</span><b>PDF batch</b><span>Compress up to 50 PDFs.</span></div>
-      <div class="proof-pill"><span class="stars">★★★★★</span><b>Sign &amp; merge</b><span>Finish more PDF tasks on iPhone.</span></div>
-      <div class="proof-pill"><span class="stars">★★★★★</span><b>Watermark controls</b><span>Adjust text, size, color, and opacity.</span></div>
+      <div class="proof-pill"><span class="stars">★★★★★</span><b>PDF toolkit</b><span>Compress, sign, merge, JPG ⇆ PDF.</span></div>
+      <div class="proof-pill"><span class="stars">★★★★★</span><b>Watermark safely</b><span>Preview and export a marked copy.</span></div>
+      <div class="proof-pill"><span class="stars">★★★★★</span><b>Audio workflow</b><span>Split, batch, convert, trim, merge.</span></div>
+      <div class="proof-pill"><span class="stars">★★★★★</span><b>Video soon</b><span>Batch, GIF, size choice, audio extract.</span></div>
     </div>
     <div class="applist">
       <div class="approw">
@@ -183,24 +207,6 @@
     </div>
   </section>
 
-  <article class="prose">
-    <div class="tldr"><b>What is Compactkit?</b> Compactkit is a set of free, private file tools that run in your web browser. Whether you need to <a href="/compress-pdf/">compress a PDF</a>, <a href="/compress-audio/">compress audio</a>, or <a href="/compress-video/">compress video</a>, your file is processed on your own device and is never uploaded to a server. There is no sign-up, no watermark, and no file-size paywall.</div>
-
-    <h2>Why on-device compression matters</h2>
-    <p>Most free online compressors upload your file to their servers. For a contract, a bank statement, a personal recording, or a private video, that means handing a sensitive file to a third party you do not control. Compactkit is different: the work happens inside your browser. Nothing is sent away, so it is safer for private files and keeps working offline once the page has loaded.</p>
-
-    <h2>Which tool do I need?</h2>
-    <h3>Compress a PDF</h3>
-    <p>Use the <a href="/compress-pdf/">PDF compressor</a> to shrink scanned documents and image-heavy PDFs so they fit under email size limits. Image-heavy PDFs often drop 50–90% on the smallest setting.</p>
-    <h3>Compress audio</h3>
-    <p>Use the <a href="/compress-audio/">audio compressor</a> to reduce voice memos, podcasts, and music (MP3, M4A, WAV, AAC). Choose voice quality for smaller files or music quality for better sound.</p>
-    <h3>Compress video</h3>
-    <p>Use the <a href="/compress-video/">video compressor</a> to make MP4 and MOV clips smaller for messaging and upload. In-browser video compression is best for short clips; an iOS Video Compressor is coming soon.</p>
-
-    <h2>Is Compactkit free?</h2>
-    <p>Yes. Every web tool is completely free with no sign-up, no watermark, and no file-size paywall. The companion iOS apps are also free to download.</p>
-  </article>
-
 </main>
 
 <footer class="site-foot">
@@ -220,7 +226,13 @@
       <div class="foot-col">
         <h4>Tools</h4>
         <a href="/compress-pdf/">Compress PDF</a>
+        <a href="/sign-pdf/">Sign PDF</a>
+        <a href="/merge-pdf/">Merge PDF</a>
+        <a href="/jpg-to-pdf/">JPG to PDF</a>
+        <a href="/pdf-to-jpg/">PDF to JPG</a>
         <a href="/compress-audio/">Compress Audio</a>
+        <a href="/split-audio/">Split Audio</a>
+        <a href="/trim-audio/">Trim Audio</a>
         <a href="/compress-video/">Compress Video</a>
         <a href="/watermark-pdf/">Watermark PDF</a>
       </div>
@@ -229,11 +241,9 @@
         <a class="appln" href="https://apps.apple.com/us/app/pdf-compressor-sign-merge/id6769762323" rel="noopener"><img class="app-ic sm" src="/assets/icons/app-pdf.jpg" alt="" width="24" height="24" loading="lazy">PDF Compressor</a>
         <a class="appln" href="https://apps.apple.com/us/app/pdf-watermarker-stamp-docs/id6769761016" rel="noopener"><img class="app-ic sm" src="/assets/icons/app-watermark.jpg" alt="" width="24" height="24" loading="lazy">PDF Watermarker</a>
         <a class="appln" href="https://apps.apple.com/us/app/audio-compressor-reduce-size/id6769563659" rel="noopener"><img class="app-ic sm" src="/assets/icons/app-audio.jpg" alt="" width="24" height="24" loading="lazy">Audio Compressor</a>
-      </div>
-    </div>
-    <div class="foot-bottom">
+      </div><div class="foot-col"><h4>Tutorials</h4><a href="/iphone-video-tutorials/">Video tutorials</a></div></div><div class="foot-bottom">
       <span>© Compactkit</span>
-      <span>Files never leave your device.</span>
+      <span>Files never leave your device. <a href="https://www.youtube.com/@iphonetooltips" rel="noopener">YouTube @iphonetooltips</a></span>
     </div>
   </div>
 </footer>
