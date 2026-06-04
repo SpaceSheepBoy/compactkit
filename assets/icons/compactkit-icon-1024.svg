@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-label="Compactkit icon">
+  <rect width="1024" height="1024" fill="#ffffff"/>
+  <rect x="208" y="208" width="608" height="608" rx="156" fill="none" stroke="#315cf6" stroke-width="42"/>
+  <path d="M372 407 454 512 372 617" fill="none" stroke="#315cf6" stroke-width="47" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M652 407 570 512 652 617" fill="none" stroke="#315cf6" stroke-width="47" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
