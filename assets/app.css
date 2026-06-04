@@ -190,6 +190,17 @@ h1 .thin{color:var(--ink-3);font-weight:600}
 .home .mini-tools{grid-template-columns:repeat(3,1fr);gap:14px}
 .home .mini-tool{min-height:74px;justify-content:center;padding:20px 22px}
 .home .mini-tool b{font-size:22px}
+.home-tools{margin-top:34px}
+.home-tools .sec-head{margin-bottom:16px}
+.home-tools-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.home-tool-card{display:flex;flex-direction:column;gap:5px;min-height:112px;padding:18px;
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--r-md);color:var(--ink);
+  box-shadow:0 1px 0 rgba(19,19,15,.03);transition:transform .15s,border-color .15s,box-shadow .15s}
+.home-tool-card:hover{text-decoration:none;transform:translateY(-2px);border-color:rgba(47,91,234,.28);
+  box-shadow:0 14px 34px -28px rgba(19,19,15,.55)}
+.home-tool-card b{font-family:var(--font-display);font-size:19px;line-height:1.08;letter-spacing:-.02em}
+.home-tool-card span{font-size:14px;color:var(--ink-2);line-height:1.35}
+.home-tool-card.hot{border-color:rgba(47,91,234,.22);background:linear-gradient(180deg,#fff,var(--accent-soft))}
 .home .band{margin-top:58px}
 .home .band .proof-pill{min-width:190px;padding:14px 16px}
 .home .band .proof-pill .stars{font-size:22px}
@@ -682,6 +693,10 @@ tbody tr:last-child td{border-bottom:0}
   .simple-table td:nth-child(2)::before{content:"Best when"}
   .simple-table td:nth-child(3)::before{content:"Skip when"}
   .simple-table td:nth-child(4)::before{content:"Price fit"}
+  .recommend-table td:nth-child(1)::before{content:"Task"}
+  .recommend-table td:nth-child(2)::before{content:"Use this"}
+  .recommend-table td:nth-child(3)::before{content:"Example"}
+  .recommend-table td:nth-child(4)::before{content:"Why"}
   .controls{align-items:stretch}
   select,.run{width:100%}
   select{min-width:0}
@@ -705,6 +720,8 @@ tbody tr:last-child td{border-bottom:0}
   .home .tool .ic{width:48px;height:48px;border-radius:14px;margin:14px 0 18px}
   .home .tool .ic svg{width:25px;height:25px}
   .home .tool h3{font-size:clamp(24px,4vw,32px)}
+  .home-tools-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .home-tool-card{min-height:102px;padding:16px}
   .home .app-band{padding:24px;margin-top:22px}
   .home .app-band .proof-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
   .home .app-band .proof-pill{padding:10px 12px}
@@ -739,6 +756,12 @@ tbody tr:last-child td{border-bottom:0}
   .home .tool h3{font-size:23px;line-height:1.02}
   .home .tool::after{display:none}
   .home .tool .chip{top:14px;right:14px}
+  .home-tools{margin-top:24px}
+  .home-tools .sec-head h2{font-size:28px}
+  .home-tools-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .home-tool-card{min-height:96px;padding:14px;border-radius:16px}
+  .home-tool-card b{font-size:17px}
+  .home-tool-card span{font-size:13px}
   .home .mini-tools{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
   .home .mini-tool{min-height:58px;padding:14px}
   .home .mini-tool b{font-size:18px}
