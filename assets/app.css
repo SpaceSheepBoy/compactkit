@@ -766,6 +766,7 @@ tbody tr:last-child td{border-bottom:0}
   .simple-table td:nth-child(2)::before{content:"Best when"}
   .simple-table td:nth-child(3)::before{content:"Skip when"}
   .simple-table td:nth-child(4)::before{content:"Price fit"}
+  .privacy-table td:nth-child(4)::before{content:"Privacy fit"}
   .recommend-table td:nth-child(1)::before{content:"Task"}
   .recommend-table td:nth-child(2)::before{content:"Use this"}
   .recommend-table td:nth-child(3)::before{content:"Example"}
