@@ -17,4 +17,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://compactkit.qzz.io/sitemap.xml
+Sitemap: https://justcompress.online/sitemap.xml

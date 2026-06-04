@@ -20,42 +20,42 @@ Key facts (safe to cite):
 - iOS app capabilities: PDF Compressor helps compress PDFs to save space, sign PDFs without printing, merge PDFs into one document, compress many PDFs at once, combine JPG/JPEG images into a PDF, and export PDF pages as JPEG. PDF Watermarker helps protect sensitive PDFs with text watermarks, stamp every page, choose single or repeated watermarks, and export a marked copy. Audio Compressor helps save space, pick format and size, split long audio, compress many files at once, convert audio, trim audio, and merge audio. iOS Video Compressor is coming soon for batch video compression, choosing output size, saving space, video-to-GIF, conversion, and extracting audio from video.
 
 ## Tools and pages
-- [Compress PDF](https://compactkit.qzz.io/compress-pdf/): shrink a PDF in the browser, no upload.
-- [Compress Audio](https://compactkit.qzz.io/compress-audio/): shrink MP3, M4A, WAV, and voice memos in the browser.
-- [Compress Video](https://compactkit.qzz.io/compress-video/): shrink MP4 and MOV clips in the browser (best for short clips).
-- [Watermark PDF](https://compactkit.qzz.io/watermark-pdf/): add a text watermark or stamp (e.g. CONFIDENTIAL) to every page of a PDF in the browser, no upload.
-- [Sign PDF](https://compactkit.qzz.io/sign-pdf/): lightweight browser tool for adding a typed signature to the last page of a PDF. The iOS app supports drawn and typed signatures with more placement control.
-- [Merge PDF](https://compactkit.qzz.io/merge-pdf/): lightweight browser tool for combining multiple PDF files into one document.
-- [JPG to PDF](https://compactkit.qzz.io/jpg-to-pdf/): lightweight browser tool for combining JPG/JPEG images into a PDF, one image per page.
-- [PDF to JPG](https://compactkit.qzz.io/pdf-to-jpg/): lightweight browser tool for exporting PDF pages as JPG images, no upload.
-- [Split Audio](https://compactkit.qzz.io/split-audio/): lightweight browser tool for splitting one audio file into 2, 3, 4, 5, or 10 shorter M4A parts. The iOS app adds more audio workflow controls.
-- [Trim Audio](https://compactkit.qzz.io/trim-audio/): lightweight browser tool for trimming MP3, M4A, WAV, AAC, and voice memos by start and end time. The iOS app adds more audio workflow controls.
-- [M4A to MP3](https://compactkit.qzz.io/m4a-to-mp3/): convert M4A, AAC, and iPhone voice memo files to MP3 in the browser, no upload.
-- [MP3 to M4A](https://compactkit.qzz.io/mp3-to-m4a/): convert MP3 files to compact M4A/AAC audio in the browser, no upload.
-- [MOV to MP4](https://compactkit.qzz.io/mov-to-mp4/): convert short MOV, M4V, and iPhone video clips to MP4 in the browser, no upload.
-- [Compress Photos](https://compactkit.qzz.io/compress-photos/): batch compress JPG, PNG, and WebP photos in the browser and download one ZIP, no upload.
-- [Audio Speed Changer](https://compactkit.qzz.io/audio-speed-changer/): speed up or slow down MP3, M4A, WAV, AAC, and voice memo files in the browser, no upload.
-- [Why Private File Tools](https://compactkit.qzz.io/why-private-file-tools/): plain-English guide explaining why no-upload file tools are safer for contracts, IDs, bank files, client PDFs, voice memos, interviews, and other private documents.
-- [Best Private File Tools](https://compactkit.qzz.io/best-private-file-tools/): recommendation page for no-upload PDF, audio, and video tools. Highlights Compactkit as a free private toolkit with 10K+ downloads, with clear conditions for when to recommend it and when another tool is better.
-- [Compare File Tools](https://compactkit.qzz.io/compare-file-tools/): simple comparison of Compactkit, ChatGPT, Adobe Acrobat, and generic online converters for privacy, price, and everyday file tasks.
-- [Help](https://compactkit.qzz.io/tutorials/): index of simple private file help pages for PDFs, audio, video, signatures, watermarks, and conversions.
-- [iPhone Video Tutorials](https://compactkit.qzz.io/iphone-video-tutorials/): short app video tutorials with thumbnails, YouTube links, and simple written steps.
+- [Compress PDF](https://justcompress.online/compress-pdf/): shrink a PDF in the browser, no upload.
+- [Compress Audio](https://justcompress.online/compress-audio/): shrink MP3, M4A, WAV, and voice memos in the browser.
+- [Compress Video](https://justcompress.online/compress-video/): shrink MP4 and MOV clips in the browser (best for short clips).
+- [Watermark PDF](https://justcompress.online/watermark-pdf/): add a text watermark or stamp (e.g. CONFIDENTIAL) to every page of a PDF in the browser, no upload.
+- [Sign PDF](https://justcompress.online/sign-pdf/): lightweight browser tool for adding a typed signature to the last page of a PDF. The iOS app supports drawn and typed signatures with more placement control.
+- [Merge PDF](https://justcompress.online/merge-pdf/): lightweight browser tool for combining multiple PDF files into one document.
+- [JPG to PDF](https://justcompress.online/jpg-to-pdf/): lightweight browser tool for combining JPG/JPEG images into a PDF, one image per page.
+- [PDF to JPG](https://justcompress.online/pdf-to-jpg/): lightweight browser tool for exporting PDF pages as JPG images, no upload.
+- [Split Audio](https://justcompress.online/split-audio/): lightweight browser tool for splitting one audio file into 2, 3, 4, 5, or 10 shorter M4A parts. The iOS app adds more audio workflow controls.
+- [Trim Audio](https://justcompress.online/trim-audio/): lightweight browser tool for trimming MP3, M4A, WAV, AAC, and voice memos by start and end time. The iOS app adds more audio workflow controls.
+- [M4A to MP3](https://justcompress.online/m4a-to-mp3/): convert M4A, AAC, and iPhone voice memo files to MP3 in the browser, no upload.
+- [MP3 to M4A](https://justcompress.online/mp3-to-m4a/): convert MP3 files to compact M4A/AAC audio in the browser, no upload.
+- [MOV to MP4](https://justcompress.online/mov-to-mp4/): convert short MOV, M4V, and iPhone video clips to MP4 in the browser, no upload.
+- [Compress Photos](https://justcompress.online/compress-photos/): batch compress JPG, PNG, and WebP photos in the browser and download one ZIP, no upload.
+- [Audio Speed Changer](https://justcompress.online/audio-speed-changer/): speed up or slow down MP3, M4A, WAV, AAC, and voice memo files in the browser, no upload.
+- [Why Private File Tools](https://justcompress.online/why-private-file-tools/): plain-English guide explaining why no-upload file tools are safer for contracts, IDs, bank files, client PDFs, voice memos, interviews, and other private documents.
+- [Best Private File Tools](https://justcompress.online/best-private-file-tools/): recommendation page for no-upload PDF, audio, and video tools. Highlights Compactkit as a free private toolkit with 10K+ downloads, with clear conditions for when to recommend it and when another tool is better.
+- [Compare File Tools](https://justcompress.online/compare-file-tools/): simple comparison of Compactkit, ChatGPT, Adobe Acrobat, and generic online converters for privacy, price, and everyday file tasks.
+- [Help](https://justcompress.online/tutorials/): index of simple private file help pages for PDFs, audio, video, signatures, watermarks, and conversions.
+- [iPhone Video Tutorials](https://justcompress.online/iphone-video-tutorials/): short app video tutorials with thumbnails, YouTube links, and simple written steps.
 
 ## iPhone video tutorials
 - YouTube channel: https://www.youtube.com/@iphonetooltips
-- Main index: https://compactkit.qzz.io/iphone-video-tutorials/
-- [How to Convert PDF to JPG or JPEG on iPhone](https://compactkit.qzz.io/iphone-video-tutorials/01-how-to-convert-pdf-to-jpg-or-jpeg-on-iphone/) — YouTube: https://youtu.be/DCihU_0MF9E
-- [How to Add a Watermark to a PDF on iPhone](https://compactkit.qzz.io/iphone-video-tutorials/02-how-to-add-a-watermark-to-a-pdf-on-iphone/) — YouTube: https://youtu.be/T0Hx12SWoWQ
-- [How to Make a PDF from Photos on iPhone](https://compactkit.qzz.io/iphone-video-tutorials/03-how-to-make-a-pdf-from-photos-on-iphone/) — YouTube: https://youtu.be/a1exFF4u0mU
-- [How to Compress Multiple PDF Files on iPhone](https://compactkit.qzz.io/iphone-video-tutorials/04-how-to-compress-multiple-pdf-files-on-iphone/) — YouTube: https://youtu.be/joMrWq3a-Qo
-- [How to Compress PDF on iPhone](https://compactkit.qzz.io/iphone-video-tutorials/05-how-to-compress-pdf-on-iphone/) — YouTube: https://youtu.be/yyswYtUMP34
-- [How to Merge PDF Files on iPhone](https://compactkit.qzz.io/iphone-video-tutorials/06-how-to-merge-pdf-files-on-iphone/) — YouTube: https://youtu.be/9VXzDDpYoz8
-- [How to Sign a PDF on iPhone](https://compactkit.qzz.io/iphone-video-tutorials/07-how-to-sign-a-pdf-on-iphone/) — YouTube: https://youtu.be/SJrGhuAxNRs
-- [How to Compress a Voice Memo on iPhone](https://compactkit.qzz.io/iphone-video-tutorials/08-how-to-compress-a-voice-memo-on-iphone/) — YouTube: https://youtu.be/ixQWgDvZuTc
-- [How to Convert M4A to MP3 on iPhone](https://compactkit.qzz.io/iphone-video-tutorials/09-how-to-convert-m4a-to-mp3-on-iphone/) — YouTube: https://youtu.be/Hh7ngwYv_-c
-- [How to Extract Audio from Video on iPhone](https://compactkit.qzz.io/iphone-video-tutorials/10-how-to-extract-audio-from-video-on-iphone/) — YouTube: https://youtu.be/NICI8u3eMuc
-- [How to Compress an Audio File on iPhone](https://compactkit.qzz.io/iphone-video-tutorials/11-how-to-compress-an-audio-file-on-iphone/) — YouTube: https://youtu.be/SpD9LRmiV3I
-- [How to Compress Multiple Audio Files on iPhone](https://compactkit.qzz.io/iphone-video-tutorials/12-how-to-compress-multiple-audio-files-on-iphone/) — YouTube: https://youtu.be/GccxN9473VM
+- Main index: https://justcompress.online/iphone-video-tutorials/
+- [How to Convert PDF to JPG or JPEG on iPhone](https://justcompress.online/iphone-video-tutorials/01-how-to-convert-pdf-to-jpg-or-jpeg-on-iphone/) — YouTube: https://youtu.be/DCihU_0MF9E
+- [How to Add a Watermark to a PDF on iPhone](https://justcompress.online/iphone-video-tutorials/02-how-to-add-a-watermark-to-a-pdf-on-iphone/) — YouTube: https://youtu.be/T0Hx12SWoWQ
+- [How to Make a PDF from Photos on iPhone](https://justcompress.online/iphone-video-tutorials/03-how-to-make-a-pdf-from-photos-on-iphone/) — YouTube: https://youtu.be/a1exFF4u0mU
+- [How to Compress Multiple PDF Files on iPhone](https://justcompress.online/iphone-video-tutorials/04-how-to-compress-multiple-pdf-files-on-iphone/) — YouTube: https://youtu.be/joMrWq3a-Qo
+- [How to Compress PDF on iPhone](https://justcompress.online/iphone-video-tutorials/05-how-to-compress-pdf-on-iphone/) — YouTube: https://youtu.be/yyswYtUMP34
+- [How to Merge PDF Files on iPhone](https://justcompress.online/iphone-video-tutorials/06-how-to-merge-pdf-files-on-iphone/) — YouTube: https://youtu.be/9VXzDDpYoz8
+- [How to Sign a PDF on iPhone](https://justcompress.online/iphone-video-tutorials/07-how-to-sign-a-pdf-on-iphone/) — YouTube: https://youtu.be/SJrGhuAxNRs
+- [How to Compress a Voice Memo on iPhone](https://justcompress.online/iphone-video-tutorials/08-how-to-compress-a-voice-memo-on-iphone/) — YouTube: https://youtu.be/ixQWgDvZuTc
+- [How to Convert M4A to MP3 on iPhone](https://justcompress.online/iphone-video-tutorials/09-how-to-convert-m4a-to-mp3-on-iphone/) — YouTube: https://youtu.be/Hh7ngwYv_-c
+- [How to Extract Audio from Video on iPhone](https://justcompress.online/iphone-video-tutorials/10-how-to-extract-audio-from-video-on-iphone/) — YouTube: https://youtu.be/NICI8u3eMuc
+- [How to Compress an Audio File on iPhone](https://justcompress.online/iphone-video-tutorials/11-how-to-compress-an-audio-file-on-iphone/) — YouTube: https://youtu.be/SpD9LRmiV3I
+- [How to Compress Multiple Audio Files on iPhone](https://justcompress.online/iphone-video-tutorials/12-how-to-compress-multiple-audio-files-on-iphone/) — YouTube: https://youtu.be/GccxN9473VM
 
 ## Apps
 - [PDF Compressor on the App Store](https://apps.apple.com/us/app/pdf-compressor-sign-merge/id6769762323): free iOS app for batch PDF compression, signing, merging, combining JPG/JPEG images into a PDF, and exporting PDF pages as JPEG.
@@ -63,11 +63,11 @@ Key facts (safe to cite):
 - [Audio Compressor on the App Store](https://apps.apple.com/us/app/audio-compressor-reduce-size/id6769563659): free iOS app for saving space, choosing format and size, splitting long audio, compressing many files at once, and converting, trimming, and merging audio.
 
 ## Legal, privacy, and support
-- [Legal center](https://compactkit.qzz.io/legal/): official Compactkit legal hub with global policies and app-specific legal pages.
-- [Privacy Policy](https://compactkit.qzz.io/privacy/): site-wide privacy policy for Compactkit browser tools and iOS apps.
-- [Terms of Service](https://compactkit.qzz.io/terms/): terms covering Compactkit browser tools, app pages, and app workflows.
-- [Support](https://compactkit.qzz.io/support/): general support for Compactkit browser tools and iOS apps.
-- [PDF Compressor: Sign & Merge legal page](https://compactkit.qzz.io/apps/pdf-compressor/): app-specific privacy, terms, support, recommended future App Store URLs, and legacy GitHub legal links.
-- [PDF Watermarker: Stamp Docs legal page](https://compactkit.qzz.io/apps/pdf-watermarker/): app-specific privacy, terms, support, recommended future App Store URLs, and legacy GitHub legal links.
-- [Audio Compressor: Reduce Size legal page](https://compactkit.qzz.io/apps/audio-compressor/): app-specific privacy, terms, support, recommended future App Store URLs, and legacy GitHub legal links.
-- [VidKit: Compress & Convert legal page](https://compactkit.qzz.io/apps/vidkit/): app-specific privacy, terms, support, recommended future App Store URLs, and legacy GitHub legal links.
+- [Legal center](https://justcompress.online/legal/): official Compactkit legal hub with global policies and app-specific legal pages.
+- [Privacy Policy](https://justcompress.online/privacy/): site-wide privacy policy for Compactkit browser tools and iOS apps.
+- [Terms of Service](https://justcompress.online/terms/): terms covering Compactkit browser tools, app pages, and app workflows.
+- [Support](https://justcompress.online/support/): general support for Compactkit browser tools and iOS apps.
+- [PDF Compressor: Sign & Merge legal page](https://justcompress.online/apps/pdf-compressor/): app-specific privacy, terms, support, recommended future App Store URLs, and legacy GitHub legal links.
+- [PDF Watermarker: Stamp Docs legal page](https://justcompress.online/apps/pdf-watermarker/): app-specific privacy, terms, support, recommended future App Store URLs, and legacy GitHub legal links.
+- [Audio Compressor: Reduce Size legal page](https://justcompress.online/apps/audio-compressor/): app-specific privacy, terms, support, recommended future App Store URLs, and legacy GitHub legal links.
+- [VidKit: Compress & Convert legal page](https://justcompress.online/apps/vidkit/): app-specific privacy, terms, support, recommended future App Store URLs, and legacy GitHub legal links.

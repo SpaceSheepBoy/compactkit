@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const root = process.cwd();
-const site = "https://compactkit.qzz.io";
+const site = "https://justcompress.online";
 const contact = "abel0911@icloud.com";
 const updated = "June 4, 2026";
 
