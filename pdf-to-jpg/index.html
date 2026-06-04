@@ -62,7 +62,7 @@
   <span class="kicker rise d1"><span class="led"></span>PDF · JPG · NO UPLOAD</span>
   <h1 class="rise d2">PDF to JPG,<br><span class="thin">page by page.</span></h1>
   <p class="lede rise d3">Turn PDF pages into JPG images. Useful when a form, receipt, scan, or document page needs to be shared as an image.</p>
-  <div class="cta-row rise d3"><div class="appcta"><img class="app-ic lg" src="/assets/icons/app-pdf.jpg" alt="PDF Compressor app icon" width="64" height="64"><div class="meta"><b>PDF Compressor: Sign &amp; Merge</b><span>PDF to JPEG · JPG to PDF · compress · sign · merge</span></div><a class="appstore" href="https://apps.apple.com/us/app/pdf-compressor-sign-merge/id6769762323" rel="noopener"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download PDF Compressor on the App Store" loading="eager"></a></div></div>
+  <div class="cta-row rise d3"><div class="appcta"><img class="app-ic lg" src="/assets/icons/app-pdf.png" alt="PDF Compressor app icon" width="64" height="64"><div class="meta"><b>PDF Compressor: Sign &amp; Merge</b><span>PDF to JPEG · JPG to PDF · compress · sign · merge</span></div><a class="appstore" href="https://apps.apple.com/us/app/pdf-compressor-sign-merge/id6769762323" rel="noopener"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download PDF Compressor on the App Store" loading="eager"></a></div></div>
   <div class="assure rise d3">100% private — PDF stays on your device</div>
 </header>
 
@@ -92,7 +92,7 @@
       <div class="result" id="result"></div>
     </div>
     <aside class="download-box">
-      <div class="appcta"><img class="app-ic md" src="/assets/icons/app-pdf.jpg" alt="" width="56" height="56"><div class="meta"><b>PDF Compressor</b><span>PDF and image toolkit</span></div><a class="appstore" href="https://apps.apple.com/us/app/pdf-compressor-sign-merge/id6769762323" rel="noopener"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us?size=250x83" alt="Download on the App Store"></a></div>
+      <div class="appcta"><img class="app-ic md" src="/assets/icons/app-pdf.png" alt="" width="56" height="56"><div class="meta"><b>PDF Compressor</b><span>PDF and image toolkit</span></div><a class="appstore" href="https://apps.apple.com/us/app/pdf-compressor-sign-merge/id6769762323" rel="noopener"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us?size=250x83" alt="Download on the App Store"></a></div>
       <p>✅ Compress · ✅ Sign · ✅ Merge · ✅ JPG to PDF · ✅ Batch tools.</p>
       <div class="proof-pill"><span class="stars">★★★★★</span><b>PDF to JPEG</b><span>Turn pages into images.</span></div>
     </aside>
@@ -180,7 +180,7 @@
 import * as pdfjsLib from 'https://cdn.jsdelivr.net/npm/pdfjs-dist@4.10.38/build/pdf.mjs';
 pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@4.10.38/build/pdf.worker.mjs';
 const $ = id => document.getElementById(id);
-const appCta = `<div class="result-cta"><img class="app-ic sm" src="/assets/icons/app-pdf.jpg" alt="" width="24" height="24"><div class="meta"><b>Doing this often on iPhone?</b><span>✅ PDF to JPEG · ✅ JPG to PDF · ✅ Compress · ✅ Sign · ✅ Merge.</span></div><a class="appstore" href="https://apps.apple.com/us/app/pdf-compressor-sign-merge/id6769762323" rel="noopener"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download PDF Compressor on the App Store"></a></div>`;
+const appCta = `<div class="result-cta"><img class="app-ic sm" src="/assets/icons/app-pdf.png" alt="" width="24" height="24"><div class="meta"><b>Doing this often on iPhone?</b><span>✅ PDF to JPEG · ✅ JPG to PDF · ✅ Compress · ✅ Sign · ✅ Merge.</span></div><a class="appstore" href="https://apps.apple.com/us/app/pdf-compressor-sign-merge/id6769762323" rel="noopener"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download PDF Compressor on the App Store"></a></div>`;
 let picked = null;
 const drop = $('drop'), input = $('file');
 function setFile(f){
