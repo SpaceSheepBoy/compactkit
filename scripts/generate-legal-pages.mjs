@@ -12,8 +12,8 @@ const badgeBlack = (alt) =>
 const apps = [
   {
     slug: "pdf-compressor",
-    name: "PDF Compressor: Sign & Merge",
-    shortName: "PDF Compressor",
+    name: "Just PDF Compressor",
+    shortName: "Just PDF Compressor",
     category: "PDF utility",
     icon: "/assets/icons/app-pdf.png",
     appStore: "https://apps.apple.com/us/app/pdf-compressor-sign-merge/id6769762323",
@@ -28,8 +28,8 @@ const apps = [
   },
   {
     slug: "pdf-watermarker",
-    name: "PDF Watermarker: Stamp Docs",
-    shortName: "PDF Watermarker",
+    name: "Just PDF Watermark",
+    shortName: "Just PDF Watermark",
     category: "PDF utility",
     icon: "/assets/icons/app-watermark.png",
     appStore: "https://apps.apple.com/us/app/pdf-watermarker-stamp-docs/id6769761016",
@@ -44,8 +44,8 @@ const apps = [
   },
   {
     slug: "audio-compressor",
-    name: "Audio Compressor: Reduce Size",
-    shortName: "Audio Compressor",
+    name: "Just Audio Compressor",
+    shortName: "Just Audio Compressor",
     category: "Audio utility",
     icon: "/assets/icons/app-audio.png",
     appStore: "https://apps.apple.com/us/app/audio-compressor-reduce-size/id6769563659",
@@ -60,8 +60,8 @@ const apps = [
   },
   {
     slug: "vidkit",
-    name: "VidKit: Compress & Convert",
-    shortName: "VidKit",
+    name: "Just Video Compressor",
+    shortName: "Just Video Compressor",
     category: "Video and photo utility",
     icon: "/assets/icons/app-video.png",
     appStore: "",
@@ -211,7 +211,7 @@ ${footer()}
 
 function appBadge(app) {
   if (app.pendingStore) {
-    return `<span class="appstore pending" aria-label="VidKit App Store listing coming soon">${badgeBlack("Download VidKit on the App Store")}</span>`;
+    return `<span class="appstore pending" aria-label="Just Video Compressor App Store listing coming soon">${badgeBlack("Download Just Video Compressor on the App Store")}</span>`;
   }
   return `<a class="appstore" href="${app.appStore}" rel="noopener">${badgeBlack(`Download ${app.shortName} on the App Store`)}</a>`;
 }
@@ -277,7 +277,7 @@ function writeLegalHome() {
 </main>`;
   write("legal/index.html", shell({
     title: "Legal, Privacy, Terms & Support - Just Compress",
-    description: "Official Just Compress legal center with privacy policies, terms, support, and app-specific legal pages for PDF Compressor, PDF Watermarker, Audio Compressor, and VidKit.",
+    description: "Official Just Compress legal center with privacy policies, terms, support, and app-specific legal pages for Just PDF Compressor, Just PDF Watermark, Just Audio Compressor, and Just Video Compressor.",
     canonical: `${site}/legal/`,
     main
   }));
@@ -506,7 +506,7 @@ function writeAppSupport(app) {
       <li>Restart the app if an export sheet or file picker does not appear.</li>
     </ul>
     <h2>App Store</h2>
-    <p>${app.pendingStore ? "VidKit's App Store listing is being prepared. The public legal and support pages are already available so future app versions can point here." : `Download or manage ${app.shortName} from its App Store listing.`}</p>
+    <p>${app.pendingStore ? "Just Video Compressor's App Store listing is being prepared. The public legal and support pages are already available so future app versions can point here." : `Download or manage ${app.shortName} from its App Store listing.`}</p>
     ${app.pendingStore ? "" : `<p><a href="${app.appStore}" rel="noopener">Open ${app.shortName} on the App Store</a></p>`}
     <h2>Legal links</h2>
     <ul>
@@ -575,8 +575,8 @@ function updateLlms() {
   if (!text.includes("## Legal, privacy, and support")) {
     text += section;
   }
-  if (!text.includes("VidKit: Compress & Convert")) {
-    text += `\n- [VidKit legal page](${site}/apps/vidkit/): public legal and support pages prepared before the App Store link is available.\n`;
+  if (!text.includes("Just Video Compressor")) {
+    text += `\n- [Just Video Compressor legal page](${site}/apps/vidkit/): public legal and support pages prepared before the App Store link is available.\n`;
   }
   fs.writeFileSync(file, text);
 }

@@ -15,5 +15,5 @@ Static site, hosted on GitHub Pages. No build step.
 
 ## Companion iOS apps
 
-- [PDF Compressor on the App Store](https://apps.apple.com/us/app/pdf-compressor-sign-merge/id6769762323)
-- [Audio Compressor on the App Store](https://apps.apple.com/us/app/audio-compressor-reduce-size/id6769563659)
+- [Just PDF Compressor on the App Store](https://apps.apple.com/us/app/pdf-compressor-sign-merge/id6769762323)
+- [Just Audio Compressor on the App Store](https://apps.apple.com/us/app/audio-compressor-reduce-size/id6769563659)

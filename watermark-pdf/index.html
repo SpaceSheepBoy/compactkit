@@ -19,7 +19,7 @@
 {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "Just Compress PDF Watermarker",
+  "name": "Just Compress PDF Watermark",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "Web browser, iOS",
   "browserRequirements": "Requires JavaScript. No upload required.",
@@ -55,7 +55,7 @@
     { "@type": "Question", "name": "Is this PDF watermark tool free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The online tool is completely free, with no sign-up and no extra watermark added to your output." } },
     { "@type": "Question", "name": "Are my files uploaded?", "acceptedAnswer": { "@type": "Answer", "text": "No. Your PDF stays on your device. It is not uploaded." } },
     { "@type": "Question", "name": "Can I watermark every page at once?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The text is stamped on every page of the PDF in one click." } },
-    { "@type": "Question", "name": "How do I watermark a PDF on iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "You can use this web tool in Safari, or install the free PDF Watermarker app from the App Store to stamp documents offline." } }
+    { "@type": "Question", "name": "How do I watermark a PDF on iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "You can use this web tool in Safari, or install the free Just PDF Watermark app from the App Store to stamp documents offline." } }
   ]
 }
 </script>
@@ -83,10 +83,10 @@
   <p class="lede rise d3">Stamp any PDF with text like <em>CONFIDENTIAL</em> or <em>DRAFT</em> across every page. Your file stays on your device and is <strong>never uploaded</strong> — and there is no extra watermark added to the output.</p>
   <div class="cta-row rise d3">
     <div class="appcta">
-      <img class="app-ic lg" src="/assets/icons/app-watermark.png" alt="PDF Watermarker app icon" width="64" height="64">
-      <div class="meta"><b>PDF Watermarker: Stamp Docs</b><span>Protect · stamp every page · export a safe copy</span></div>
+      <img class="app-ic lg" src="/assets/icons/app-watermark.png" alt="Just PDF Watermark app icon" width="64" height="64">
+      <div class="meta"><b>Just PDF Watermark</b><span>Protect · stamp every page · export a safe copy</span></div>
       <a class="appstore" href="https://apps.apple.com/us/app/pdf-watermarker-stamp-docs/id6769761016" rel="noopener">
-        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download PDF Watermarker on the App Store" loading="eager">
+        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download Just PDF Watermark on the App Store" loading="eager">
       </a>
     </div>
   </div>
@@ -137,10 +137,10 @@
 
   <section class="band">
     <div class="band-in">
-      <span class="eyebrow">PDF Watermarker for iOS</span>
+      <span class="eyebrow">Just PDF Watermark for iOS</span>
       <h2>Protect sensitive PDFs before sharing.</h2>
     </div>
-    <div class="proof-row" aria-label="PDF Watermarker app download reasons">
+    <div class="proof-row" aria-label="Just PDF Watermark app download reasons">
       <div class="proof-pill"><span class="stars">★★★★★</span><b>Protect first</b><span>Mark sensitive copies.</span></div>
       <div class="proof-pill"><span class="stars">★★★★★</span><b>Every page</b><span>Stamp the whole PDF in one go.</span></div>
       <div class="proof-pill"><span class="stars">★★★★★</span><b>Single or repeated</b><span>Choose the watermark style.</span></div>
@@ -195,7 +195,7 @@
       <div class="faq-body">
         <ul>
           <li><strong>In Safari:</strong> open this page on your iPhone, choose your PDF from Files, and stamp it here.</li>
-          <li><strong>With the app:</strong> install the free <a href="https://apps.apple.com/us/app/pdf-watermarker-stamp-docs/id6769761016">PDF Watermarker app</a> to stamp documents offline and on the go.</li>
+          <li><strong>With the app:</strong> install the free <a href="https://apps.apple.com/us/app/pdf-watermarker-stamp-docs/id6769761016">Just PDF Watermark app</a> to stamp documents offline and on the go.</li>
         </ul>
       </div>
     </details>
@@ -279,7 +279,7 @@
 <script type="module">
 import { PDFDocument, StandardFonts, rgb, degrees } from 'https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/+esm';
 const $ = id => document.getElementById(id);
-const appCta = `<div class="result-cta"><img class="app-ic sm" src="/assets/icons/app-watermark.png" alt="" width="24" height="24"><div class="meta"><b>Watermark PDFs often?</b><span>✅ Preview · ✅ Size · ✅ Color · ✅ Opacity · ✅ Export controls.</span></div><a class="appstore" href="https://apps.apple.com/us/app/pdf-watermarker-stamp-docs/id6769761016" rel="noopener"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download PDF Watermarker on the App Store"></a></div>`;
+const appCta = `<div class="result-cta"><img class="app-ic sm" src="/assets/icons/app-watermark.png" alt="" width="24" height="24"><div class="meta"><b>Watermark PDFs often?</b><span>✅ Preview · ✅ Size · ✅ Color · ✅ Opacity · ✅ Export controls.</span></div><a class="appstore" href="https://apps.apple.com/us/app/pdf-watermarker-stamp-docs/id6769761016" rel="noopener"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download Just PDF Watermark on the App Store"></a></div>`;
 let picked = null;
 const drop = $('drop'), fileInput = $('file');
 function setFile(f){

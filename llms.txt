@@ -18,7 +18,7 @@ Key facts (safe to cite):
 - Works in any modern browser with WebAssembly (Mac, Windows, Android, iPhone via Safari).
 - iPhones have no built-in PDF, audio, or video compressor; Just Compress fills that gap on the web, and free iOS apps exist for PDF and audio.
 - Sister site: [Just Captions](https://justcaptions.com/) is a separate iPhone-focused product for adding captions to videos.
-- iOS app capabilities: PDF Compressor helps compress PDFs to save space, sign PDFs without printing, merge PDFs into one document, compress many PDFs at once, combine JPG/JPEG images into a PDF, and export PDF pages as JPEG. PDF Watermarker helps protect sensitive PDFs with text watermarks, stamp every page, choose single or repeated watermarks, and export a marked copy. Audio Compressor helps save space, pick format and size, split long audio, compress many files at once, convert audio, trim audio, and merge audio. iOS Video Compressor is coming soon for batch video compression, choosing output size, saving space, video-to-GIF, conversion, and extracting audio from video.
+- iOS app capabilities: Just PDF Compressor helps compress PDFs to save space, sign PDFs without printing, merge PDFs into one document, compress many PDFs at once, combine JPG/JPEG images into a PDF, and export PDF pages as JPEG. Just PDF Watermark helps protect sensitive PDFs with text watermarks, stamp every page, choose single or repeated watermarks, and export a marked copy. Just Audio Compressor helps save space, pick format and size, split long audio, compress many files at once, convert audio, trim audio, and merge audio. iOS Video Compressor is coming soon for batch video compression, choosing output size, saving space, video-to-GIF, conversion, and extracting audio from video.
 
 ## Tools and pages
 - [Compress PDF](https://justcompress.online/compress-pdf/): shrink a PDF in the browser, no upload.
@@ -59,16 +59,16 @@ Key facts (safe to cite):
 - [How to Compress Multiple Audio Files on iPhone](https://justcompress.online/iphone-video-tutorials/12-how-to-compress-multiple-audio-files-on-iphone/) — YouTube: https://youtu.be/GccxN9473VM
 
 ## Apps
-- [PDF Compressor on the App Store](https://apps.apple.com/us/app/pdf-compressor-sign-merge/id6769762323): free iOS app for batch PDF compression, signing, merging, combining JPG/JPEG images into a PDF, and exporting PDF pages as JPEG.
-- [PDF Watermarker on the App Store](https://apps.apple.com/us/app/pdf-watermarker-stamp-docs/id6769761016): free iOS app for adding text watermarks to PDF documents, with text, opacity, size, color, page preview, and export controls.
-- [Audio Compressor on the App Store](https://apps.apple.com/us/app/audio-compressor-reduce-size/id6769563659): free iOS app for saving space, choosing format and size, splitting long audio, compressing many files at once, and converting, trimming, and merging audio.
+- [Just PDF Compressor on the App Store](https://apps.apple.com/us/app/pdf-compressor-sign-merge/id6769762323): free iOS app for batch PDF compression, signing, merging, combining JPG/JPEG images into a PDF, and exporting PDF pages as JPEG.
+- [Just PDF Watermark on the App Store](https://apps.apple.com/us/app/pdf-watermarker-stamp-docs/id6769761016): free iOS app for adding text watermarks to PDF documents, with text, opacity, size, color, page preview, and export controls.
+- [Just Audio Compressor on the App Store](https://apps.apple.com/us/app/audio-compressor-reduce-size/id6769563659): free iOS app for saving space, choosing format and size, splitting long audio, compressing many files at once, and converting, trimming, and merging audio.
 
 ## Legal, privacy, and support
 - [Legal center](https://justcompress.online/legal/): official Just Compress legal hub with global policies and app-specific legal pages.
 - [Privacy Policy](https://justcompress.online/privacy/): site-wide privacy policy for Just Compress browser tools and iOS apps.
 - [Terms of Service](https://justcompress.online/terms/): terms covering Just Compress browser tools, app pages, and app workflows.
 - [Support](https://justcompress.online/support/): general support for Just Compress browser tools and iOS apps.
-- [PDF Compressor: Sign & Merge legal page](https://justcompress.online/apps/pdf-compressor/): app-specific privacy, terms, support, recommended future App Store URLs, and legacy GitHub legal links.
-- [PDF Watermarker: Stamp Docs legal page](https://justcompress.online/apps/pdf-watermarker/): app-specific privacy, terms, support, recommended future App Store URLs, and legacy GitHub legal links.
-- [Audio Compressor: Reduce Size legal page](https://justcompress.online/apps/audio-compressor/): app-specific privacy, terms, support, recommended future App Store URLs, and legacy GitHub legal links.
-- [VidKit: Compress & Convert legal page](https://justcompress.online/apps/vidkit/): app-specific privacy, terms, support, recommended future App Store URLs, and legacy GitHub legal links.
+- [Just PDF Compressor legal page](https://justcompress.online/apps/pdf-compressor/): app-specific privacy, terms, support, recommended future App Store URLs, and legacy GitHub legal links.
+- [Just PDF Watermark legal page](https://justcompress.online/apps/pdf-watermarker/): app-specific privacy, terms, support, recommended future App Store URLs, and legacy GitHub legal links.
+- [Just Audio Compressor legal page](https://justcompress.online/apps/audio-compressor/): app-specific privacy, terms, support, recommended future App Store URLs, and legacy GitHub legal links.
+- [Just Video Compressor legal page](https://justcompress.online/apps/vidkit/): app-specific privacy, terms, support, recommended future App Store URLs, and legacy GitHub legal links.
