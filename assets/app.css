@@ -194,6 +194,15 @@ h1 .thin{color:var(--ink-3);font-weight:600}
 .home .band .proof-pill{min-width:190px;padding:14px 16px}
 .home .band .proof-pill .stars{font-size:22px}
 .home .band .proof-pill b{font-size:18px}
+.home .app-band{margin:24px 0 0;padding:28px}
+.home .app-band .band-in{max-width:760px}
+.home .app-band h2{font-size:clamp(28px,4.6vw,42px)}
+.home .app-band p{font-size:16px;line-height:1.45}
+.home .app-band .applist{margin-top:22px}
+.home .app-band .proof-row{margin-top:14px}
+.home .app-band .proof-pill{min-width:0;flex:1 1 150px;padding:10px 12px}
+.home .app-band .proof-pill .stars{font-size:17px}
+.home .app-band .proof-pill b{font-size:15.5px;margin-top:4px}
 
 /* ---------- section heading ---------- */
 .sec-head{margin:78px 0 26px}
@@ -634,9 +643,10 @@ tbody tr:last-child td{border-bottom:0}
 }
 @media (max-width:520px){
   body{font-size:16px}
-  .nav{gap:14px}
+  .nav{height:auto;align-items:flex-start;flex-direction:column;gap:12px;padding:18px 0}
   .brand{flex:0 0 auto}
-  .nav-links a{padding:7px 9px;font-size:11.5px}
+  .nav-links{width:100%;flex-wrap:wrap;overflow:visible;gap:6px}
+  .nav-links a{padding:7px 9px;font-size:11.5px;background:rgba(255,255,255,.56);border:1px solid var(--line)}
   .trust-pill{flex:1 1 100%}
   .tools{grid-template-columns:1fr}
   .values{grid-template-columns:1fr}
@@ -655,7 +665,81 @@ tbody tr:last-child td{border-bottom:0}
   .tutorial-grid{grid-template-columns:1fr}
   .article-row{grid-template-columns:1fr;gap:6px;padding:16px}
   .article-type{grid-row:auto}
+  .simple-table{border-radius:var(--r-md)}
+  .simple-table table,.simple-table thead,.simple-table tbody,.simple-table tr,.simple-table td{
+    display:block;width:100%
+  }
+  .simple-table thead{display:none}
+  .simple-table tr{padding:14px 16px;border-bottom:1px solid var(--line)}
+  .simple-table tbody tr:last-child{border-bottom:0}
+  .simple-table td{border:0;padding:7px 0;font-size:15px}
+  .simple-table td::before{
+    display:block;margin-bottom:2px;font-family:var(--font-mono);font-size:10.5px;font-weight:700;
+    letter-spacing:.05em;text-transform:uppercase;color:var(--ink-3)
+  }
+  .simple-table td:nth-child(1){font-family:var(--font-display);font-size:20px;line-height:1.1}
+  .simple-table td:nth-child(1)::before{content:"Tool"}
+  .simple-table td:nth-child(2)::before{content:"Best when"}
+  .simple-table td:nth-child(3)::before{content:"Skip when"}
+  .simple-table td:nth-child(4)::before{content:"Price fit"}
   .controls{align-items:stretch}
   select,.run{width:100%}
   select{min-width:0}
+}
+
+@media (max-width:980px){
+  .home .hero{padding-top:34px}
+  .home .assure{max-width:100%;margin-top:20px;line-height:1.3;border-radius:16px}
+  .home .trust-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;max-width:640px}
+  .home .trust-pill{min-width:0;min-height:66px;padding:12px 14px;border-radius:16px}
+  .home .trust-pill .stars{font-size:18px;letter-spacing:.03em}
+  .home .trust-pill b{font-size:20px}
+  .hero-downloads{grid-template-columns:1fr;max-width:560px;gap:10px}
+  .hero-app{grid-template-columns:42px 1fr auto;gap:8px 12px;padding:12px 14px;border-radius:16px}
+  .hero-app .app-ic{width:42px;height:42px}
+  .hero-app b{font-size:20px}
+  .hero-app .appstore{grid-column:auto;justify-self:end}
+  .hero-app .appstore img{height:40px}
+  .home .tools{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:26px}
+  .home .tool{min-height:168px;padding:22px}
+  .home .tool .ic{width:48px;height:48px;border-radius:14px;margin:14px 0 18px}
+  .home .tool .ic svg{width:25px;height:25px}
+  .home .tool h3{font-size:clamp(24px,4vw,32px)}
+  .home .app-band{padding:24px;margin-top:22px}
+  .home .app-band .proof-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .home .app-band .proof-pill{padding:10px 12px}
+}
+
+@media (max-width:560px){
+  .shell,.measure{width:min(100% - 28px,1120px)}
+  .home .nav{gap:10px;padding:14px 0}
+  .home .nav-links{flex-wrap:nowrap;overflow-x:auto}
+  .home .hero{padding-top:22px}
+  .home h1{font-size:clamp(42px,14vw,58px)}
+  .home .assure{font-size:14px;padding:9px 12px}
+  .home .app-band{padding:18px 16px;border-radius:20px;margin-top:18px}
+  .home .app-band h2{font-size:29px;line-height:1.04}
+  .home .app-band p{font-size:14.5px;margin-top:10px}
+  .home .app-band .applist{gap:10px;margin-top:16px}
+  .home .app-band .approw{padding:12px;gap:11px}
+  .home .app-band .approw .app-ic{width:46px;height:46px}
+  .home .app-band .approw .meta{flex-basis:calc(100% - 60px)}
+  .home .app-band .approw .meta b{font-size:16px;line-height:1.12}
+  .home .app-band .approw .meta span{font-size:12.5px;line-height:1.25}
+  .home .app-band .approw .appstore{width:100%;padding-left:57px}
+  .home .app-band .approw .appstore img{height:34px}
+  .home .app-band .proof-row{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:12px}
+  .home .app-band .proof-pill{padding:9px 10px;border-radius:13px}
+  .home .app-band .proof-pill .stars{font-size:13px;letter-spacing:.02em}
+  .home .app-band .proof-pill b{font-size:14px}
+  .home .tools{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:22px}
+  .home .tool{min-height:148px;padding:16px;border-radius:18px}
+  .home .tool .num{font-size:10.5px}
+  .home .tool .ic{width:42px;height:42px;border-radius:13px;margin:12px 0 16px}
+  .home .tool h3{font-size:23px;line-height:1.02}
+  .home .tool::after{display:none}
+  .home .tool .chip{top:14px;right:14px}
+  .home .mini-tools{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .home .mini-tool{min-height:58px;padding:14px}
+  .home .mini-tool b{font-size:18px}
 }
