@@ -220,7 +220,7 @@ h1 .thin{color:var(--ink-3);font-weight:600}
 .home .band .proof-pill{min-width:190px;padding:14px 16px}
 .home .band .proof-pill .stars{font-size:22px}
 .home .band .proof-pill b{font-size:18px}
-.home .app-band{margin:24px 0 0;padding:28px}
+.home .app-band{margin:24px 0 56px;padding:28px}
 .home .app-band .band-in{max-width:980px}
 .home .app-band h2{font-size:clamp(28px,4.6vw,42px)}
 .home .app-band p{font-size:16px;line-height:1.45;white-space:nowrap}
@@ -795,7 +795,7 @@ tbody tr:last-child td{border-bottom:0}
   .home .tool h3{font-size:clamp(24px,4vw,32px)}
   .home-tools-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .home-tool-card{min-height:102px;padding:16px}
-  .home .app-band{padding:24px;margin-top:22px}
+  .home .app-band{padding:24px;margin:22px 0 46px}
   .home .app-band .proof-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
   .home .app-band .proof-pill{padding:10px 12px}
 }
@@ -807,7 +807,7 @@ tbody tr:last-child td{border-bottom:0}
   .home .hero{padding-top:22px}
   .home h1{font-size:clamp(42px,14vw,58px)}
   .home .assure{font-size:14px;padding:9px 12px}
-  .home .app-band{padding:18px 16px;border-radius:20px;margin-top:18px}
+  .home .app-band{padding:18px 16px;border-radius:20px;margin:18px 0 36px}
   .home .app-band h2{font-size:29px;line-height:1.04}
   .home .app-band p{font-size:14.5px;margin-top:10px;white-space:normal}
   .home .app-band .applist{gap:10px;margin-top:16px}

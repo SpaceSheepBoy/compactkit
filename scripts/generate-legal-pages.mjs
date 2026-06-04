@@ -197,7 +197,7 @@ function shell({ title, description, canonical, bodyClass = "t-pdf", active = "l
 <meta property="og:type" content="website">
 <meta property="og:url" content="${canonical}">
 <meta name="theme-color" content="#FBFAF6">
-<link rel="stylesheet" href="/assets/app.css">
+<link rel="stylesheet" href="/assets/app.css?v=20260604-spacing">
 ${schema}
 </head>
 <body class="${bodyClass}">
