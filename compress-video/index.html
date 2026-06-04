@@ -20,11 +20,11 @@
   "name": "Compactkit Video Compressor",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "Web browser",
-  "browserRequirements": "Requires JavaScript and WebAssembly. Runs fully client-side.",
+  "browserRequirements": "Requires JavaScript. No upload required.",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
   "featureList": [
     "Compress MP4 and MOV video size in the browser",
-    "Files are processed locally and never uploaded",
+    "Files stay on your device and are never uploaded",
     "Choose a quality level",
     "No sign-up, no watermark"
   ]
@@ -50,7 +50,7 @@
   "@type": "FAQPage",
   "mainEntity": [
     { "@type": "Question", "name": "Is this video compressor free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The online tool is completely free, with no sign-up, no watermark, and no file-size paywall." } },
-    { "@type": "Question", "name": "Are my videos uploaded to a server?", "acceptedAnswer": { "@type": "Answer", "text": "No. Compression runs entirely in your browser using WebAssembly (FFmpeg). Your video never leaves your device." } },
+    { "@type": "Question", "name": "Are my videos uploaded?", "acceptedAnswer": { "@type": "Answer", "text": "No. Your video stays on your device. It is not uploaded." } },
     { "@type": "Question", "name": "How large a video can I compress in the browser?", "acceptedAnswer": { "@type": "Answer", "text": "In-browser video compression is best for short clips, up to roughly a minute or two. Longer videos are slow in the browser; an iOS Video Compressor is coming soon for a smoother phone workflow." } }
   ]
 }
@@ -81,7 +81,7 @@
 <header class="measure hero">
   <span class="kicker rise d1"><span class="led"></span>03 / VIDEO · FREE · NO UPLOAD</span>
   <h1 class="rise d2">Compress video,<br><span class="thin">free &amp; private.</span></h1>
-  <p class="lede rise d3">Make MP4 and MOV clips smaller in your browser. Your video is processed on your own device and is <strong>never uploaded</strong>. Best for short clips.</p>
+  <p class="lede rise d3">Make MP4 and MOV clips smaller. Your video stays on your device and is <strong>never uploaded</strong>. Best for short clips.</p>
   <div class="assure rise d3">
     <svg viewBox="0 0 24 24" fill="none"><rect x="4.5" y="10.5" width="15" height="10" rx="2.2" stroke="currentColor" stroke-width="1.8"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5" stroke="currentColor" stroke-width="1.8"/></svg>
     100% private — files stay on your device
@@ -92,7 +92,7 @@
 
   <section class="panel rise d4" id="tool" aria-label="Video compressor tool">
     <div class="phead"><h2>Compress a video now</h2><span class="mono">PRIVATE TOOL</span></div>
-    <p class="hint">Everything runs locally in your browser. Nothing is sent to a server.</p>
+    <p class="hint">Your file stays on your device. Nothing is uploaded.</p>
     <div class="callout">
       <svg viewBox="0 0 24 24" fill="none"><path d="M12 3 22 20H2L12 3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 10v4M12 17h0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
       <span>In-browser video compression is best for <strong>short clips (≈ up to 1–2 min)</strong>. Large videos can be slow — keep this tab open while it works.</span>
@@ -126,7 +126,7 @@
     <div class="band-in">
       <span class="eyebrow">On the roadmap</span>
       <h2>iOS Video Compressor is coming soon.</h2>
-      <p>The upcoming iOS app is planned for common phone video tasks: batch compress videos, choose target size, save space, delete originals safely after export, convert video, make GIFs, and get audio from videos.</p>
+      <p>✅ Batch compress · ✅ Pick target size · ✅ Save space · ✅ Convert video · ✅ Make GIFs · ✅ Extract audio.</p>
       <span class="soon">● iOS app · coming soon</span>
       <div class="proof-row" aria-label="Video app coming soon highlights">
         <div class="proof-pill"><span class="stars">★★★★★</span><b>Batch videos</b><span>Compress many clips.</span></div>
@@ -148,7 +148,7 @@
     <p>Use the right setting for short clips, messages, and email.</p>
   </div>
 
-  <div class="tldr"><b>Short answer:</b> To compress a video for free without uploading it, choose your MP4 or MOV above, pick a quality level (Balanced is a good default), and click Compress. The smaller file downloads when it finishes, and your original never leaves your device. In-browser compression is best for short clips.</div>
+  <div class="quick-note"><b>Quick tip:</b> Choose video, pick quality, compress. Best for short clips.</div>
 
   <div class="faq">
     <details class="faq-item" open>
@@ -157,13 +157,13 @@
         <ol>
           <li><strong>Choose your video.</strong> Click <em>Choose video</em> above or drag a file in. MP4, MOV, M4V, and WebM work.</li>
           <li><strong>Pick a quality level.</strong> <em>Smallest</em> compresses hardest, <em>Balanced</em> is the best default for sharing, <em>High</em> keeps more detail.</li>
-          <li><strong>Click Compress.</strong> The video is re-encoded in your browser (this can take a little while) and the smaller MP4 downloads automatically.</li>
+          <li><strong>Click Compress.</strong> Compactkit makes a smaller MP4 and downloads it automatically. This can take a little while.</li>
         </ol>
       </div>
     </details>
     <details class="faq-item">
       <summary>Why compress in the browser instead of uploading?<span class="pm"></span></summary>
-      <div class="faq-body"><p>Most free online video compressors upload your file to their servers and cap the size unless you pay. For personal videos that means handing your footage to a third party. Compactkit does the work in your browser, so the file is never sent away. The trade-off is speed: your device does the work, so it is best for short clips.</p></div>
+      <div class="faq-body"><p>Most online video compressors upload your file first. Compactkit keeps the video on your device, so it is better for personal clips. Because your device does the work, short clips work best.</p></div>
     </details>
     <details class="faq-item">
       <summary>How do I get the smallest video?<span class="pm"></span></summary>
@@ -171,7 +171,7 @@
         <ul>
           <li>Use the <em>Smallest</em> quality level for messaging and email.</li>
           <li>Trim the clip first — shorter video means a smaller file and faster compression.</li>
-          <li>For long videos or many files at once, a native app is much faster than any browser tool.</li>
+          <li>For long videos or many files at once, an app is usually faster.</li>
         </ul>
       </div>
     </details>
@@ -181,11 +181,11 @@
     </details>
     <details class="faq-item">
       <summary>Are my files uploaded?<span class="pm"></span></summary>
-      <div class="faq-body"><p>No. Compression happens entirely in your browser. Your video never leaves your device.</p></div>
+      <div class="faq-body"><p>No. Your video stays on your device.</p></div>
     </details>
     <details class="faq-item">
       <summary>Why is it slower than other sites?<span class="pm"></span></summary>
-      <div class="faq-body"><p>Other sites upload your video and compress it on their servers. This tool compresses on your own device to keep your video private, so larger clips take longer.</p></div>
+      <div class="faq-body"><p>Other sites upload your video first. Compactkit keeps it on your device, so larger clips can take longer.</p></div>
     </details>
   </div>
 
@@ -203,7 +203,7 @@
           </svg>
           Compactkit
         </a>
-        <p>Free, private file compression. Nothing is ever uploaded — every file is processed on your own device.</p>
+        <p>Free, private file compression. Nothing is ever uploaded — files stay on your device.</p>
       </div>
       <div class="foot-col">
         <h4>Tools</h4>

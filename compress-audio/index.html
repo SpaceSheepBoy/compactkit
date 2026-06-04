@@ -20,12 +20,12 @@
   "name": "Compactkit Audio Compressor",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "Web browser, iOS",
-  "browserRequirements": "Requires JavaScript and WebAssembly. Runs fully client-side.",
+  "browserRequirements": "Requires JavaScript. No upload required.",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
   "featureList": [
     "Compress audio file size in the browser",
     "Supports MP3, M4A, WAV, AAC, and voice memos",
-    "Files are processed locally and never uploaded",
+    "Files stay on your device and are never uploaded",
     "Choose a target bitrate",
     "No sign-up, no watermark"
   ],
@@ -52,7 +52,7 @@
   "@type": "FAQPage",
   "mainEntity": [
     { "@type": "Question", "name": "Is this audio compressor free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The online tool is completely free, with no sign-up, no watermark, and no file-size paywall." } },
-    { "@type": "Question", "name": "Are my audio files uploaded to a server?", "acceptedAnswer": { "@type": "Answer", "text": "No. Compression runs entirely in your browser using WebAssembly (FFmpeg). Your audio never leaves your device." } },
+    { "@type": "Question", "name": "Are my audio files uploaded?", "acceptedAnswer": { "@type": "Answer", "text": "No. Your audio stays on your device. It is not uploaded." } },
     { "@type": "Question", "name": "What audio formats are supported?", "acceptedAnswer": { "@type": "Answer", "text": "It reads MP3, M4A, AAC, WAV, CAF voice memos, and more, and outputs a compressed M4A (AAC) file that plays on iPhone, Android, Mac, and Windows." } },
     { "@type": "Question", "name": "How do I make a voice memo smaller to email?", "acceptedAnswer": { "@type": "Answer", "text": "Compress it at 64 kbps. Voice recordings stay clear and the file is small enough to email or message easily." } }
   ]
@@ -84,7 +84,7 @@
 <header class="measure hero">
   <span class="kicker rise d1"><span class="led"></span>02 / AUDIO · FREE · NO UPLOAD</span>
   <h1 class="rise d2">Compress audio,<br><span class="thin">free &amp; private.</span></h1>
-  <p class="lede rise d3">Shrink MP3, M4A, WAV, and voice memos in seconds. Your file is processed on your own device and is <strong>never uploaded</strong>.</p>
+  <p class="lede rise d3">Shrink MP3, M4A, WAV, and voice memos in seconds. Your file stays on your device and is <strong>never uploaded</strong>.</p>
   <div class="cta-row rise d3">
     <div class="appcta">
       <img class="app-ic lg" src="/assets/icons/app-audio.jpg" alt="Audio Compressor app icon" width="64" height="64">
@@ -104,7 +104,7 @@
 
   <section class="panel rise d4" id="tool" aria-label="Audio compressor tool">
     <div class="phead"><h2>Compress audio now</h2><span class="mono">PRIVATE TOOL</span></div>
-    <p class="hint">Everything runs locally in your browser. Nothing is sent to a server.</p>
+    <p class="hint">Your file stays on your device. Nothing is uploaded.</p>
     <label class="dropzone" id="drop">
       <input type="file" id="file" accept="audio/*,.m4a,.mp3,.wav,.aac,.caf,.aiff">
       <svg class="dz-ic" viewBox="0 0 24 24" fill="none"><path d="M3 12h2M7 8v8M11 4v16M15 7v10M19 10v4M21 12h0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
@@ -124,7 +124,7 @@
     </div>
     <div class="morehint">
       <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l1.7 4.8L18.5 9.5 13.7 11.2 12 16l-1.7-4.8L5.5 9.5l4.8-1.7L12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-      <span><b>Need more on iPhone?</b> The app adds format choice, target size control, long-audio splitting, batch compression, trimming, merging, and conversion. <a href="https://apps.apple.com/us/app/audio-compressor-reduce-size/id6769563659" rel="noopener">Download on the App Store →</a></span>
+      <span><b>Need more on iPhone?</b> ✅ Pick format · ✅ Set target size · ✅ Batch compress · ✅ Split, trim, merge, convert. <a href="https://apps.apple.com/us/app/audio-compressor-reduce-size/id6769563659" rel="noopener">Download on the App Store →</a></span>
     </div>
     <div class="status" id="status">Pick an audio file to begin. First run may take a moment; later runs are faster.</div>
     <div class="progress" id="bar"><i id="barfill"></i></div>
@@ -135,29 +135,13 @@
     <div class="band-in">
       <span class="eyebrow">Audio Compressor for iOS</span>
       <h2>More than shrinking one audio file.</h2>
-      <p>The iOS app is for the full audio workflow: save space, choose format and size, split long audio, compress many files, and convert, trim, or merge audio.</p>
     </div>
-    <div class="proof-row" aria-label="Audio app download reasons">
+    <div class="proof-row" aria-label="Audio app highlights">
       <div class="proof-pill"><span class="stars">★★★★★</span><b>Save space</b><span>Compress audio and reduce storage.</span></div>
       <div class="proof-pill"><span class="stars">★★★★★</span><b>Pick format &amp; size</b><span>Choose the output that fits.</span></div>
       <div class="proof-pill"><span class="stars">★★★★★</span><b>Split long audio</b><span>Break long files automatically.</span></div>
       <div class="proof-pill"><span class="stars">★★★★★</span><b>Batch files</b><span>Compress many files at once.</span></div>
-      <div class="proof-pill"><span class="stars">★★★★★</span><b>Convert, trim, merge</b><span>Finish common audio tasks.</span></div>
-    </div>
-    <div class="feats">
-      <div class="feat"><b>Batch compress</b><span>Many recordings in one tap</span></div>
-      <div class="feat"><b>Save storage</b><span>Make large files smaller</span></div>
-      <div class="feat"><b>All formats</b><span>MP3, M4A, WAV, AAC</span></div>
-      <div class="feat"><b>Share fast</b><span>Straight to Messages &amp; Mail</span></div>
-    </div>
-    <div class="applist">
-      <div class="approw">
-        <img class="app-ic md" src="/assets/icons/app-audio.jpg" alt="Audio Compressor app icon" width="56" height="56" loading="lazy">
-        <div class="meta"><b>Audio Compressor: Reduce Size</b><span>Save space · pick size · split · batch · trim · merge</span></div>
-        <a class="appstore" href="https://apps.apple.com/us/app/audio-compressor-reduce-size/id6769563659" rel="noopener">
-          <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us?size=250x83" alt="Download Audio Compressor on the App Store">
-        </a>
-      </div>
+      <div class="proof-pill"><span class="stars">★★★★★</span><b>Trim, merge, convert</b><span>Finish common audio tasks.</span></div>
     </div>
   </section>
 
@@ -167,7 +151,7 @@
     <p>Pick the right setting for voice memos, interviews, podcasts, or music.</p>
   </div>
 
-  <div class="tldr"><b>Short answer:</b> To compress an audio file for free without uploading it, choose your file above, pick voice or music quality, and click Compress. The smaller audio file downloads instantly and your original never leaves your device. On iPhone, do the same in Safari or install the free Audio Compressor app for a simple phone workflow.</div>
+  <div class="quick-note"><b>Quick tip:</b> Choose audio, pick quality, compress. Your file stays on your device.</div>
 
   <div class="faq">
     <details class="faq-item" open>
@@ -176,7 +160,7 @@
         <ol>
           <li><strong>Choose your audio file.</strong> Click <em>Choose audio</em> above or drag a file in. MP3, M4A, WAV, AAC, and voice memos all work.</li>
           <li><strong>Pick a bitrate.</strong> Lower bitrate = smaller file. <em>48–64 kbps</em> is ideal for voice; <em>128 kbps</em> is a good balance for music; <em>192 kbps</em> keeps more detail.</li>
-          <li><strong>Click Compress.</strong> The audio is re-encoded in your browser and the smaller M4A downloads automatically.</li>
+          <li><strong>Click Compress.</strong> Compactkit makes a smaller M4A and downloads it automatically.</li>
         </ol>
       </div>
     </details>
@@ -196,7 +180,7 @@
     </details>
     <details class="faq-item">
       <summary>Why compress in the browser instead of uploading?<span class="pm"></span></summary>
-      <div class="faq-body"><p>Most free online audio compressors upload your file to their servers. For personal recordings, interviews, or unreleased music, that means handing your audio to a third party. This page compresses the audio in your browser, so your recording is not sent to another company just to make it smaller.</p></div>
+      <div class="faq-body"><p>Most online audio compressors upload your file first. Compactkit keeps your recording on your device, which is better for voice memos, interviews, and unreleased music.</p></div>
     </details>
     <details class="faq-item">
       <summary>How do I compress audio on iPhone?<span class="pm"></span></summary>
@@ -213,7 +197,7 @@
     </details>
     <details class="faq-item">
       <summary>Are my files uploaded?<span class="pm"></span></summary>
-      <div class="faq-body"><p>No. Compression happens entirely in your browser. Your audio never leaves your device.</p></div>
+      <div class="faq-body"><p>No. Your audio stays on your device.</p></div>
     </details>
     <details class="faq-item">
       <summary>What file do I get back?<span class="pm"></span></summary>
@@ -235,7 +219,7 @@
           </svg>
           Compactkit
         </a>
-        <p>Free, private file compression. Nothing is ever uploaded — every file is processed on your own device.</p>
+        <p>Free, private file compression. Nothing is ever uploaded — files stay on your device.</p>
       </div>
       <div class="foot-col">
         <h4>Tools</h4>
@@ -265,7 +249,7 @@ import { FFmpeg } from '/vendor/ffmpeg/index.js';
 import { fetchFile, toBlobURL } from '/vendor/util/index.js';
 const CORE = 'https://cdn.jsdelivr.net/npm/@ffmpeg/core@0.12.6/dist/esm';
 const $ = id => document.getElementById(id);
-const appCta = `<div class="result-cta"><img class="app-ic sm" src="/assets/icons/app-audio.jpg" alt="" width="24" height="24"><div class="meta"><b>Doing this often on iPhone?</b><span>Get the free app for batch compress, split, trim, merge, convert, and size control.</span></div><a class="appstore" href="https://apps.apple.com/us/app/audio-compressor-reduce-size/id6769563659" rel="noopener"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download Audio Compressor on the App Store"></a></div>`;
+const appCta = `<div class="result-cta"><img class="app-ic sm" src="/assets/icons/app-audio.jpg" alt="" width="24" height="24"><div class="meta"><b>Doing this often on iPhone?</b><span>✅ Batch compress · ✅ Split · ✅ Trim · ✅ Merge · ✅ Convert · ✅ Size control.</span></div><a class="appstore" href="https://apps.apple.com/us/app/audio-compressor-reduce-size/id6769563659" rel="noopener"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download Audio Compressor on the App Store"></a></div>`;
 let picked = null, ffmpeg = null, loaded = false;
 
 const drop = $('drop'), fileInput = $('file');

@@ -190,30 +190,30 @@ h1 .thin{color:var(--ink-3);font-weight:600}
 .home .mini-tools{grid-template-columns:repeat(3,1fr);gap:14px}
 .home .mini-tool{min-height:74px;justify-content:center;padding:20px 22px}
 .home .mini-tool b{font-size:22px}
-.home-tools{margin-top:34px}
-.home-tools .sec-head{margin-bottom:16px}
+.home-tools{margin-top:24px}
+.home-tools h2{font-family:var(--font-display);font-size:clamp(32px,4.2vw,48px);line-height:1.02;letter-spacing:-.03em;
+  margin:0 0 18px;max-width:980px}
 .home-tools-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
-.home-tool-card{display:flex;flex-direction:column;gap:5px;min-height:112px;padding:18px;
+.home-tool-card{display:flex;align-items:center;min-height:76px;padding:18px;
   background:var(--surface);border:1px solid var(--line);border-radius:var(--r-md);color:var(--ink);
   box-shadow:0 1px 0 rgba(19,19,15,.03);transition:transform .15s,border-color .15s,box-shadow .15s}
 .home-tool-card:hover{text-decoration:none;transform:translateY(-2px);border-color:rgba(47,91,234,.28);
   box-shadow:0 14px 34px -28px rgba(19,19,15,.55)}
 .home-tool-card b{font-family:var(--font-display);font-size:19px;line-height:1.08;letter-spacing:-.02em}
-.home-tool-card span{font-size:14px;color:var(--ink-2);line-height:1.35}
 .home-tool-card.hot{border-color:rgba(47,91,234,.22);background:linear-gradient(180deg,#fff,var(--accent-soft))}
 .home .band{margin-top:58px}
 .home .band .proof-pill{min-width:190px;padding:14px 16px}
 .home .band .proof-pill .stars{font-size:22px}
 .home .band .proof-pill b{font-size:18px}
 .home .app-band{margin:24px 0 0;padding:28px}
-.home .app-band .band-in{max-width:760px}
+.home .app-band .band-in{max-width:980px}
 .home .app-band h2{font-size:clamp(28px,4.6vw,42px)}
-.home .app-band p{font-size:16px;line-height:1.45}
+.home .app-band p{font-size:16px;line-height:1.45;white-space:nowrap}
 .home .app-band .applist{margin-top:22px}
-.home .app-band .proof-row{margin-top:14px}
+.home .app-band .proof-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:14px}
 .home .app-band .proof-pill{min-width:0;flex:1 1 150px;padding:10px 12px}
 .home .app-band .proof-pill .stars{font-size:17px}
-.home .app-band .proof-pill b{font-size:15.5px;margin-top:4px}
+.home .app-band .proof-pill b{font-size:17px;margin-top:4px}
 
 /* ---------- section heading ---------- */
 .sec-head{margin:78px 0 26px}
@@ -342,6 +342,15 @@ h1 .thin{color:var(--ink-3);font-weight:600}
 .simple-table th,.simple-table td{vertical-align:top}
 .simple-table td:first-child{font-weight:700;color:var(--ink)}
 .price-note{font-size:13px;color:var(--ink-3);margin-top:12px}
+.tool-compare-list{display:grid;grid-template-columns:1fr;gap:12px;margin-top:18px}
+.tool-compare-card{border:1px solid var(--line);border-radius:var(--r-md);padding:18px 20px;background:#fff}
+.tool-compare-card.recommended{border-color:rgba(47,91,234,.32);background:linear-gradient(180deg,#fff,var(--accent-soft))}
+.tool-compare-head{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:10px}
+.tool-compare-head h3{font-family:var(--font-display);font-size:24px;line-height:1.05;letter-spacing:-.025em;margin:0}
+.tool-compare-head span{flex:0 0 auto;font-family:var(--font-mono);font-size:13px;font-weight:700;color:var(--accent-ink);
+  background:var(--accent-soft);border:1px solid rgba(47,91,234,.18);border-radius:999px;padding:6px 10px}
+.tool-compare-card ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 18px;margin:0;padding-left:18px}
+.tool-compare-card li{margin:0;color:#26261F;font-size:15px;line-height:1.35}
 .guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
 .guide-card{display:flex;flex-direction:column;gap:8px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-md);padding:18px;color:var(--ink)}
 .guide-card:hover{text-decoration:none;border-color:rgba(47,91,234,.25);box-shadow:0 14px 34px -26px rgba(19,19,15,.5)}
@@ -564,6 +573,9 @@ select:focus-visible,.controls input[type=text]:focus-visible,.controls input[ty
 .tldr{position:relative;background:var(--accent-soft);border:1px solid var(--line);border-left:3px solid var(--accent);
   padding:18px 20px;border-radius:0 var(--r-md) var(--r-md) 0;margin:0 0 6px;font-size:16px}
 .tldr b{color:var(--accent-ink)}
+.quick-note{margin:0 0 12px;padding:10px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  color:var(--ink-2);font-size:15.5px;line-height:1.45}
+.quick-note b{color:var(--ink);font-weight:700}
 .prose .tldr{background:transparent;border:0;border-bottom:1px solid var(--line);border-radius:0;
   padding:0 0 24px;margin:0 0 28px;font-size:18px;line-height:1.65;color:#26261F}
 .prose .tldr b{display:block;font-family:var(--font-display);font-size:clamp(22px,3.2vw,30px);
@@ -723,7 +735,7 @@ tbody tr:last-child td{border-bottom:0}
   .home-tools-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .home-tool-card{min-height:102px;padding:16px}
   .home .app-band{padding:24px;margin-top:22px}
-  .home .app-band .proof-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .home .app-band .proof-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
   .home .app-band .proof-pill{padding:10px 12px}
 }
 
@@ -736,7 +748,7 @@ tbody tr:last-child td{border-bottom:0}
   .home .assure{font-size:14px;padding:9px 12px}
   .home .app-band{padding:18px 16px;border-radius:20px;margin-top:18px}
   .home .app-band h2{font-size:29px;line-height:1.04}
-  .home .app-band p{font-size:14.5px;margin-top:10px}
+  .home .app-band p{font-size:14.5px;margin-top:10px;white-space:normal}
   .home .app-band .applist{gap:10px;margin-top:16px}
   .home .app-band .approw{padding:12px;gap:11px}
   .home .app-band .approw .app-ic{width:46px;height:46px}
@@ -745,10 +757,10 @@ tbody tr:last-child td{border-bottom:0}
   .home .app-band .approw .meta span{font-size:12.5px;line-height:1.25}
   .home .app-band .approw .appstore{width:100%;padding-left:57px}
   .home .app-band .approw .appstore img{height:34px}
-  .home .app-band .proof-row{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:12px}
+  .home .app-band .proof-row{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px}
   .home .app-band .proof-pill{padding:9px 10px;border-radius:13px}
   .home .app-band .proof-pill .stars{font-size:13px;letter-spacing:.02em}
-  .home .app-band .proof-pill b{font-size:14px}
+  .home .app-band .proof-pill b{font-size:13.5px;margin-top:3px}
   .home .tools{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:22px}
   .home .tool{min-height:148px;padding:16px;border-radius:18px}
   .home .tool .num{font-size:10.5px}
@@ -756,12 +768,13 @@ tbody tr:last-child td{border-bottom:0}
   .home .tool h3{font-size:23px;line-height:1.02}
   .home .tool::after{display:none}
   .home .tool .chip{top:14px;right:14px}
-  .home-tools{margin-top:24px}
-  .home-tools .sec-head h2{font-size:28px}
+  .home-tools{margin-top:20px}
+  .home-tools h2{font-size:28px;margin-bottom:14px}
   .home-tools-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
   .home-tool-card{min-height:96px;padding:14px;border-radius:16px}
   .home-tool-card b{font-size:17px}
-  .home-tool-card span{font-size:13px}
+  .tool-compare-head{align-items:flex-start;flex-direction:column;gap:8px}
+  .tool-compare-card ul{grid-template-columns:1fr}
   .home .mini-tools{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
   .home .mini-tool{min-height:58px;padding:14px}
   .home .mini-tool b{font-size:18px}
