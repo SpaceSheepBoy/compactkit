@@ -199,7 +199,9 @@ h1 .thin{color:var(--ink-3);font-weight:600}
   box-shadow:0 1px 0 rgba(19,19,15,.03);transition:transform .15s,border-color .15s,box-shadow .15s}
 .home-tool-card:hover{text-decoration:none;transform:translateY(-2px);border-color:rgba(47,91,234,.28);
   box-shadow:0 14px 34px -28px rgba(19,19,15,.55)}
-.home-tool-card b{font-family:var(--font-display);font-size:19px;line-height:1.08;letter-spacing:-.02em}
+.home-tool-card b{display:flex;align-items:center;flex-wrap:wrap;gap:8px;font-family:var(--font-display);font-size:19px;line-height:1.08;letter-spacing:-.02em}
+.free-badge{display:inline-flex;align-items:center;justify-content:center;min-height:29px;padding:5px 10px;border-radius:9px;
+  background:#2d2d2f;color:#fff;font-family:var(--font-sans);font-size:14px;font-weight:850;letter-spacing:0;line-height:1}
 .home-tool-card.hot{border-color:rgba(47,91,234,.22);background:linear-gradient(180deg,#fff,var(--accent-soft))}
 .home .band{margin-top:58px}
 .home .band .proof-pill{min-width:190px;padding:14px 16px}
