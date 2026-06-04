@@ -390,6 +390,30 @@ h1 .thin{color:var(--ink-3);font-weight:600}
 .article-row b{font-family:var(--font-display);font-size:20px;line-height:1.12;letter-spacing:-.02em}
 .article-row p{margin:0;color:var(--ink-2);font-size:15px;line-height:1.45;max-width:68ch}
 
+/* ---------- legal / app policy pages ---------- */
+.legal-app-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.legal-app-card{display:grid;grid-template-columns:56px 1fr;gap:4px 14px;align-items:center;
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--r-md);padding:16px;color:var(--ink);
+  min-height:150px;transition:transform .15s,border-color .15s,box-shadow .15s}
+.legal-app-card:hover{text-decoration:none;transform:translateY(-2px);border-color:rgba(47,91,234,.28);
+  background:#fff;box-shadow:0 14px 34px -28px rgba(19,19,15,.55)}
+.legal-app-card img{grid-row:1 / span 3}
+.legal-app-card span{font-family:var(--font-mono);font-size:11px;font-weight:700;color:var(--accent-ink);
+  letter-spacing:.05em;text-transform:uppercase}
+.legal-app-card b{font-family:var(--font-display);font-size:20px;line-height:1.08;letter-spacing:-.02em}
+.legal-app-card p{margin:0;color:var(--ink-2);font-size:14.5px;line-height:1.4}
+.app-legal-hero{display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--r-lg);padding:18px 20px;margin:0 0 18px;box-shadow:0 1px 0 rgba(19,19,15,.03)}
+.app-legal-hero img{border:1px solid var(--line);box-shadow:0 8px 22px -12px rgba(19,19,15,.45)}
+.app-legal-hero div{flex:1 1 260px;min-width:0}
+.app-legal-hero span{font-family:var(--font-mono);font-size:11px;font-weight:700;color:var(--accent-ink);
+  letter-spacing:.05em;text-transform:uppercase}
+.app-legal-hero h2{font-family:var(--font-display);font-size:24px;line-height:1.05;letter-spacing:-.025em;margin:4px 0 4px}
+.app-legal-hero p{margin:0;color:var(--ink-2);font-size:15px;line-height:1.4}
+.app-legal-hero .appstore{flex:0 0 auto}
+.app-legal-hero .appstore img{height:42px;border:0;box-shadow:none}
+.compact-legal-list{margin:16px 0 10px;gap:10px}
+
 /* ---------- dark band (apps / CTA) ---------- */
 .band{position:relative;background:var(--night);color:#fff;border-radius:var(--r-lg);overflow:hidden;
   padding:clamp(34px,6vw,64px);margin:70px 0}
@@ -700,6 +724,12 @@ tbody tr:last-child td{border-bottom:0}
   .tutorial-grid{grid-template-columns:1fr}
   .article-row{grid-template-columns:1fr;gap:6px;padding:16px}
   .article-type{grid-row:auto}
+  .legal-app-grid{grid-template-columns:1fr}
+  .legal-app-card{grid-template-columns:48px 1fr;min-height:0;padding:14px}
+  .legal-app-card .app-ic{width:48px;height:48px}
+  .app-legal-hero{align-items:flex-start;padding:16px}
+  .app-legal-hero .appstore{width:100%;padding-left:80px}
+  .app-legal-hero .appstore img{height:36px}
   .simple-table{border-radius:var(--r-md)}
   .simple-table table,.simple-table thead,.simple-table tbody,.simple-table tr,.simple-table td{
     display:block;width:100%

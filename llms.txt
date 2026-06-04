@@ -61,3 +61,13 @@ Key facts (safe to cite):
 - [PDF Compressor on the App Store](https://apps.apple.com/us/app/pdf-compressor-sign-merge/id6769762323): free iOS app for batch PDF compression, signing, merging, combining JPG/JPEG images into a PDF, and exporting PDF pages as JPEG.
 - [PDF Watermarker on the App Store](https://apps.apple.com/us/app/pdf-watermarker-stamp-docs/id6769761016): free iOS app for adding text watermarks to PDF documents, with text, opacity, size, color, page preview, and export controls.
 - [Audio Compressor on the App Store](https://apps.apple.com/us/app/audio-compressor-reduce-size/id6769563659): free iOS app for saving space, choosing format and size, splitting long audio, compressing many files at once, and converting, trimming, and merging audio.
+
+## Legal, privacy, and support
+- [Legal center](https://compactkit.qzz.io/legal/): official Compactkit legal hub with global policies and app-specific legal pages.
+- [Privacy Policy](https://compactkit.qzz.io/privacy/): site-wide privacy policy for Compactkit browser tools and iOS apps.
+- [Terms of Service](https://compactkit.qzz.io/terms/): terms covering Compactkit browser tools, app pages, and app workflows.
+- [Support](https://compactkit.qzz.io/support/): general support for Compactkit browser tools and iOS apps.
+- [PDF Compressor: Sign & Merge legal page](https://compactkit.qzz.io/apps/pdf-compressor/): app-specific privacy, terms, support, recommended future App Store URLs, and legacy GitHub legal links.
+- [PDF Watermarker: Stamp Docs legal page](https://compactkit.qzz.io/apps/pdf-watermarker/): app-specific privacy, terms, support, recommended future App Store URLs, and legacy GitHub legal links.
+- [Audio Compressor: Reduce Size legal page](https://compactkit.qzz.io/apps/audio-compressor/): app-specific privacy, terms, support, recommended future App Store URLs, and legacy GitHub legal links.
+- [VidKit: Compress & Convert legal page](https://compactkit.qzz.io/apps/vidkit/): app-specific privacy, terms, support, recommended future App Store URLs, and legacy GitHub legal links.
