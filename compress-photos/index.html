@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Compress Photos Online Free - Batch JPG and PNG Compressor</title>
+<meta name="description" content="Compress photos online in batches for free. Shrink JPG, PNG, and WebP images in your browser and download a ZIP. No upload, no sign-up, no watermark.">
+<link rel="canonical" href="https://compactkit.qzz.io/compress-photos/">
+<meta property="og:title" content="Compress Photos Online Free - Batch Photo Compressor">
+<meta property="og:description" content="Batch compress JPG, PNG, and WebP photos privately in your browser.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://compactkit.qzz.io/compress-photos/">
+<meta name="theme-color" content="#FBFAF6">
+<link rel="stylesheet" href="/assets/app.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Compactkit Batch Photo Compressor",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web browser",
+  "browserRequirements": "Requires JavaScript. No upload required.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "featureList": [
+    "Batch compress photos in the browser",
+    "Supports JPG, PNG, and WebP images",
+    "Download compressed photos as a ZIP",
+    "Files stay on your device and are never uploaded"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Can I batch compress photos without uploading?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Compactkit compresses photos in your browser and downloads a ZIP. The images stay on your device." } },
+    { "@type": "Question", "name": "What photo formats work?", "acceptedAnswer": { "@type": "Answer", "text": "JPG, PNG, and WebP work in modern browsers. HEIC support depends on the browser." } },
+    { "@type": "Question", "name": "Do compressed photos download one by one?", "acceptedAnswer": { "@type": "Answer", "text": "No. The compressed images download together as one ZIP file." } }
+  ]
+}
+</script>
+</head>
+<body class="t-pdf">
+<div class="topline"></div>
+<div class="shell">
+  <nav class="nav">
+    <a class="brand" href="/"><svg class="mark" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="1" y="1" width="26" height="26" rx="8" stroke="currentColor" stroke-width="1.6"/><path d="M8 9.5 11.5 14 8 18.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 9.5 16.5 14 20 18.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Compactkit</a>
+    <div class="nav-links"><a href="/compress-pdf/">Compress PDF</a><a href="/compress-audio/">Compress Audio</a><a href="/compress-video/">Compress Video</a><a class="active" href="/jpg-to-pdf/">Photos</a><a href="/tutorials/">Help</a></div>
+  </nav>
+</div>
+
+<header class="measure hero">
+  <span class="kicker rise d1"><span class="led"></span>PHOTO COMPRESSOR · BATCH · NO UPLOAD</span>
+  <h1 class="rise d2">Compress photos in batch,<br><span class="thin">free &amp; private.</span></h1>
+  <p class="lede rise d3">Shrink JPG, PNG, and WebP photos in your browser, then download the compressed images as one ZIP file.</p>
+  <div class="cta-row rise d3">
+    <div class="appcta">
+      <img class="app-ic lg" src="/assets/icons/app-vidkit.png" alt="VidKit app icon" width="64" height="64">
+      <div class="meta"><b>VidKit</b><span>Batch video and photo compression for iPhone</span></div>
+      <span class="appstore pending" aria-label="VidKit App Store link coming soon"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="VidKit App Store badge coming soon" loading="eager"></span>
+    </div>
+  </div>
+  <div class="assure rise d3">100% private - photos stay on your device</div>
+</header>
+
+<main class="measure">
+  <section class="panel task-panel single-tool rise d4" id="tool" aria-label="Batch photo compressor">
+    <div>
+      <div class="phead"><h2>Compress photos now</h2><span class="mono">PRIVATE TOOL</span></div>
+      <p class="hint">Choose multiple photos. Compactkit processes them one by one in your browser.</p>
+      <label class="dropzone" id="drop">
+        <input type="file" id="file" accept="image/jpeg,image/png,image/webp,.jpg,.jpeg,.png,.webp,.heic,.heif" multiple>
+        <svg class="dz-ic" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2.2" stroke="currentColor" stroke-width="1.7"/><path d="M7 15l3-3 2.5 2.5L15 12l3 3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="9" r="1.1" fill="currentColor"/></svg>
+        <div class="dz-title" id="dropLabel">Choose photos - or drop them here</div>
+        <div class="dz-sub">JPG, PNG, WebP, and browser-supported photos</div>
+      </label>
+      <div class="controls">
+        <label class="field">Output
+          <select id="format">
+            <option value="image/jpeg" selected>JPEG - universal</option>
+            <option value="image/webp">WebP - smaller</option>
+            <option value="image/png">PNG - lossless</option>
+          </select>
+        </label>
+        <label class="field">Quality
+          <select id="quality">
+            <option value="0.72">Smallest</option>
+            <option value="0.82" selected>Balanced</option>
+            <option value="0.9">High quality</option>
+          </select>
+        </label>
+        <label class="field">Max size
+          <select id="maxSize">
+            <option value="0" selected>Original dimensions</option>
+            <option value="2560">Max 2560 px</option>
+            <option value="1920">Max 1920 px</option>
+            <option value="1280">Max 1280 px</option>
+          </select>
+        </label>
+        <button class="run" id="go" disabled>Compress photos</button>
+      </div>
+      <div class="morehint"><span><b>HEIC note:</b> HEIC support depends on your browser. If a HEIC file fails, export it as JPG first and run it again.</span></div>
+      <div class="status" id="status">Choose one or more photos to begin.</div>
+      <div class="progress" id="bar"><i id="barfill"></i></div>
+      <div class="result" id="result"></div>
+    </div>
+  </section>
+
+  <section class="band"><div class="band-in"><span class="eyebrow">Use cases</span><h2>Smaller photos for upload forms and email.</h2><p>Batch photo compression helps with receipts, forms, product images, real estate photos, social posts, school portals, and client folders.</p></div></section>
+
+  <div class="sec-head"><span class="eyebrow">Related tools</span><h2>More image and file tools</h2></div>
+  <div class="mini-tools">
+    <a class="mini-tool" href="/jpg-to-pdf/"><b>JPG to PDF</b><span>Combine photos into a PDF.</span></a>
+    <a class="mini-tool" href="/pdf-to-jpg/"><b>PDF to JPG</b><span>Export PDF pages as images.</span></a>
+    <a class="mini-tool" href="/compress-pdf/"><b>Compress PDF</b><span>Shrink PDF files.</span></a>
+    <a class="mini-tool" href="/mov-to-mp4/"><b>MOV to MP4</b><span>Convert iPhone videos.</span></a>
+  </div>
+
+  <div class="faq">
+    <details class="faq-item" open><summary>How do I batch compress photos?<span class="pm"></span></summary><div class="faq-body"><ol><li>Choose multiple JPG, PNG, or WebP photos.</li><li>Pick output format, quality, and max size.</li><li>Click Compress photos. The compressed images download as one ZIP.</li></ol></div></details>
+    <details class="faq-item"><summary>Are photos uploaded?<span class="pm"></span></summary><div class="faq-body"><p>No. The photos are processed in your browser and zipped locally.</p></div></details>
+    <details class="faq-item"><summary>Which output should I pick?<span class="pm"></span></summary><div class="faq-body"><p>Pick JPEG for general sharing, WebP for smaller web images, and PNG when you need lossless output.</p></div></details>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="shell">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="/">
+          <svg class="mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+        <rect x="1" y="1" width="26" height="26" rx="8" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M8 9.5 11.5 14 8 18.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M20 9.5 16.5 14 20 18.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+          Compactkit
+        </a>
+        <p>Free online file tools. Private by default. Your files stay on your device.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Popular tools <span class="free-badge">Free</span></h4>
+        <a href="/compress-pdf/">🔥 Compress PDF</a>
+        <a href="/compress-audio/">🔥 Compress Audio</a>
+        <a href="/compress-photos/">🔥 Compress Photos</a>
+        <a href="/m4a-to-mp3/">🔥 M4A to MP3</a>
+        <a href="/mov-to-mp4/">🔥 MOV to MP4</a>
+      </div>
+      <div class="foot-col">
+        <h4>Audio tools <span class="free-badge">Free</span></h4>
+        <a href="/compress-audio/">Compress Audio</a>
+        <a href="/m4a-to-mp3/">M4A to MP3</a>
+        <a href="/mp3-to-m4a/">MP3 to M4A</a>
+        <a href="/audio-speed-changer/">Audio Speed Changer</a>
+        <a href="/trim-audio/">Trim Audio</a>
+        <a href="/split-audio/">Split Audio</a>
+      </div>
+      <div class="foot-col">
+        <h4>PDF tools <span class="free-badge">Free</span></h4>
+        <a href="/compress-pdf/">Compress PDF</a>
+        <a href="/watermark-pdf/">Watermark PDF</a>
+        <a href="/merge-pdf/">Merge PDF</a>
+        <a href="/sign-pdf/">Sign PDF</a>
+        <a href="/jpg-to-pdf/">JPG to PDF</a>
+        <a href="/pdf-to-jpg/">PDF to JPG</a>
+      </div>
+      <div class="foot-col">
+        <h4>Video &amp; photos <span class="free-badge">Free</span></h4>
+        <a href="/compress-video/">Compress Video</a>
+        <a href="/mov-to-mp4/">MOV to MP4</a>
+        <a href="/compress-photos/">Compress Photos</a>
+        <a href="/jpg-to-pdf/">JPG to PDF</a>
+        <a href="/pdf-to-jpg/">PDF to JPG</a>
+      </div>
+      <div class="foot-col">
+        <h4>Help &amp; legal</h4>
+        <a href="/tutorials/">Find the right tool</a>
+        <a href="/legal/">Legal center</a>
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/support/">Support</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; Compactkit</span>
+      <span>Files never leave your device.</span>
+      <div class="foot-platforms" aria-label="Compactkit platforms">
+        <a class="platform-link youtube" href="https://www.youtube.com/@iphonetooltips" rel="noopener" aria-label="Compactkit YouTube tutorials">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2a3 3 0 0 0-2.1-2.1C17.7 4.6 12 4.6 12 4.6s-5.7 0-7.5.5a3 3 0 0 0-2.1 2.1A31 31 0 0 0 2 12a31 31 0 0 0 .4 4.8 3 3 0 0 0 2.1 2.1c1.8.5 7.5.5 7.5.5s5.7 0 7.5-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 22 12a31 31 0 0 0-.4-4.8ZM10 15.4V8.6l5.8 3.4L10 15.4Z"/></svg>
+          <span>YouTube</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="module">
+import JSZip from 'https://cdn.jsdelivr.net/npm/jszip@3.10.1/+esm';
+import { $, baseName, downloadBlob, formatMB, wireMultiFileDrop } from '/assets/toolkit.js';
+
+const extByType = { 'image/jpeg': 'jpg', 'image/webp': 'webp', 'image/png': 'png' };
+let picked = [];
+
+function isImage(file){
+  return /^image\//i.test(file.type) || /\.(jpe?g|png|webp|heic|heif)$/i.test(file.name);
+}
+
+function setFiles(files){
+  picked = files.filter(isImage);
+  if(!picked.length){
+    $('dropLabel').textContent = 'Choose photos - or drop them here';
+    $('go').disabled = true;
+    $('status').textContent = 'Choose at least one JPG, PNG, or WebP photo.';
+    return;
+  }
+  const total = picked.reduce((sum, file) => sum + file.size, 0);
+  $('dropLabel').textContent = `${picked.length} photo${picked.length > 1 ? 's' : ''} selected · ${formatMB(total)}`;
+  $('go').disabled = false;
+  $('status').textContent = 'Ready. Click Compress photos.';
+  $('result').classList.remove('show');
+}
+
+wireMultiFileDrop({ drop: $('drop'), input: $('file'), onFiles: setFiles });
+
+function toBlob(canvas, type, quality){
+  return new Promise((resolve, reject) => {
+    canvas.toBlob(blob => blob ? resolve(blob) : reject(new Error('This browser could not export the image.')), type, quality);
+  });
+}
+
+async function compressPhoto(file, options){
+  const image = await createImageBitmap(file);
+  const longest = Math.max(image.width, image.height);
+  const scale = options.maxSize > 0 && longest > options.maxSize ? options.maxSize / longest : 1;
+  const width = Math.max(1, Math.round(image.width * scale));
+  const height = Math.max(1, Math.round(image.height * scale));
+  const canvas = document.createElement('canvas');
+  canvas.width = width;
+  canvas.height = height;
+  const context = canvas.getContext('2d', { alpha: options.type !== 'image/jpeg' });
+  if(options.type === 'image/jpeg'){
+    context.fillStyle = '#fff';
+    context.fillRect(0, 0, width, height);
+  }
+  context.drawImage(image, 0, 0, width, height);
+  if(image.close) image.close();
+  const blob = await toBlob(canvas, options.type, options.quality);
+  return { blob, name: `${baseName(file.name)}-compressed.${extByType[options.type]}` };
+}
+
+$('go').addEventListener('click', async () => {
+  if(!picked.length) return;
+  $('go').disabled = true;
+  $('bar').classList.add('show');
+  $('barfill').style.width = '0';
+  const totalBefore = picked.reduce((sum, file) => sum + file.size, 0);
+  const options = {
+    type: $('format').value,
+    quality: Number($('quality').value),
+    maxSize: Number($('maxSize').value),
+  };
+
+  try{
+    const zip = new JSZip();
+    let totalAfter = 0;
+    for(let index = 0; index < picked.length; index += 1){
+      const file = picked[index];
+      $('status').textContent = `Compressing ${index + 1} of ${picked.length}: ${file.name}`;
+      const item = await compressPhoto(file, options);
+      totalAfter += item.blob.size;
+      zip.file(item.name, item.blob);
+      $('barfill').style.width = `${Math.round(((index + 1) / picked.length) * 80)}%`;
+    }
+    $('status').textContent = 'Creating ZIP...';
+    const zipBlob = await zip.generateAsync({ type: 'blob' }, meta => {
+      $('barfill').style.width = `${80 + Math.round((meta.percent || 0) * 0.2)}%`;
+    });
+    downloadBlob(zipBlob, 'compactkit-compressed-photos.zip');
+    const saved = Math.max(0, Math.round((1 - totalAfter / totalBefore) * 100));
+    $('result').className = 'result show';
+    $('result').innerHTML = saved > 0
+      ? `Done - compressed <b>${picked.length}</b> photos and saved about <b>${saved}%</b>. ${formatMB(totalBefore)} &rarr; <b>${formatMB(totalAfter)}</b>.`
+      : `Done - created a ZIP for <b>${picked.length}</b> photos. These files were already close to the selected size.`;
+    $('status').textContent = 'Compress another batch any time - nothing was uploaded.';
+  }catch(error){
+    $('status').textContent = `Something went wrong: ${error && error.message ? error.message : error}`;
+  }finally{
+    $('bar').classList.remove('show');
+    $('barfill').style.width = '0';
+    $('go').disabled = false;
+  }
+});
+</script>
+</body>
+</html>
