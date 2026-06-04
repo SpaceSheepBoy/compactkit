@@ -96,10 +96,10 @@
 
   <section class="panel rise d4" id="tool" aria-label="Video compressor tool">
     <div class="phead"><h2>Compress a video now</h2><span class="mono">PRIVATE TOOL</span></div>
-    <p class="hint">Your file stays on your device. Nothing is uploaded.</p>
+    <p class="hint">Private video compression. No upload.</p>
     <div class="callout">
       <svg viewBox="0 0 24 24" fill="none"><path d="M12 3 22 20H2L12 3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 10v4M12 17h0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-      <span>In-browser video compression is best for <strong>short clips (≈ up to 1–2 min)</strong>. Large videos can be slow — keep this tab open while it works.</span>
+      <span>Best for <strong>short clips</strong>. Long videos can take time.</span>
     </div>
     <label class="dropzone" id="drop">
       <input type="file" id="file" accept="video/*,.mp4,.mov,.m4v,.webm">
@@ -117,11 +117,7 @@
       </label>
       <button class="run" id="go" disabled>Compress video</button>
     </div>
-    <div class="morehint">
-      <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l1.7 4.8L18.5 9.5 13.7 11.2 12 16l-1.7-4.8L5.5 9.5l4.8-1.7L12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-      <span><b>Working with a long video?</b> Browser video compression can be slow. For best results today, start with short clips and keep this tab open. A native iOS app is coming soon.</span>
-    </div>
-    <div class="status" id="status">Pick a video to begin. First run may take a moment; later runs are faster.</div>
+    <div class="status" id="status">Pick a video to begin.</div>
     <div class="progress" id="bar"><i id="barfill"></i></div>
     <div class="result" id="result"></div>
   </section>
@@ -130,14 +126,13 @@
     <div class="band-in">
       <span class="eyebrow">On the roadmap</span>
       <h2>iOS Video Compressor is coming soon.</h2>
-      <p>✅ Batch compress · ✅ Pick target size · ✅ Save space · ✅ Convert video · ✅ Make GIFs · ✅ Extract audio.</p>
+      <p>Batch videos, choose size, make GIFs, and extract audio.</p>
       <span class="soon">● iOS app · coming soon</span>
       <div class="proof-row" aria-label="Video app coming soon highlights">
         <div class="proof-pill"><span class="stars">★★★★★</span><b>Batch videos</b><span>Compress many clips.</span></div>
         <div class="proof-pill"><span class="stars">★★★★★</span><b>Choose size</b><span>Pick the output target.</span></div>
         <div class="proof-pill"><span class="stars">★★★★★</span><b>Save space</b><span>Keep smaller exports.</span></div>
-        <div class="proof-pill"><span class="stars">★★★★★</span><b>Video to GIF</b><span>Turn clips into GIFs.</span></div>
-        <div class="proof-pill"><span class="stars">★★★★★</span><b>Get audio</b><span>Extract audio from video.</span></div>
+        <div class="proof-pill"><span class="stars">★★★★★</span><b>GIF + audio</b><span>More tools coming.</span></div>
       </div>
       <div class="band-links">
         <a href="/compress-pdf/">Compress PDF →</a>
@@ -148,35 +143,29 @@
 
   <div class="sec-head">
     <span class="eyebrow">Help &amp; FAQ</span>
-    <h2>How to make a video smaller safely</h2>
-    <p>Use the right setting for short clips, messages, and email.</p>
+    <h2>Video compressor FAQ</h2>
+    <p>Short answers for common questions.</p>
   </div>
 
-  <div class="quick-note"><b>Quick tip:</b> Choose video, pick quality, compress. Best for short clips.</div>
-
   <div class="faq">
-    <details class="faq-item" open>
+    <details class="faq-item">
       <summary>How do I compress a video, step by step?<span class="pm"></span></summary>
       <div class="faq-body">
         <ol>
-          <li><strong>Choose your video.</strong> Click <em>Choose video</em> above or drag a file in. MP4, MOV, M4V, and WebM work.</li>
-          <li><strong>Pick a quality level.</strong> <em>Smallest</em> compresses hardest, <em>Balanced</em> is the best default for sharing, <em>High</em> keeps more detail.</li>
-          <li><strong>Click Compress.</strong> Just Compress makes a smaller MP4 and downloads it automatically. This can take a little while.</li>
+          <li>Choose a video.</li>
+          <li>Pick a quality level.</li>
+          <li>Click Compress.</li>
         </ol>
       </div>
     </details>
     <details class="faq-item">
       <summary>Why compress in the browser instead of uploading?<span class="pm"></span></summary>
-      <div class="faq-body"><p>Most online video compressors upload your file first. Just Compress keeps the video on your device, so it is better for personal clips. Because your device does the work, short clips work best.</p></div>
+      <div class="faq-body"><p>Your video stays on your device. Nothing is uploaded.</p></div>
     </details>
     <details class="faq-item">
       <summary>How do I get the smallest video?<span class="pm"></span></summary>
       <div class="faq-body">
-        <ul>
-          <li>Use the <em>Smallest</em> quality level for messaging and email.</li>
-          <li>Trim the clip first — shorter video means a smaller file and faster compression.</li>
-          <li>For long videos or many files at once, an app is usually faster.</li>
-        </ul>
+        <p>Use Smallest quality. Shorter clips compress faster.</p>
       </div>
     </details>
     <details class="faq-item">
@@ -186,10 +175,6 @@
     <details class="faq-item">
       <summary>Are my files uploaded?<span class="pm"></span></summary>
       <div class="faq-body"><p>No. Your video stays on your device.</p></div>
-    </details>
-    <details class="faq-item">
-      <summary>Why is it slower than other sites?<span class="pm"></span></summary>
-      <div class="faq-body"><p>Other sites upload your video first. Just Compress keeps it on your device, so larger clips can take longer.</p></div>
     </details>
   </div>
 
