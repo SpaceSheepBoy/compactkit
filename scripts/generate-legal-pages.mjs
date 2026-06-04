@@ -101,7 +101,7 @@ function nav(active = "legal") {
   <nav class="nav">
     <a class="brand" href="/">
       ${brandMark()}
-      Compactkit
+      Just Compress
     </a>
     <div class="nav-links">
       ${link("/compress-pdf/", "Compress PDF", "pdf")}
@@ -121,7 +121,7 @@ function footer() {
       <div class="foot-brand">
         <a class="brand" href="/">
           ${brandMark()}
-          Compactkit
+          Just Compress
         </a>
         <p>Free online file tools. Private by default. Your files stay on your device.</p>
       </div>
@@ -169,10 +169,10 @@ function footer() {
       </div>
     </div>
     <div class="foot-bottom">
-      <span>&copy; Compactkit</span>
+      <span>&copy; Just Compress</span>
       <span>Files never leave your device.</span>
-      <div class="foot-platforms" aria-label="Compactkit platforms">
-        <a class="platform-link youtube" href="https://www.youtube.com/@iphonetooltips" rel="noopener" aria-label="Compactkit YouTube tutorials">
+      <div class="foot-platforms" aria-label="Just Compress platforms">
+        <a class="platform-link youtube" href="https://www.youtube.com/@iphonetooltips" rel="noopener" aria-label="Just Compress YouTube tutorials">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2a3 3 0 0 0-2.1-2.1C17.7 4.6 12 4.6 12 4.6s-5.7 0-7.5.5a3 3 0 0 0-2.1 2.1A31 31 0 0 0 2 12a31 31 0 0 0 .4 4.8 3 3 0 0 0 2.1 2.1c1.8.5 7.5.5 7.5.5s5.7 0 7.5-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 22 12a31 31 0 0 0-.4-4.8ZM10 15.4V8.6l5.8 3.4L10 15.4Z"/></svg>
           <span>YouTube</span>
         </a>
@@ -253,14 +253,14 @@ function appCard(app) {
 }
 
 function writeLegalHome() {
-  const main = `${legalHero("LEGAL CENTER", "Legal, privacy,<br><span class=\"thin\">and support.</span>", "Official Compactkit policies for the website, browser tools, and iOS apps. These pages are public, app-specific, and ready to use as future App Store metadata URLs while legacy GitHub pages remain available.")}
+  const main = `${legalHero("LEGAL CENTER", "Legal, privacy,<br><span class=\"thin\">and support.</span>", "Official Just Compress policies for the website, browser tools, and iOS apps. These pages are public, app-specific, and ready to use as future App Store metadata URLs while legacy GitHub pages remain available.")}
 <main class="measure">
   <section class="article-index">
     <div class="article-section">
       <span class="eyebrow">Core policies</span>
-      ${linkCard("Privacy", "/privacy/", "Compactkit Privacy Policy", "How Compactkit web tools and iOS apps handle files, diagnostics, purchases, and user data.")}
-      ${linkCard("Terms", "/terms/", "Compactkit Terms of Service", "Terms for using Compactkit browser tools, app pages, and companion iOS apps.")}
-      ${linkCard("Support", "/support/", "Compactkit Support", "Get help with file tools, app downloads, purchases, exports, and privacy questions.")}
+      ${linkCard("Privacy", "/privacy/", "Just Compress Privacy Policy", "How Just Compress web tools and iOS apps handle files, diagnostics, purchases, and user data.")}
+      ${linkCard("Terms", "/terms/", "Just Compress Terms of Service", "Terms for using Just Compress browser tools, app pages, and companion iOS apps.")}
+      ${linkCard("Support", "/support/", "Just Compress Support", "Get help with file tools, app downloads, purchases, exports, and privacy questions.")}
     </div>
   </section>
 
@@ -275,68 +275,68 @@ function writeLegalHome() {
   </section>
 </main>`;
   write("legal/index.html", shell({
-    title: "Legal, Privacy, Terms & Support - Compactkit",
-    description: "Official Compactkit legal center with privacy policies, terms, support, and app-specific legal pages for PDF Compressor, PDF Watermarker, Audio Compressor, and VidKit.",
+    title: "Legal, Privacy, Terms & Support - Just Compress",
+    description: "Official Just Compress legal center with privacy policies, terms, support, and app-specific legal pages for PDF Compressor, PDF Watermarker, Audio Compressor, and VidKit.",
     canonical: `${site}/legal/`,
     main
   }));
 }
 
 function writeGlobalPrivacy() {
-  const main = `${legalHero("PRIVACY POLICY", "Privacy Policy,<br><span class=\"thin\">plain and specific.</span>", "Compactkit is designed around local file processing. Web tools run in your browser where possible, and iOS app pages below describe each app's exact data handling.")}
+  const main = `${legalHero("PRIVACY POLICY", "Privacy Policy,<br><span class=\"thin\">plain and specific.</span>", "Just Compress is designed around local file processing. Web tools run in your browser where possible, and iOS app pages below describe each app's exact data handling.")}
 <main class="measure">
   <article class="prose">
-    <div class="tldr"><b>Summary</b>Compactkit does not require an account. Browser tools process selected files on your device and do not upload those files to Compactkit. Companion iOS apps are designed for local processing and have app-specific privacy pages.</div>
+    <div class="tldr"><b>Summary</b>Just Compress does not require an account. Browser tools process selected files on your device and do not upload those files to Just Compress. Companion iOS apps are designed for local processing and have app-specific privacy pages.</div>
     <p><strong>Effective date:</strong> ${updated}</p>
     <h2>Information we do not intentionally collect</h2>
     <ul>
       <li>Your selected documents, photos, videos, or audio files.</li>
       <li>Your name, email address, phone number, precise location, contacts, or advertising identifiers.</li>
-      <li>Account credentials, because Compactkit does not require accounts for the browser tools.</li>
+      <li>Account credentials, because Just Compress does not require accounts for the browser tools.</li>
     </ul>
     <h2>Browser tools</h2>
-    <p>Compactkit web tools use browser APIs and WebAssembly libraries to process files locally when you choose a file. Selected files stay in your browser session and are not uploaded to Compactkit servers.</p>
+    <p>Just Compress web tools use browser APIs and WebAssembly libraries to process files locally when you choose a file. Selected files stay in your browser session and are not uploaded to Just Compress servers.</p>
     <h2>iOS apps</h2>
     <p>Each iOS app has its own public privacy policy describing permissions, local data, purchases, diagnostics, and third-party services. Use the app-specific pages below for App Store metadata and in-app legal links.</p>
     <div class="article-index compact-legal-list">
       ${apps.map((app) => linkCard("App", `/apps/${app.slug}/privacy/`, `${app.name} Privacy Policy`, app.summary)).join("\n      ")}
     </div>
     <h2>Diagnostics and analytics</h2>
-    <p>Apple may provide aggregated crash reports, performance information, and App Store analytics to developers. These reports are controlled by Apple and depend on user device settings. Compactkit uses them to improve reliability.</p>
+    <p>Apple may provide aggregated crash reports, performance information, and App Store analytics to developers. These reports are controlled by Apple and depend on user device settings. Just Compress uses them to improve reliability.</p>
     <h2>Privacy choices</h2>
     <p>You can manage app permissions in iOS Settings. You can delete app-local files and preferences by deleting the app from your device. For questions, contact <a href="mailto:${contact}">${contact}</a>.</p>
     <h2>Changes</h2>
-    <p>We may update this policy as Compactkit changes. Material updates will be reflected on this page with a new effective date.</p>
+    <p>We may update this policy as Just Compress changes. Material updates will be reflected on this page with a new effective date.</p>
   </article>
 </main>`;
   write("privacy/index.html", shell({
-    title: "Privacy Policy - Compactkit",
-    description: "Compactkit privacy policy for browser tools and iOS apps. Files are processed locally when possible, no account is required, and app-specific privacy pages are provided.",
+    title: "Privacy Policy - Just Compress",
+    description: "Just Compress privacy policy for browser tools and iOS apps. Files are processed locally when possible, no account is required, and app-specific privacy pages are provided.",
     canonical: `${site}/privacy/`,
     main
   }));
 }
 
 function writeGlobalTerms() {
-  const main = `${legalHero("TERMS OF SERVICE", "Terms of Service,<br><span class=\"thin\">for Compactkit.</span>", "These terms cover the Compactkit website, browser tools, app pages, and companion iOS app workflows.")}
+  const main = `${legalHero("TERMS OF SERVICE", "Terms of Service,<br><span class=\"thin\">for Just Compress.</span>", "These terms cover the Just Compress website, browser tools, app pages, and companion iOS app workflows.")}
 <main class="measure">
   <article class="prose">
-    <div class="tldr"><b>Summary</b>Use Compactkit responsibly, keep your own copies of important files, and review outputs before relying on them. App Store purchases, refunds, and downloads are handled by Apple.</div>
+    <div class="tldr"><b>Summary</b>Use Just Compress responsibly, keep your own copies of important files, and review outputs before relying on them. App Store purchases, refunds, and downloads are handled by Apple.</div>
     <p><strong>Effective date:</strong> ${updated}</p>
-    <h2>Using Compactkit</h2>
-    <p>Compactkit provides file tools, educational pages, app pages, privacy policies, terms, and support information. You are responsible for making sure your use is lawful and appropriate for the files you process.</p>
+    <h2>Using Just Compress</h2>
+    <p>Just Compress provides file tools, educational pages, app pages, privacy policies, terms, and support information. You are responsible for making sure your use is lawful and appropriate for the files you process.</p>
     <h2>Your files</h2>
-    <p>You keep ownership of your files. Compactkit browser tools are designed to process selected files locally, but you should keep backups and review outputs before deleting originals or sharing converted files.</p>
+    <p>You keep ownership of your files. Just Compress browser tools are designed to process selected files locally, but you should keep backups and review outputs before deleting originals or sharing converted files.</p>
     <h2>iOS apps and Apple purchases</h2>
-    <p>Downloads, purchases, subscriptions, refunds, and family sharing are handled by Apple under Apple's App Store terms. Compactkit does not receive full payment card details.</p>
+    <p>Downloads, purchases, subscriptions, refunds, and family sharing are handled by Apple under Apple's App Store terms. Just Compress does not receive full payment card details.</p>
     <h2>Acceptable use</h2>
-    <p>Do not use Compactkit to violate laws, infringe rights, bypass security controls, distribute harmful content, or process files you do not have permission to use.</p>
+    <p>Do not use Just Compress to violate laws, infringe rights, bypass security controls, distribute harmful content, or process files you do not have permission to use.</p>
     <h2>No professional advice</h2>
-    <p>Compactkit is a utility product. It does not provide legal, financial, medical, compliance, or professional review services.</p>
+    <p>Just Compress is a utility product. It does not provide legal, financial, medical, compliance, or professional review services.</p>
     <h2>Availability and changes</h2>
     <p>We may update, limit, or remove features as needed. Browser performance depends on the device, browser, file size, and available memory.</p>
     <h2>Warranty disclaimer and liability</h2>
-    <p>Compactkit is provided as is and as available, without warranties to the maximum extent permitted by law. To the maximum extent permitted by law, Compactkit is not liable for indirect, incidental, special, consequential, or punitive damages.</p>
+    <p>Just Compress is provided as is and as available, without warranties to the maximum extent permitted by law. To the maximum extent permitted by law, Just Compress is not liable for indirect, incidental, special, consequential, or punitive damages.</p>
     <h2>App-specific terms</h2>
     <div class="article-index compact-legal-list">
       ${apps.map((app) => linkCard("Terms", `/apps/${app.slug}/terms/`, `${app.name} Terms`, `Terms for ${app.shortName}, including local processing, exports, purchases, and acceptable use.`)).join("\n      ")}
@@ -346,15 +346,15 @@ function writeGlobalTerms() {
   </article>
 </main>`;
   write("terms/index.html", shell({
-    title: "Terms of Service - Compactkit",
-    description: "Compactkit terms of service for browser tools, app pages, and companion iOS apps, including files, purchases, acceptable use, and support.",
+    title: "Terms of Service - Just Compress",
+    description: "Just Compress terms of service for browser tools, app pages, and companion iOS apps, including files, purchases, acceptable use, and support.",
     canonical: `${site}/terms/`,
     main
   }));
 }
 
 function writeGlobalSupport() {
-  const main = `${legalHero("SUPPORT", "Support for Compactkit<br><span class=\"thin\">and our apps.</span>", "Get help with browser tools, file exports, iOS apps, purchases, privacy questions, and App Store legal links.")}
+  const main = `${legalHero("SUPPORT", "Support for Just Compress<br><span class=\"thin\">and our apps.</span>", "Get help with browser tools, file exports, iOS apps, purchases, privacy questions, and App Store legal links.")}
 <main class="measure">
   <article class="prose">
     <div class="tldr"><b>Contact</b>Email <a href="mailto:${contact}">${contact}</a> with the app name, device model, iOS version, browser if using the website, and a short description of the issue.</div>
@@ -372,8 +372,8 @@ function writeGlobalSupport() {
   </article>
 </main>`;
   write("support/index.html", shell({
-    title: "Support - Compactkit",
-    description: "Support page for Compactkit browser tools and iOS apps. Get help with exports, purchases, privacy, and app-specific legal pages.",
+    title: "Support - Just Compress",
+    description: "Support page for Just Compress browser tools and iOS apps. Get help with exports, purchases, privacy, and app-specific legal pages.",
     canonical: `${site}/support/`,
     main
   }));
@@ -385,7 +385,7 @@ function writeAppHome(app) {
   ${appHero(app)}
   <section class="article-index">
     <div class="article-section">
-      <span class="eyebrow">Official Compactkit URLs</span>
+      <span class="eyebrow">Official Just Compress URLs</span>
       ${linkCard("Privacy", `/apps/${app.slug}/privacy/`, "Privacy Policy", `How ${app.shortName} handles selected files, permissions, local data, purchases, and diagnostics.`)}
       ${linkCard("Terms", `/apps/${app.slug}/terms/`, "Terms of Use", `Terms for using ${app.shortName}, processing files, exports, purchases, and acceptable use.`)}
       ${linkCard("Support", `/apps/${app.slug}/support/`, "Support", `Contact, troubleshooting, App Store links, and legacy legal URLs for ${app.shortName}.`)}
@@ -396,7 +396,7 @@ function writeAppHome(app) {
     <h2>What ${app.shortName} does</h2>
     <ul>${app.features.map((feature) => `<li>${feature}</li>`).join("")}</ul>
     <h2>Legacy GitHub pages</h2>
-    <p>Older app versions and current App Store metadata may still point to GitHub Pages. Keep those URLs live while future app versions switch to Compactkit.</p>
+    <p>Older app versions and current App Store metadata may still point to GitHub Pages. Keep those URLs live while future app versions switch to Just Compress.</p>
     <ul>
       <li><a href="${app.legacy}/privacy/" rel="noopener">Legacy privacy page</a></li>
       <li><a href="${app.legacy}/terms/" rel="noopener">Legacy terms page</a></li>
@@ -422,12 +422,12 @@ function writeAppPrivacy(app) {
     <h2>What this policy covers</h2>
     <p>This Privacy Policy applies to ${app.name}, including the app's file processing, export, support, and purchase-related workflows.</p>
     <h2>Files and media processing</h2>
-    <p>${app.shortName} works with ${app.fileTypes} that you choose. Processing is designed to happen locally on your device. Your selected files are not intentionally uploaded to Compactkit servers.</p>
+    <p>${app.shortName} works with ${app.fileTypes} that you choose. Processing is designed to happen locally on your device. Your selected files are not intentionally uploaded to Just Compress servers.</p>
     <h2>Data we do not intentionally collect</h2>
     <ul>
       <li>The contents of your selected files, documents, photos, videos, or audio recordings.</li>
       <li>Your name, email address, phone number, contacts, precise location, or advertising identifiers.</li>
-      <li>Account credentials, because the app does not require a Compactkit account.</li>
+      <li>Account credentials, because the app does not require a Just Compress account.</li>
     </ul>
     <h2>Local app data</h2>
     <ul>${app.localData.map((item) => `<li>${item}</li>`).join("")}</ul>
@@ -477,7 +477,7 @@ function writeAppTerms(app) {
     <h2>No professional advice</h2>
     <p>The app is a utility product. It does not provide legal, financial, medical, compliance, archival, or professional review services.</p>
     <h2>Warranty disclaimer and liability</h2>
-    <p>The app is provided as is and as available, without warranties to the maximum extent permitted by law. To the maximum extent permitted by law, Compactkit is not liable for indirect, incidental, special, consequential, or punitive damages.</p>
+    <p>The app is provided as is and as available, without warranties to the maximum extent permitted by law. To the maximum extent permitted by law, Just Compress is not liable for indirect, incidental, special, consequential, or punitive damages.</p>
     <h2>Contact</h2>
     <p>Questions about these terms can be sent to <a href="mailto:${contact}">${contact}</a>.</p>
     <p class="quick-note"><b>Legacy URL:</b> <a href="${app.legacy}/terms/" rel="noopener">${app.legacy}/terms/</a></p>
@@ -513,7 +513,7 @@ function writeAppSupport(app) {
       <li><a href="/apps/${app.slug}/terms/">Terms of Use</a></li>
     </ul>
     <h2>Legacy GitHub links</h2>
-    <p>These links remain available for older versions and current App Store metadata while future versions move to Compactkit.</p>
+    <p>These links remain available for older versions and current App Store metadata while future versions move to Just Compress.</p>
     <ul>
       <li><a href="${app.legacy}/privacy/" rel="noopener">Legacy privacy page</a></li>
       <li><a href="${app.legacy}/terms/" rel="noopener">Legacy terms page</a></li>
@@ -570,7 +570,7 @@ function updateSitemap() {
 function updateLlms() {
   const file = path.join(root, "llms.txt");
   let text = fs.readFileSync(file, "utf8");
-  const section = `\n## Legal, privacy, and support\n- [Legal center](${site}/legal/): official Compactkit legal hub with global policies and app-specific legal pages.\n- [Privacy Policy](${site}/privacy/): site-wide privacy policy for Compactkit browser tools and iOS apps.\n- [Terms of Service](${site}/terms/): terms covering Compactkit browser tools, app pages, and app workflows.\n- [Support](${site}/support/): general support for Compactkit browser tools and iOS apps.\n${apps.map((app) => `- [${app.name} legal page](${site}/apps/${app.slug}/): app-specific privacy, terms, support, recommended future App Store URLs, and legacy GitHub legal links.`).join("\n")}\n`;
+  const section = `\n## Legal, privacy, and support\n- [Legal center](${site}/legal/): official Just Compress legal hub with global policies and app-specific legal pages.\n- [Privacy Policy](${site}/privacy/): site-wide privacy policy for Just Compress browser tools and iOS apps.\n- [Terms of Service](${site}/terms/): terms covering Just Compress browser tools, app pages, and app workflows.\n- [Support](${site}/support/): general support for Just Compress browser tools and iOS apps.\n${apps.map((app) => `- [${app.name} legal page](${site}/apps/${app.slug}/): app-specific privacy, terms, support, recommended future App Store URLs, and legacy GitHub legal links.`).join("\n")}\n`;
   if (!text.includes("## Legal, privacy, and support")) {
     text += section;
   }

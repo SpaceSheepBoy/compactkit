@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-label="Just Compress icon">
+  <rect width="1024" height="1024" rx="220" fill="#FBFAF6"/>
+  <rect x="186" y="186" width="652" height="652" rx="188" fill="none" stroke="#F5D200" stroke-width="60"/>
+  <path d="M382 382 642 642M642 382 382 642" fill="none" stroke="#F5D200" stroke-width="72" stroke-linecap="round"/>
+</svg>

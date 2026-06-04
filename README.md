@@ -1,4 +1,4 @@
-# Compactkit
+# Just Compress
 
 Free, privacy-first file compressors that run **entirely in the browser**. Files are processed on the user's own device with WebAssembly and are never uploaded.
 
