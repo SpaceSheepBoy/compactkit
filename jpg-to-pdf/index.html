@@ -81,13 +81,13 @@
       <div class="controls">
         <button class="run" id="go" disabled>Create PDF</button>
       </div>
-      <div class="morehint"><span><b>Doing this often?</b> ✅ Compress · ✅ Sign · ✅ Merge · ✅ Batch tools · ✅ Export pages. <a href="https://apps.apple.com/us/app/pdf-compressor-sign-merge/id6769762323" rel="noopener">Download on the App Store →</a></span></div>
+      <div class="morehint"><span><b>Use this on iPhone?</b> <a href="https://apps.apple.com/us/app/pdf-compressor-sign-merge/id6769762323" rel="noopener">Get the app →</a></span></div>
       <div class="status" id="status">Pick JPG images to begin.</div>
       <div class="result" id="result"></div>
     </div>
     <aside class="download-box">
       <div class="appcta"><img class="app-ic md" src="/assets/icons/app-pdf.png" alt="" width="56" height="56"><div class="meta"><b>Just PDF Compressor</b><span>Image and PDF toolkit</span></div><a class="appstore" href="https://apps.apple.com/us/app/pdf-compressor-sign-merge/id6769762323" rel="noopener"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us?size=250x83" alt="Download on the App Store"></a></div>
-      <p>✅ Compress · ✅ Sign · ✅ Merge · ✅ Batch compress · ✅ PDF to JPEG.</p>
+      <p>JPG to PDF, PDF to JPG, compress, sign, and merge.</p>
       <div class="proof-pill"><span class="stars">★★★★★</span><b>JPG to PDF</b><span>Combine images into a document.</span></div>
     </aside>
   </section>
@@ -173,7 +173,7 @@
 <script type="module">
 import { PDFDocument } from 'https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/+esm';
 const $ = id => document.getElementById(id);
-const appCta = `<div class="result-cta"><img class="app-ic sm" src="/assets/icons/app-pdf.png" alt="" width="24" height="24"><div class="meta"><b>Doing this often on iPhone?</b><span>✅ JPG to PDF · ✅ PDF to JPEG · ✅ Compress · ✅ Sign · ✅ Merge.</span></div><a class="appstore" href="https://apps.apple.com/us/app/pdf-compressor-sign-merge/id6769762323" rel="noopener"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download Just PDF Compressor on the App Store"></a></div>`;
+const appCta = `<div class="result-cta"><img class="app-ic sm" src="/assets/icons/app-pdf.png" alt="" width="24" height="24"><div class="meta"><b>Need PDF tools on iPhone?</b><span>Use the Just PDF Compressor app.</span></div><a class="appstore" href="https://apps.apple.com/us/app/pdf-compressor-sign-merge/id6769762323" rel="noopener"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download Just PDF Compressor on the App Store"></a></div>`;
 let picked = [];
 const drop = $('drop'), input = $('files');
 function setFiles(files){
