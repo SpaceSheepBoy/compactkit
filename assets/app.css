@@ -82,6 +82,8 @@ strong{font-weight:700}
 
 .shell{width:min(1120px,calc(100% - 40px));margin:0 auto}
 .measure{width:min(840px,calc(100% - 40px));margin:0 auto}
+body:has(#tool) > header.measure.hero{width:min(1040px,calc(100% - 40px))}
+main.measure:has(#tool){width:min(1040px,calc(100% - 40px))}
 
 .mono{font-family:var(--font-mono);font-weight:500;letter-spacing:0}
 
@@ -572,6 +574,7 @@ figure.diagram figcaption{font-family:var(--font-mono);font-size:12px;color:var(
 /* ---------- tool widget (tool pages) ---------- */
 .panel{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);
   padding:clamp(24px,4vw,40px);box-shadow:var(--shadow);margin-top:18px}
+main.measure:has(#tool) .panel#tool{padding:clamp(34px,5vw,56px);margin-top:22px}
 .panel .phead{display:flex;align-items:baseline;justify-content:space-between;gap:14px;margin-bottom:4px}
 .panel h2{font-family:var(--font-display);font-weight:700;font-size:22px;letter-spacing:-.02em;margin:0}
 .panel .phead .mono{font-size:11.5px;color:var(--ink-3)}
@@ -608,10 +611,11 @@ figure.diagram figcaption{font-family:var(--font-mono);font-size:12px;color:var(
 
 .dropzone{position:relative;display:block;border:1.5px dashed var(--line);border-radius:var(--r-md);
   padding:34px 24px;text-align:center;cursor:pointer;transition:border-color .15s,background .15s}
+main.measure:has(#tool) .panel#tool .dropzone{padding:52px 28px}
 .dropzone:hover,.dropzone.drag{border-color:var(--accent);background:var(--accent-soft)}
 .dropzone input{display:none}
 .dz-ic{width:42px;height:42px;color:var(--accent);margin:0 auto 12px;display:block}
-.dz-title{font-family:var(--font-display);font-weight:700;font-size:16px}
+.dz-title{font-family:var(--font-display);font-weight:800;font-size:clamp(22px,2.2vw,30px);line-height:1.08;letter-spacing:-.02em}
 .dz-sub{color:var(--ink-3);font-size:13px;margin-top:5px;font-family:var(--font-mono)}
 
 .controls{display:flex;gap:14px;flex-wrap:wrap;align-items:flex-end;margin-top:22px}
@@ -626,10 +630,10 @@ select:focus-visible,.controls input[type=text]:focus-visible,.controls input[ty
 .field.grow{flex:1 1 240px}
 .field.grow input[type=text],.field.grow input[type=number]{width:100%}
 .run{font-family:var(--font-text);font-weight:700;font-size:16px;border:0;border-radius:999px;padding:13px 28px;
-  cursor:pointer;color:#fff;background:var(--accent);transition:transform .15s,box-shadow .15s,filter .15s;
+  cursor:pointer;color:var(--accent-ink);background:var(--accent);transition:transform .15s,box-shadow .15s,filter .15s;
   box-shadow:0 10px 22px -10px var(--accent)}
 .run:hover:not([disabled]){transform:translateY(-2px);filter:brightness(1.05)}
-.run[disabled]{opacity:.4;cursor:not-allowed;box-shadow:none}
+.run[disabled]{opacity:.72;cursor:not-allowed;box-shadow:none}
 
 .trim-editor{margin-top:18px;padding:16px;border:1px solid var(--line);border-radius:var(--r-md);background:var(--paper)}
 .trim-editor[hidden]{display:none}
@@ -661,16 +665,34 @@ select:focus-visible,.controls input[type=text]:focus-visible,.controls input[ty
 .progress{height:7px;border-radius:999px;background:var(--paper-2);overflow:hidden;margin-top:14px;display:none}
 .progress.show{display:block}
 .progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent),var(--accent-2));transition:width .2s}
-.result{margin-top:18px;padding:16px 18px;border-radius:var(--r-md);background:var(--accent-soft);
-  border:1px solid var(--line);font-size:14.5px;display:none}
+.result{margin-top:18px;padding:20px 22px;border-radius:var(--r-md);background:var(--accent-soft);
+  border:1px solid rgba(245,210,0,.45);font-size:17px;line-height:1.45;display:none}
 .result.show{display:block}
 .result b{color:var(--accent-ink)}
+.result strong{display:block;font-family:var(--font-display);font-size:clamp(24px,3vw,34px);line-height:1.05;letter-spacing:-.025em;color:var(--ink);margin-bottom:6px}
+.result .simple{display:block;font-size:17px;color:#34342c}
+.result .fine{display:block;margin-top:8px;font-family:var(--font-mono);font-size:12.5px;line-height:1.45;color:var(--ink-2)}
+.result-metrics{display:flex;align-items:stretch;gap:10px;flex-wrap:wrap}
+.metric{display:flex;flex-direction:column;gap:3px;min-width:160px;padding:13px 15px;border-radius:14px;border:1px solid var(--line);background:#fff}
+.metric span{font-family:var(--font-mono);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--ink-3)}
+.metric b{font-family:var(--font-display);font-size:clamp(25px,3vw,36px);line-height:1;letter-spacing:-.025em}
+.metric.save{background:#E9FBEF;border-color:rgba(28,147,73,.24)}
+.metric.save b{color:#188246}
+.metric.out{background:#FFF7CE;border-color:rgba(245,210,0,.45)}
+.metric.out b{color:#6B5600}
 .result-cta{display:flex;align-items:center;gap:13px;flex-wrap:wrap;margin-top:14px;padding:13px;
   border-radius:var(--r-md);background:var(--surface);border:1px solid var(--line)}
 .result-cta .meta{display:flex;flex-direction:column;gap:1px;min-width:180px;flex:1 1 220px}
 .result-cta .meta b{font-family:var(--font-display);font-size:15px;line-height:1.15;color:var(--ink)}
 .result-cta .meta span{font-size:13px;color:var(--ink-2);line-height:1.3}
 .result-cta .appstore img{height:42px}
+
+.tool-under{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;margin:18px 0 0;
+  padding:16px 18px;border:1px solid var(--line);border-radius:var(--r-md);
+  background:linear-gradient(180deg,var(--surface),var(--accent-soft));box-shadow:0 14px 36px -30px rgba(19,19,15,.45)}
+.tool-under .appcta{flex:1 1 440px;min-width:0}
+.tool-under .assure{margin:0;flex:0 1 auto}
+.tool-under .appstore img{height:46px}
 
 /* ---------- prose / SEO article ---------- */
 .prose{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);
@@ -851,6 +873,10 @@ tbody tr:last-child td{border-bottom:0}
   .controls{align-items:stretch}
   select,.run{width:100%}
   select{min-width:0}
+  main.measure:has(#tool) .panel#tool{padding:24px 18px}
+  main.measure:has(#tool) .panel#tool .dropzone{padding:38px 18px}
+  .tool-under{align-items:flex-start;padding:14px}
+  .tool-under .assure{border-radius:14px}
 }
 
 @media (max-width:980px){

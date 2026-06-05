@@ -13,7 +13,7 @@
 <meta name="theme-color" content="#FBFAF6">
 <link rel="icon" href="/assets/icons/just-compress-icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/icons/just-compress-icon.svg">
-<link rel="stylesheet" href="/assets/app.css?v=20260604-blog">
+<link rel="stylesheet" href="/assets/app.css?v=20260605-metrics">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -55,7 +55,7 @@
 <header class="measure hero">
   <span class="kicker rise d1"><span class="led"></span>VIDEO CONVERTER · MOV TO MP4 · NO UPLOAD</span>
   <h1 class="rise d2">Convert MOV to MP4,<br><span class="thin">free &amp; private.</span></h1>
-  <p class="lede rise d3">Turn iPhone MOV, M4V, and short video clips into broadly compatible MP4 files. Nothing is uploaded.</p>
+  <p class="lede rise d3">Turn MOV into MP4. No upload.</p>
   <div class="cta-row rise d3">
     <div class="appcta">
       <img class="app-ic lg" src="/assets/icons/app-video.png" alt="Just Video Compressor app icon" width="64" height="64">
@@ -117,7 +117,7 @@
         <a class="brand" href="/">
           <svg class="mark" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="3" y="3" width="22" height="22" rx="6.5" stroke="#F5D200" stroke-width="1.8"/><path d="M9.6 10.3 12.2 14 9.6 17.7" stroke="#F5D200" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.4 10.3 15.8 14 18.4 17.7" stroke="#F5D200" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg>Just <span class="brand-hl">Compress</span>
         </a>
-        <p>Free online file tools. Private by default. Your files stay on your device.</p>
+        <p>Free private file tools. Files stay on your device.</p>
       </div>
       <div class="foot-col">
         <h4>Popular tools <span class="free-badge">Free</span></h4>
@@ -197,7 +197,7 @@ wireSingleFileDrop({ drop: $('drop'), input: $('file'), onFile: setFile });
 $('go').addEventListener('click', async () => {
   if(!picked) return;
   $('go').disabled = true;
-  $('status').textContent = 'Loading the private video engine... first run may take a moment.';
+  $('status').textContent = 'Loading engine...';
   try{
     const ffmpeg = await ensureFFmpeg(progress => {
       $('bar').classList.add('show');
@@ -206,13 +206,13 @@ $('go').addEventListener('click', async () => {
     const inName = `input.${extension(picked.name, 'mov')}`;
     const outName = 'output.mp4';
     await ffmpeg.writeFile(inName, await fetchFile(picked));
-    await ffmpeg.exec(['-i', inName, '-c:v', 'libx264', '-preset', 'ultrafast', '-crf', $('quality').value, '-c:a', 'aac', '-b:a', '128k', '-movflags', '+faststart', outName]);
+    await ffmpeg.exec(['-i', inName, '-map', '0:v:0', '-map', '0:a?', '-c:v', 'libx264', '-preset', 'ultrafast', '-crf', $('quality').value, '-pix_fmt', 'yuv420p', '-tag:v', 'avc1', '-c:a', 'aac', '-b:a', '128k', '-movflags', '+faststart', outName]);
     const data = await ffmpeg.readFile(outName);
     downloadBlob(new Blob([data.buffer || data], { type: 'video/mp4' }), `${baseName(picked.name)}.mp4`);
     await cleanupFFmpeg([inName, outName]);
     $('result').className = 'result show';
     $('result').innerHTML = `Done - converted <b>${formatMB(picked.size)}</b> to MP4.`;
-    $('status').textContent = 'Convert another video any time - nothing was uploaded.';
+    $('status').textContent = 'Ready again. No upload.';
   }catch(error){
     $('status').textContent = `Something went wrong: ${error && error.message ? error.message : error}`;
   }finally{

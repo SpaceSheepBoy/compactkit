@@ -13,7 +13,7 @@
 <meta name="theme-color" content="#FBFAF6">
 <link rel="icon" href="/assets/icons/just-compress-icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/icons/just-compress-icon.svg">
-<link rel="stylesheet" href="/assets/app.css?v=20260604-blog">
+<link rel="stylesheet" href="/assets/app.css?v=20260605-metrics">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -55,27 +55,18 @@
 <header class="measure hero">
   <span class="kicker rise d1"><span class="led"></span>PHOTO COMPRESSOR · BATCH · NO UPLOAD</span>
   <h1 class="rise d2">Compress photos in batch,<br><span class="thin">free &amp; private.</span></h1>
-  <p class="lede rise d3">Shrink JPG, PNG, and WebP photos in your browser, then download the compressed images as one ZIP file.</p>
-  <div class="cta-row rise d3">
-    <div class="appcta">
-      <img class="app-ic lg" src="/assets/icons/app-video.png" alt="Just Video Compressor app icon" width="64" height="64">
-      <div class="meta"><b>Just Video Compressor</b><span>Batch video and photo compression for iPhone</span></div>
-      <span class="appstore pending" aria-label="Just Video Compressor App Store link coming soon"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Just Video Compressor App Store badge coming soon" loading="eager"></span>
-    </div>
-  </div>
-  <div class="assure rise d3">100% private - photos stay on your device</div>
+  <p class="lede rise d3">Make photos smaller. Download one ZIP.</p>
 </header>
 
 <main class="measure">
   <section class="panel task-panel single-tool rise d4" id="tool" aria-label="Batch photo compressor">
     <div>
       <div class="phead"><h2>Compress photos now</h2><span class="mono">PRIVATE TOOL</span></div>
-      <p class="hint">Choose multiple photos. Just Compress processes them one by one in your browser.</p>
+      <p class="hint">Pick photos. No upload.</p>
       <label class="dropzone" id="drop">
         <input type="file" id="file" accept="image/jpeg,image/png,image/webp,.jpg,.jpeg,.png,.webp,.heic,.heif" multiple>
         <svg class="dz-ic" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2.2" stroke="currentColor" stroke-width="1.7"/><path d="M7 15l3-3 2.5 2.5L15 12l3 3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="9" r="1.1" fill="currentColor"/></svg>
         <div class="dz-title" id="dropLabel">Choose photos - or drop them here</div>
-        <div class="dz-sub">JPG, PNG, WebP, and browser-supported photos</div>
       </label>
       <div class="controls">
         <label class="field">Output
@@ -102,12 +93,21 @@
         </label>
         <button class="run" id="go" disabled>Compress photos</button>
       </div>
-      <div class="morehint"><span><b>HEIC note:</b> HEIC support depends on your browser. If a HEIC file fails, export it as JPG first and run it again.</span></div>
-      <div class="status" id="status">Choose one or more photos to begin.</div>
+      <div class="morehint"><span><b>HEIC:</b> If it fails, export as JPG first.</span></div>
+      <div class="status" id="status">Choose photos to begin.</div>
       <div class="progress" id="bar"><i id="barfill"></i></div>
       <div class="result" id="result"></div>
     </div>
   </section>
+
+  <div class="tool-under rise d4">
+    <div class="appcta">
+      <img class="app-ic lg" src="/assets/icons/app-video.png" alt="Just Video Compressor app icon" width="64" height="64">
+      <div class="meta"><b>Just Video Compressor</b><span>Batch video and photo compression for iPhone</span></div>
+      <span class="appstore pending" aria-label="Just Video Compressor App Store link coming soon"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Just Video Compressor App Store badge coming soon" loading="eager"></span>
+    </div>
+    <div class="assure">100% private - photos stay on your device</div>
+  </div>
 
   <section class="band"><div class="band-in"><span class="eyebrow">Use cases</span><h2>Smaller photos for upload forms and email.</h2><p>Batch photo compression helps with receipts, forms, product images, real estate photos, social posts, school portals, and client folders.</p></div></section>
 
@@ -133,7 +133,7 @@
         <a class="brand" href="/">
           <svg class="mark" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="3" y="3" width="22" height="22" rx="6.5" stroke="#F5D200" stroke-width="1.8"/><path d="M9.6 10.3 12.2 14 9.6 17.7" stroke="#F5D200" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.4 10.3 15.8 14 18.4 17.7" stroke="#F5D200" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg>Just <span class="brand-hl">Compress</span>
         </a>
-        <p>Free online file tools. Private by default. Your files stay on your device.</p>
+        <p>Free private file tools. Files stay on your device.</p>
       </div>
       <div class="foot-col">
         <h4>Popular tools <span class="free-badge">Free</span></h4>
@@ -209,17 +209,39 @@ function setFiles(files){
   if(!picked.length){
     $('dropLabel').textContent = 'Choose photos - or drop them here';
     $('go').disabled = true;
-    $('status').textContent = 'Choose at least one JPG, PNG, or WebP photo.';
+    $('status').textContent = 'Choose JPG, PNG, or WebP.';
     return;
   }
   const total = picked.reduce((sum, file) => sum + file.size, 0);
   $('dropLabel').textContent = `${picked.length} photo${picked.length > 1 ? 's' : ''} selected · ${formatMB(total)}`;
   $('go').disabled = false;
-  $('status').textContent = 'Ready. Click Compress photos.';
-  $('result').classList.remove('show');
+  $('status').textContent = 'Ready to compress. Your photos stay in this browser.';
+  showEstimate();
 }
 
 wireMultiFileDrop({ drop: $('drop'), input: $('file'), onFiles: setFiles });
+
+function estimatePhotoSavings(bytes){
+  const qualityRatio = Math.max(0, Math.min(1, Number($('quality').value) || .72));
+  const formatBoost = $('format').value === 'image/webp' ? .18 : $('format').value === 'image/jpeg' ? .12 : .04;
+  const resizeBoost = Number($('maxSize').value) > 0 ? .18 : 0;
+  const ratio = Math.max(.08, Math.min(.65, (1 - qualityRatio) + formatBoost + resizeBoost));
+  const saved = Math.max(0, Math.round(bytes * ratio));
+  const output = Math.max(0, bytes - saved);
+  return { saved, output, pct: Math.round(saved / bytes * 100) };
+}
+
+function showEstimate(){
+  if(!picked.length) return;
+  const total = picked.reduce((sum, file) => sum + file.size, 0);
+  const est = estimatePhotoSavings(total);
+  $('result').className = 'result show estimate';
+  $('result').innerHTML = `<div class="result-metrics"><div class="metric save"><span>Save about</span><b>${formatMB(est.saved)}</b></div><div class="metric out"><span>New ZIP</span><b>${formatMB(est.output)}</b></div></div>`;
+}
+
+$('format').addEventListener('change', showEstimate);
+$('quality').addEventListener('change', showEstimate);
+$('maxSize').addEventListener('change', showEstimate);
 
 function toBlob(canvas, type, quality){
   return new Promise((resolve, reject) => {
@@ -253,6 +275,7 @@ $('go').addEventListener('click', async () => {
   $('bar').classList.add('show');
   $('barfill').style.width = '0';
   const totalBefore = picked.reduce((sum, file) => sum + file.size, 0);
+  $('status').textContent = `Compressing ${formatMB(totalBefore)}...`;
   const options = {
     type: $('format').value,
     quality: Number($('quality').value),
@@ -275,12 +298,18 @@ $('go').addEventListener('click', async () => {
       $('barfill').style.width = `${80 + Math.round((meta.percent || 0) * 0.2)}%`;
     });
     downloadBlob(zipBlob, 'just-compress-compressed-photos.zip');
-    const saved = Math.max(0, Math.round((1 - totalAfter / totalBefore) * 100));
+    const zipSize = zipBlob.size;
+    const delta = zipSize - totalBefore;
+    const saved = Math.max(0, Math.round((1 - zipSize / totalBefore) * 100));
+    const pct = Math.round(Math.abs(delta) / totalBefore * 100);
+    const direction = delta <= 0 ? 'smaller' : 'larger';
+    const deltaText = `${delta <= 0 ? '-' : '+'}${formatMB(Math.abs(delta))}`;
+    const details = `<span class="fine">${formatMB(totalBefore)} -> ${formatMB(zipSize)} · ${deltaText} (${pct}% ${direction})</span>`;
     $('result').className = 'result show';
     $('result').innerHTML = saved > 0
-      ? `Done - compressed <b>${picked.length}</b> photos and saved about <b>${saved}%</b>. ${formatMB(totalBefore)} &rarr; <b>${formatMB(totalAfter)}</b>.`
-      : `Done - created a ZIP for <b>${picked.length}</b> photos. These files were already close to the selected size.`;
-    $('status').textContent = 'Compress another batch any time - nothing was uploaded.';
+      ? `<div class="result-metrics"><div class="metric save"><span>Saved</span><b>${formatMB(totalBefore - zipSize)}</b></div><div class="metric out"><span>New ZIP</span><b>${formatMB(zipSize)}</b></div></div>${details}`
+      : `<div class="result-metrics"><div class="metric save"><span>Already small</span><b>0 MB</b></div><div class="metric out"><span>New ZIP</span><b>${formatMB(zipSize)}</b></div></div>${details}`;
+    $('status').textContent = 'Ready again. No upload.';
   }catch(error){
     $('status').textContent = `Something went wrong: ${error && error.message ? error.message : error}`;
   }finally{

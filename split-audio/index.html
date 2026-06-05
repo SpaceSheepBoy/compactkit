@@ -13,7 +13,7 @@
 <meta name="theme-color" content="#FBFAF6">
 <link rel="icon" href="/assets/icons/just-compress-icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/icons/just-compress-icon.svg">
-<link rel="stylesheet" href="/assets/app.css?v=20260604-blog">
+<link rel="stylesheet" href="/assets/app.css?v=20260605-metrics">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -67,7 +67,7 @@
 <header class="measure hero">
   <span class="kicker rise d1"><span class="led"></span>AUDIO · SPLIT · NO UPLOAD</span>
   <h1 class="rise d2">Split long audio,<br><span class="thin">then share faster.</span></h1>
-  <p class="lede rise d3">Break a long recording into smaller parts. Useful for voice memos, lectures, podcasts, interviews, music clips, and other audio that is too long or too large to send.</p>
+  <p class="lede rise d3">Split long audio into smaller parts. No upload.</p>
   <div class="cta-row rise d3">
     <div class="appcta">
       <img class="app-ic lg" src="/assets/icons/app-audio.png" alt="Just Audio Compressor app icon" width="64" height="64">
@@ -82,7 +82,7 @@
   <section class="panel task-panel single-tool rise d4" id="tool" aria-label="Split audio with Just Audio Compressor">
     <div>
       <div class="phead"><h2>Split audio now</h2><span class="mono">PRIVATE TOOL</span></div>
-      <p class="hint">Choose how many parts you want. Just Compress cuts the recording into equal pieces.</p>
+      <p class="hint">Pick audio. Choose parts. Split.</p>
       <label class="dropzone" id="drop">
         <input type="file" id="file" accept="audio/*,.m4a,.mp3,.wav,.aac,.caf,.aiff">
         <svg class="dz-ic" viewBox="0 0 24 24" fill="none"><path d="M3 12h2M7 8v8M11 4v16M15 7v10M19 10v4M21 12h0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
@@ -101,7 +101,7 @@
         </label>
         <button class="run" id="go" disabled>Split audio</button>
       </div>
-      <div class="morehint"><span><b>Need batch, trim, merge, or conversion?</b> ✅ Batch compress · ✅ Trim · ✅ Merge · ✅ Convert. <a href="https://apps.apple.com/us/app/audio-compressor-reduce-size/id6769563659" rel="noopener">Download on the App Store →</a></span></div>
+      <div class="morehint"><span><b>Need more?</b> Batch · Trim · Merge · Convert. <a href="https://apps.apple.com/us/app/audio-compressor-reduce-size/id6769563659" rel="noopener">Get the app -></a></span></div>
       <div class="status" id="status">Pick an audio file to begin.</div>
       <div class="progress" id="bar"><i id="barfill"></i></div>
       <div class="result" id="result"></div>
@@ -149,7 +149,7 @@
         <a class="brand" href="/">
           <svg class="mark" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="3" y="3" width="22" height="22" rx="6.5" stroke="#F5D200" stroke-width="1.8"/><path d="M9.6 10.3 12.2 14 9.6 17.7" stroke="#F5D200" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.4 10.3 15.8 14 18.4 17.7" stroke="#F5D200" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg>Just <span class="brand-hl">Compress</span>
         </a>
-        <p>Free online file tools. Private by default. Your files stay on your device.</p>
+        <p>Free private file tools. Files stay on your device.</p>
       </div>
       <div class="foot-col">
         <h4>Popular tools <span class="free-badge">Free</span></h4>
@@ -244,7 +244,7 @@ async function ensureLoaded(){
 $('go').addEventListener('click', async () => {
   if(!picked) return;
   $('go').disabled = true;
-  $('status').textContent = 'Loading engine and splitting... (first run downloads ~25 MB, then it is cached)';
+  $('status').textContent = 'Splitting...';
   try{
     await ensureLoaded();
     const ext = (picked.name.match(/\.([a-z0-9]+)$/i)?.[1] || 'audio').toLowerCase();
@@ -277,8 +277,8 @@ $('go').addEventListener('click', async () => {
     }
     try{ await ffmpeg.deleteFile(inName); }catch(e){}
     $('result').className = 'result show';
-    $('result').innerHTML = `Done — created <b>${parts.length}</b> audio part${parts.length>1?'s':''} from a <b>${Math.round(duration)}</b>-second file.${appCta}`;
-    $('status').textContent = 'Split another file any time — nothing was uploaded.';
+    $('result').innerHTML = `Done - <b>${parts.length}</b> part${parts.length>1?'s':''} created.${appCta}`;
+    $('status').textContent = 'Ready again. No upload.';
   }catch(err){
     $('status').textContent = 'Something went wrong: ' + (err && err.message || err);
   }finally{
