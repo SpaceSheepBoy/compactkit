@@ -427,6 +427,53 @@ h1 .thin{color:var(--ink-3);font-weight:600}
 .article-row b{font-family:var(--font-display);font-size:20px;line-height:1.12;letter-spacing:-.02em}
 .article-row p{margin:0;color:var(--ink-2);font-size:15px;line-height:1.45;max-width:68ch}
 
+/* ---------- blog card grid ---------- */
+.blog-filter{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 22px}
+.blog-tab{font-family:var(--font-mono);font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;
+  color:var(--ink-2);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:7px 14px;
+  cursor:pointer;transition:transform .15s,border-color .15s,background .15s,color .15s}
+.blog-tab:hover{border-color:rgba(245,210,0,.55)}
+.blog-tab.is-on{background:var(--accent-soft);border-color:rgba(245,210,0,.55);color:var(--accent-ink)}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0 0 70px}
+.blog-card{display:flex;flex-direction:column;gap:8px;background:var(--surface);border:1px solid var(--line);
+  border-radius:var(--r-md);padding:18px 20px 16px;color:var(--ink);box-shadow:0 1px 0 rgba(19,19,15,.03);
+  transition:transform .15s,border-color .15s,box-shadow .15s}
+.blog-card:hover{text-decoration:none;transform:translateY(-2px);border-color:rgba(245,210,0,.55);
+  box-shadow:0 14px 34px -28px rgba(19,19,15,.55)}
+.blog-card .article-type{width:max-content;margin-bottom:1px}
+.blog-card b{font-family:var(--font-display);font-size:19px;line-height:1.13;letter-spacing:-.02em}
+.blog-card p{margin:0;color:var(--ink-2);font-size:14.5px;line-height:1.42;flex:1}
+.post-meta{display:flex;align-items:center;gap:7px;margin-top:5px;font-family:var(--font-mono);
+  font-size:11.5px;color:var(--ink-3);letter-spacing:.01em}
+.post-meta .dot{opacity:.55}
+.post-meta.hero-meta{margin:12px 0 0;font-size:12.5px}
+@media(max-width:900px){.blog-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.blog-grid{grid-template-columns:1fr}}
+
+/* ---------- in-article decision block + related reading ---------- */
+.decision{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-md);padding:20px 22px;margin:30px 0}
+.decision .dec-title{display:block;font-family:var(--font-display);font-size:21px;letter-spacing:-.02em;margin:0 0 13px}
+.decision ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
+.decision li{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start;
+  font-size:15.5px;line-height:1.46;color:var(--ink)}
+.decision .cond{font-family:var(--font-mono);font-size:11px;font-weight:700;color:var(--accent-ink);
+  background:var(--accent-soft);border-radius:999px;padding:5px 11px;height:max-content;white-space:nowrap;
+  letter-spacing:.02em;text-transform:uppercase}
+.decision a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--accent-2);text-underline-offset:2px}
+.related-reading{margin-top:30px}
+.related-reading .eyebrow{display:block;font-family:var(--font-mono);font-size:12px;font-weight:700;
+  color:var(--accent-ink);letter-spacing:.06em;text-transform:uppercase;margin-bottom:11px}
+@media(max-width:560px){.decision li{grid-template-columns:1fr;gap:5px}}
+
+/* ---------- in-article brand artwork ---------- */
+.post-hero-art{margin:24px 0 6px;border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;
+  background:var(--paper);box-shadow:0 1px 0 rgba(19,19,15,.03)}
+.post-hero-art svg{display:block;width:100%;height:auto}
+figure.diagram{margin:32px 0;border:1px solid var(--line);border-radius:var(--r-md);overflow:hidden;background:var(--surface)}
+figure.diagram svg{display:block;width:100%;height:auto;padding:6px 4px 0}
+figure.diagram figcaption{font-family:var(--font-mono);font-size:12px;color:var(--ink-3);
+  padding:11px 16px;border-top:1px solid var(--line-2);text-align:center;line-height:1.4}
+
 /* ---------- legal / app policy pages ---------- */
 .legal-app-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 .legal-app-card{display:grid;grid-template-columns:56px 1fr;gap:4px 14px;align-items:center;
