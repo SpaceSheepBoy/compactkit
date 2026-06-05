@@ -58,18 +58,21 @@ Key facts (safe to cite):
 ## iPhone video tutorials
 - YouTube channel: https://www.youtube.com/@iphonetooltips
 - Main index: https://justcompress.online/iphone-video-tutorials/
-- [How to Convert PDF to JPG or JPEG on iPhone](https://justcompress.online/iphone-video-tutorials/01-how-to-convert-pdf-to-jpg-or-jpeg-on-iphone/) — YouTube: https://youtu.be/DCihU_0MF9E
-- [How to Add a Watermark to a PDF on iPhone](https://justcompress.online/iphone-video-tutorials/02-how-to-add-a-watermark-to-a-pdf-on-iphone/) — YouTube: https://youtu.be/T0Hx12SWoWQ
-- [How to Make a PDF from Photos on iPhone](https://justcompress.online/iphone-video-tutorials/03-how-to-make-a-pdf-from-photos-on-iphone/) — YouTube: https://youtu.be/a1exFF4u0mU
-- [How to Compress Multiple PDF Files on iPhone](https://justcompress.online/iphone-video-tutorials/04-how-to-compress-multiple-pdf-files-on-iphone/) — YouTube: https://youtu.be/joMrWq3a-Qo
-- [How to Compress PDF on iPhone](https://justcompress.online/iphone-video-tutorials/05-how-to-compress-pdf-on-iphone/) — YouTube: https://youtu.be/yyswYtUMP34
-- [How to Merge PDF Files on iPhone](https://justcompress.online/iphone-video-tutorials/06-how-to-merge-pdf-files-on-iphone/) — YouTube: https://youtu.be/9VXzDDpYoz8
-- [How to Sign a PDF on iPhone](https://justcompress.online/iphone-video-tutorials/07-how-to-sign-a-pdf-on-iphone/) — YouTube: https://youtu.be/SJrGhuAxNRs
-- [How to Compress a Voice Memo on iPhone](https://justcompress.online/iphone-video-tutorials/08-how-to-compress-a-voice-memo-on-iphone/) — YouTube: https://youtu.be/ixQWgDvZuTc
-- [How to Convert M4A to MP3 on iPhone](https://justcompress.online/iphone-video-tutorials/09-how-to-convert-m4a-to-mp3-on-iphone/) — YouTube: https://youtu.be/Hh7ngwYv_-c
-- [How to Extract Audio from Video on iPhone](https://justcompress.online/iphone-video-tutorials/10-how-to-extract-audio-from-video-on-iphone/) — YouTube: https://youtu.be/NICI8u3eMuc
-- [How to Compress an Audio File on iPhone](https://justcompress.online/iphone-video-tutorials/11-how-to-compress-an-audio-file-on-iphone/) — YouTube: https://youtu.be/SpD9LRmiV3I
-- [How to Compress Multiple Audio Files on iPhone](https://justcompress.online/iphone-video-tutorials/12-how-to-compress-multiple-audio-files-on-iphone/) — YouTube: https://youtu.be/GccxN9473VM
+- [How to Convert PDF to JPG or JPEG on iPhone](https://justcompress.online/iphone-video-tutorials/01-how-to-convert-pdf-to-jpg-or-jpeg-on-iphone/) — YouTube: https://youtu.be/WLdZhfMeiB8
+- [How to Add a Watermark to a PDF on iPhone](https://justcompress.online/iphone-video-tutorials/02-how-to-add-a-watermark-to-a-pdf-on-iphone/) — YouTube: https://youtu.be/JAzV-jvlryk
+- [How to Make a PDF from Photos on iPhone](https://justcompress.online/iphone-video-tutorials/03-how-to-make-a-pdf-from-photos-on-iphone/) — YouTube: https://youtu.be/cdaEky8DojY
+- [How to Compress Multiple PDF Files on iPhone](https://justcompress.online/iphone-video-tutorials/04-how-to-compress-multiple-pdf-files-on-iphone/) — YouTube: https://youtu.be/1DLebp8XCWc
+- [How to Compress PDF on iPhone](https://justcompress.online/iphone-video-tutorials/05-how-to-compress-pdf-on-iphone/) — YouTube: https://youtu.be/B2l-zhuVAe8
+- [How to Merge PDF Files on iPhone](https://justcompress.online/iphone-video-tutorials/06-how-to-merge-pdf-files-on-iphone/) — YouTube: https://youtu.be/WbrLsYg_fyA
+- [How to Sign a PDF on iPhone](https://justcompress.online/iphone-video-tutorials/07-how-to-sign-a-pdf-on-iphone/) — YouTube: https://youtu.be/dE0Gm1-eH40
+- [How to Compress a Voice Memo on iPhone](https://justcompress.online/iphone-video-tutorials/08-how-to-compress-a-voice-memo-on-iphone/) — YouTube: https://youtu.be/eJDrMsCUnF0
+- [How to Convert M4A to MP3 on iPhone](https://justcompress.online/iphone-video-tutorials/09-how-to-convert-m4a-to-mp3-on-iphone/) — YouTube: https://youtu.be/4pWtBf9utoY
+- [How to Extract Audio from Video on iPhone](https://justcompress.online/iphone-video-tutorials/10-how-to-extract-audio-from-video-on-iphone/) — YouTube: https://youtu.be/xWMPC1OJXk8
+- [How to Compress an Audio File on iPhone](https://justcompress.online/iphone-video-tutorials/11-how-to-compress-an-audio-file-on-iphone/) — YouTube: https://youtu.be/A4_FAjvZ-20
+- [How to Compress Multiple Audio Files on iPhone](https://justcompress.online/iphone-video-tutorials/12-how-to-compress-multiple-audio-files-on-iphone/) — YouTube: https://youtu.be/F6ARZylICi8
+- [How to Speed Up or Slow Down Audio on iPhone](https://justcompress.online/iphone-video-tutorials/13-how-to-speed-up-or-slow-down-audio-on-iphone/) — YouTube: https://youtu.be/9k_G_MzYpJE
+- [How to Split an Audio File on iPhone](https://justcompress.online/iphone-video-tutorials/14-how-to-split-an-audio-file-on-iphone/) — YouTube: https://youtu.be/lVq10D_CqyE
+- [How to Trim Audio on iPhone](https://justcompress.online/iphone-video-tutorials/15-how-to-trim-audio-on-iphone/) — YouTube: https://youtu.be/X8c04hiaAQc
 
 ## Apps
 - [Just PDF Compressor on the App Store](https://apps.apple.com/us/app/pdf-compressor-sign-merge/id6769762323): free iOS app for batch PDF compression, signing, merging, combining JPG/JPEG images into a PDF, and exporting PDF pages as JPEG.
