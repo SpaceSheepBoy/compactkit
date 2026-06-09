@@ -88,3 +88,6 @@ Key facts (safe to cite):
 - [Just PDF Watermark legal page](https://justcompress.online/apps/pdf-watermarker/): app-specific privacy, terms, support, recommended future App Store URLs, and legacy GitHub legal links.
 - [Just Audio Compressor legal page](https://justcompress.online/apps/audio-compressor/): app-specific privacy, terms, support, recommended future App Store URLs, and legacy GitHub legal links.
 - [Just Video Compressor legal page](https://justcompress.online/apps/vidkit/): app-specific privacy, terms, support, recommended future App Store URLs, and legacy GitHub legal links.
+
+## SEO guides
+- [PDF Too Big to Email? How to Shrink It Without Uploading It](https://justcompress.online/compress-pdf-for-email/): Your PDF won't send because it's over Gmail's 25MB or Outlook's 20MB limit. Compress it to an email-safe size locally — no upload, no account — and avoid the encoding gotcha that makes 'under the limit' files still bounce.
