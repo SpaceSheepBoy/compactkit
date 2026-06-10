@@ -22,5 +22,26 @@
       ["Reduce attachment size to send large files with Outlook - Microsoft Support", "https://support.microsoft.com/en-us/office/reduce-attachment-size-to-send-large-files-with-outlook-8c698842-b462-4a4c-8d53-5c5dd04f77ef"]
     ],
     "primaryCta": "/compress-pdf/"
+  },
+  {
+    "slug": "compress-video-for-whatsapp",
+    "tag": "VIDEO FOR WHATSAPP",
+    "title": "Video Too Big for WhatsApp? Compress It to Under 16MB",
+    "description": "WhatsApp caps videos at 16MB, so longer clips won't send or get crushed in quality. Shrink your video to fit locally, no upload, or use the one iPhone trick that skips the limit entirely.",
+    "direct": "WhatsApp limits videos and Status clips to 16MB, which is only about 30 to 90 seconds of phone footage. Compress the video to fit and WhatsApp will not crush it further; aim for 720p with the H.264 codec. On iPhone you can also send the clip as a Document to skip WhatsApp compression entirely, up to 100MB. Just Compress shrinks supported clips locally, so private video is not uploaded to a server just to be resized.",
+    "sections": [
+      ["The real WhatsApp limit is 16MB", "WhatsApp caps video attachments and Status posts at 16MB on both iPhone and Android, roughly 30 to 90 seconds of typical phone video. Go over and WhatsApp either refuses the file or compresses it hard, which is why shared clips often look blocky. Getting under 16MB yourself, before sending, keeps you in control of the quality."],
+      ["Compress to fit without the quality cliff", "For a clip that needs to land under 16MB, 720p with the H.264 codec and a bitrate around 1000 to 1500 kbps looks clean on a phone screen while staying small. Compression mainly trades resolution and bitrate for size, and for a short talking or scenery clip the difference is usually hard to spot in a chat."],
+      ["Do it without uploading the clip", "Most compress-for-WhatsApp tools upload your video to a server first. For family moments, screen recordings, or anything private, that is avoidable exposure. Just Compress reduces supported MP4 and MOV clips locally in your browser and iOS app: pick the file, choose a preset, and download the smaller copy. The footage never leaves your device to be resized."],
+      ["The iPhone trick that skips the limit", "If you would rather not compress at all, send the video as a file. In a WhatsApp chat, tap the attachment icon, choose Document, and pick the video. Sent this way it skips WhatsApp's 16MB media compression and supports files up to 100MB, though the recipient receives the full-size file to download."]
+    ],
+    "faqs": [
+      ["What is the maximum video size on WhatsApp?", "16MB for videos sent as media and for Status clips, on both iPhone and Android, which is about 30 to 90 seconds of normal phone video. Files sent as a Document can be up to 100MB."],
+      ["How do I make a video small enough for WhatsApp?", "Compress it to under 16MB. A target of 720p with H.264 at roughly 1000 to 1500 kbps works well. Just Compress can shrink supported clips locally without uploading them."],
+      ["Will compressing ruin the quality?", "Not noticeably for short clips on a phone screen. Compression lowers resolution and bitrate, and at 720p most viewers cannot tell a compressed clip from the original in a chat."],
+      ["Can I send a video on WhatsApp without it being compressed?", "Yes. On iPhone, attach it as a Document instead of media. WhatsApp then skips its own compression and allows files up to 100MB."],
+      ["Can I compress a WhatsApp video without uploading it?", "Yes. Just Compress processes supported video locally in your browser or iOS app, so a private clip is not sent to a server just to be made smaller."]
+    ],
+    "primaryCta": "/compress-video/"
   }
 ]
