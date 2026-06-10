@@ -119,6 +119,7 @@ function render(page) {
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="apple-itunes-app" content="app-id=6769762323">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(page.title)} | Just Compress</title>
 <meta name="description" content="${attr(page.description)}">
